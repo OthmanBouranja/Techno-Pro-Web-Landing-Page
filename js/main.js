@@ -817,71 +817,71 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // main.js
-document.addEventListener('DOMContentLoaded', () => {
-  /* ============================
-      1. MERGE DICTIONARIES
-  ============================ */
-  const I18N = {
-    en: window.I18N_EN || {},
-    fr: window.I18N_FR || {},
-  };
+// document.addEventListener('DOMContentLoaded', () => {
+//   /* ============================
+//       1. MERGE DICTIONARIES
+//   ============================ */
+//   const I18N = {
+//     en: window.I18N_EN || {},
+//     fr: window.I18N_FR || {},
+//   };
 
-  /* ============================
-      2. APPLY LANGUAGE
-  ============================ */
-  const applyLanguage = (lang) => {
-    const dict = I18N[lang] || I18N.en;
+//   /* ============================
+//       2. APPLY LANGUAGE
+//   ============================ */
+//   const applyLanguage = (lang) => {
+//     const dict = I18N[lang] || I18N.en;
 
-    // HTML lang attribute
-    document.documentElement.setAttribute('lang', lang);
+//     // HTML lang attribute
+//     document.documentElement.setAttribute('lang', lang);
 
-    // Replace texts
-    document.querySelectorAll('[data-i18n]').forEach((node) => {
-      const key = node.getAttribute('data-i18n');
-      if (dict[key]) node.textContent = dict[key];
-    });
+//     // Replace texts
+//     document.querySelectorAll('[data-i18n]').forEach((node) => {
+//       const key = node.getAttribute('data-i18n');
+//       if (dict[key]) node.textContent = dict[key];
+//     });
 
-    // Save choice
-    localStorage.setItem('lang', lang);
+//     // Save choice
+//     localStorage.setItem('lang', lang);
 
-    // Update UI highlight on flag buttons
-    setActiveFlag(lang);
-  };
+//     // Update UI highlight on flag buttons
+//     setActiveFlag(lang);
+//   };
 
 
-  /* ============================
-      3. INLINE FLAG SWITCHER
-  ============================ */
-  const flagBtns = document.querySelectorAll('#langSwitcher [data-lang]');
+//   /* ============================
+//       3. INLINE FLAG SWITCHER
+//   ============================ */
+//   const flagBtns = document.querySelectorAll('#langSwitcher [data-lang]');
 
-  const setActiveFlag = (lang) => {
-    flagBtns.forEach((btn) => {
-      const isActive = btn.dataset.lang === lang;
+//   const setActiveFlag = (lang) => {
+//     flagBtns.forEach((btn) => {
+//       const isActive = btn.dataset.lang === lang;
 
-      btn.setAttribute('aria-pressed', isActive);
+//       btn.setAttribute('aria-pressed', isActive);
 
-      // clean then apply style for active
-      btn.classList.remove('ring-2', 'ring-offset-2', 'ring-indigo-500');
-      if (isActive) {
-        btn.classList.add('ring-2', 'ring-offset-2', 'ring-indigo-500');
-      }
-    });
-  };
+//       // clean then apply style for active
+//       btn.classList.remove('ring-2', 'ring-offset-2', 'ring-indigo-500');
+//       if (isActive) {
+//         btn.classList.add('ring-2', 'ring-offset-2', 'ring-indigo-500');
+//       }
+//     });
+//   };
 
-  // Click handlers
-  flagBtns.forEach((btn) => {
-    btn.addEventListener('click', () => applyLanguage(btn.dataset.lang));
-  });
+//   // Click handlers
+//   flagBtns.forEach((btn) => {
+//     btn.addEventListener('click', () => applyLanguage(btn.dataset.lang));
+//   });
 
-  /* ============================
-      4. INIT LANGUAGE
-  ============================ */
-  const saved = localStorage.getItem('lang');
-  const browserDefault =
-    (navigator.language || 'en').toLowerCase().startsWith('fr') ? 'fr' : 'en';
+//   /* ============================
+//       4. INIT LANGUAGE
+//   ============================ */
+//   const saved = localStorage.getItem('lang');
+//   const browserDefault =
+//     (navigator.language || 'en').toLowerCase().startsWith('fr') ? 'fr' : 'en';
 
-  applyLanguage(saved || browserDefault);
-});
+//   applyLanguage(saved || browserDefault);
+// });
 
 
 
