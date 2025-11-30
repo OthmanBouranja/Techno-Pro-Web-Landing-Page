@@ -1,0 +1,2326 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TechnoPro Web</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png"
+      href="assets/img/logos/formatLogo-no-bg.png.png" sizes="192x192">
+
+    <!-- Tailwind CDN -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+    <link rel="stylesheet" href="dist/output.css">
+    <link href="/css/style.css" rel="stylesheet" />
+
+  </head>
+
+  <body class="antialiased text-slate-800">
+    <span id="cursorDots" aria-hidden="true"></span>
+
+    <!-- =========================
+       LIGHT NAVBAR (sticky)
+  ========================== -->
+    <header
+      class="sticky top-0 z-50 border-b border-slate-200 bg-white/80 backdrop-blur">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-20 items-center justify-between gap-3">
+
+          <!-- Brand -->
+          <a href="#" class="flex items-center gap-2">
+            <img src="assets/img/logos/formatLogo-no-bg.png.png"
+              alt="Techno Pro Web Logo"
+              class="h-20 w-20 rounded-lg object-cover img-logo">
+          </a>
+
+          <!-- Desktop Navigation -->
+          <nav class="hidden lg:block">
+            <ul
+              class="flex items-center gap-1 rounded-full bg-slate-100 py-1 shadow-sm ring-1 ring-slate-200">
+              <!-- ACTIVE (ACCUEIL) -->
+              <li>
+                <a href="/"
+                  class="rounded-full px-4 py-2 text-sm font-medium bg-white text-slate-900 shadow-sm">
+                  Home
+                </a>
+              </li>
+              <li><a href="about.html"
+                  class="rounded-full px-4 py-2 text-sm font-medium text-slate-600 hover:text-slate-900">About</a></li>
+              <li><a href="/services.html" data-i18n="nav.services"
+                  class="rounded-full px-4 py-2 text-sm font-medium text-slate-600 hover:text-slate-900">Services</a></li>
+              <li><a href="portfolio.html" data-i18n="nav.portfolio"
+                  class="rounded-full px-4 py-2 text-sm font-medium text-slate-600 hover:text-slate-900">Portfolio</a>
+              </li>
+              <li><a href="/contact.html" data-i18n="nav.contact"
+                  class="rounded-full px-4 py-2 text-sm font-medium text-slate-600 hover:text-slate-900">Contact</a></li>
+            </ul>
+          </nav>
+
+          <div class="flex items-center gap-2">
+            <!-- Language Switcher (Desktop) -->
+            <!-- Inline Flag Switcher -->
+            <!-- <div id="langSwitcher" class="flex items-center gap-3">
+              <button type="button" data-lang="fr" aria-pressed="false"
+                title="Français"
+                class="inline-flex h-6 w-8 items-center justify-center rounded-md bg-white/80 ring-1 ring-slate-200 shadow-sm hover:bg-white transition">
+                <span class="text-base leading-none">🇫🇷</span>
+                <span class="sr-only">Français</span>
+              </button>
+
+              <button type="button" data-lang="en" aria-pressed="false"
+                title="English (US)"
+                class="inline-flex h-6 w-8 items-center justify-center rounded-md bg-white/80 ring-1 ring-slate-200 shadow-sm hover:bg-white transition">
+                <span class="text-base leading-none">🇺🇸</span>
+                <span class="sr-only">English</span>
+              </button>
+            </div> -->
+
+            <!-- CTA -->
+            <!-- <a href="/contact.html" data-i18n="cta.get_started"
+              class="hidden sm:inline-flex items-center rounded-full bg-gradient-to-r from-[#C6B2FF] to-[#B0E0FF] px-4 py-2 text-sm font-semibold text-white shadow-sm hover:opacity-90">
+              Get Started
+            </a> -->
+            <a href="/contact.html"
+              class="hidden sm:inline-flex items-center rounded-full bg-gradient-to-r from-[#C6B2FF] to-[#B0E0FF] px-4 py-2 text-sm font-semibold text-white shadow-sm hover:opacity-90">
+              Get Started
+            </a>
+
+            <!-- Mobile toggle -->
+            <button id="mobToggle"
+              type="button"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              class="lg:hidden inline-flex h-10 w-10 items-center justify-center rounded-lg border border-slate-300 bg-white shadow-sm">
+              <span class="sr-only">Toggle navigation</span>
+
+              <!-- Fries lines -->
+              <span class="burger-line line-1 block w-5 rounded-full"></span>
+              <span class="burger-line line-2 block w-4 rounded-full"></span>
+              <span class="burger-line line-3 block w-6 rounded-full"></span>
+            </button>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobMenu"
+        class="lg:hidden hidden border-t border-slate-200 bg-white">
+        <div class="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
+
+          <ul class="space-y-3">
+            <li><a href="/" data-i18n="nav.home"
+                class="block text-sm font-medium">Home</a></li>
+            <li><a href="/about.html" data-i18n="nav.about"
+                class="block text-sm font-medium">About</a></li>
+            <li><a href="/services.html" data-i18n="nav.services"
+                class="block text-sm font-medium">Services</a></li>
+            <li><a href="portfolio.html" data-i18n="nav.portfolio"
+                class="block text-sm font-medium">Portfolio</a></li>
+            <li><a href="/contact.html" data-i18n="nav.contact"
+                class="block text-sm font-medium">Contact</a></li>
+            <li>
+              <!-- <a href="/contact.html" data-i18n="cta.get_started"
+                class="inline-flex rounded-full bg-gradient-to-r from-[#C6B2FF] to-[#B0E0FF] px-4 py-2 text-sm font-semibold text-white">
+                Get Started
+              </a> -->
+              <a href="/contact.html"
+                class="inline-flex rounded-full bg-gradient-to-r from-[#C6B2FF] to-[#B0E0FF] px-4 py-2 text-sm font-semibold text-white">
+                Get Started
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- =========================
+         HERO with gradient
+  ========================== -->
+    <section id="hero" class="relative overflow-hidden">
+      <!-- Background gradient -->
+      <div
+        class="absolute inset-0 -z-10 bg-gradient-to-br from-[#F6CED8] via-[#C6B2FF] to-[#B0E0FF]"></div>
+      <div
+        class="pointer-events-none absolute -inset-40 -z-10 opacity-40 [background:radial-gradient(40rem_40rem_at_20%_10%,white,transparent),radial-gradient(30rem_30rem_at_80%_30%,white,transparent)]">
+      </div>
+
+      <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+        <div class="grid items-center gap-12 lg:grid-cols-2">
+          <!-- Left copy (SLIDES) -->
+          <div>
+            <div
+              class="inline-flex items-center gap-2 rounded-full bg-white/60 px-4 py-2 text-sm font-semibold text-slate-800 shadow-sm backdrop-blur">
+              <span
+                class="h-2 w-2 rounded-full bg-gradient-to-r from-[#C6B2FF] to-[#B0E0FF]"></span>
+              SEO Premium Tangier Morocco
+            </div>
+
+            <!-- Copy slides wrapper (height locked by JS to avoid shift) -->
+            <div id="copySlides" class="relative mt-6">
+              <!-- Slide 1 — Website creation -->
+              <div
+                class="copy-slide absolute inset-0 opacity-0 transition-opacity duration-500">
+                <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl">
+                  <span class="block">WEBSITE</span>
+                  <span class="block">CREATION</span>
+                  <span class="block mt-3">
+                    <span
+                      class="bg-clip-text text-transparent bg-gradient-to-r from-[#6D28D9] via-[#4338CA] to-[#0EA5E9] filter drop-shadow">
+                      MODERN & FAST DESIGN
+                    </span>
+                  </span>
+                </h1>
+                <p
+                  class="mt-5 max-w-2xl text-base leading-relaxed text-slate-700">
+                  We create modern, fast websites optimized to turn your
+                  visitors
+                  into customers. Professional, responsive design adapted to all
+                  types of businesses. Free audit!
+                </p>
+              </div>
+
+              <!-- Slide 2 — SEO -->
+              <div
+                class="copy-slide absolute inset-0 opacity-0 transition-opacity duration-500">
+                <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl">
+                  <span class="block">SEO RANKING</span>
+                  <span class="block">
+                    <span
+                      class="bg-clip-text text-transparent bg-gradient-to-r from-[#6D28D9] via-[#4338CA] to-[#0EA5E9]">SEO</span>
+                    TANGIER
+                  </span>
+                  <span class="block mt-3">
+                    <span
+                      class="bg-clip-text text-transparent bg-gradient-to-r from-[#6D28D9] via-[#4338CA] to-[#0EA5E9] filter drop-shadow">
+                      FIRST PAGE ON GOOGLE
+                    </span>
+                  </span>
+                </h1>
+                <p
+                  class="mt-5 max-w-2xl text-base leading-relaxed text-slate-700">
+                  Boost your visibility on Google with a complete SEO strategy:
+                  technical optimization, content, backlinks and performance
+                  tracking. Dominate the first page.
+                </p>
+              </div>
+
+              <!-- Slide 3 — Google Ads -->
+              <div
+                class="copy-slide absolute inset-0 opacity-0 transition-opacity duration-500">
+                <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl">
+                  <span class="block">ADVERTISING</span>
+                  <span class="block">
+                    <span
+                      class="bg-clip-text text-transparent bg-gradient-to-r from-[#6D28D9] via-[#4338CA] to-[#0EA5E9]">GOOGLE
+                      ADS</span>
+                  </span>
+                  <span class="block mt-3">
+                    <span
+                      class="bg-clip-text text-transparent bg-gradient-to-r from-[#6D28D9] via-[#4338CA] to-[#0EA5E9] filter drop-shadow">
+                      MORE CLIENTS IMMEDIATELY
+                    </span>
+                  </span>
+                </h1>
+                <p
+                  class="mt-5 max-w-2xl text-base leading-relaxed text-slate-700">
+                  Attract clients quickly with optimized Google Ads campaigns.
+                  Smart targeting, controlled budget and immediate results to
+                  grow
+                  your business.
+                </p>
+              </div>
+            </div>
+
+            <div class="mt-8 flex flex-wrap items-center gap-3">
+              <a href="/contact.html"
+                class="inline-flex items-center gap-2 rounded-full bg-white/80 px-5 py-3 text-sm font-semibold text-slate-900 shadow ring-1 ring-black/5 backdrop-blur hover:bg-white">
+                Free SEO Audit
+              </a>
+              <a href="portfolio.html"
+                class="inline-flex items-center gap-2 rounded-full border border-white/70 bg-transparent px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/30">
+                View Demo
+              </a>
+            </div>
+
+            <!-- Dots (control both sliders) -->
+            <div id="dots"
+              class="mt-10 inline-flex items-center gap-2 rounded-full bg-white/80 px-3 py-2 shadow ring-1 ring-black/5 backdrop-blur">
+            </div>
+          </div>
+
+          <!-- Right: IMAGE SLIDER (3 slides) -->
+          <div class="relative mx-auto w-full max-w-xl">
+            <div
+              class="rounded-3xl bg-white/40 p-4 shadow-2xl ring-1 ring-white/40 backdrop-blur">
+              <div id="slides"
+                class="relative aspect-[16/11] w-full overflow-hidden rounded-2xl">
+                <!-- Slides (JS toggles hidden/opacity) -->
+                <img src="assets/img/webDesign.png" alt="Slide 1"
+                  class="slide absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-500" />
+                <img src="assets/img/seo.png" alt="Slide 2"
+                  class="slide absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-500" />
+                <img src="assets/img/ads.png" alt="Slide 3"
+                  class="slide absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-500" />
+              </div>
+            </div>
+
+            <!-- Side arrows -->
+            <button id="prevBtn" aria-label="Prev"
+              class="absolute left-[-18px] top-1/2 -translate-y-1/2 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/80 shadow ring-1 ring-black/5 backdrop-blur hover:opacity-90">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  stroke-width="2" d="m15 19-7-7 7-7" />
+              </svg>
+            </button>
+            <button id="nextBtn" aria-label="Next"
+              class="absolute right-[-18px] top-1/2 -translate-y-1/2 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/80 shadow ring-1 ring-black/5 backdrop-blur hover:opacity-90">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  stroke-width="2" d="m9 5 7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+     HERO — playful & animated
+========================== -->
+    <section class="relative overflow-hidden">
+      <!-- Soft gradient background -->
+      <div
+        class="absolute inset-0 -z-10 bg-gradient-to-br from-[#F6CED8] via-[#C6B2FF]/40 to-[#B0E0FF]"></div>
+      <div class="absolute inset-0 -z-10 opacity-60">
+        <!-- subtle light spots -->
+        <div
+          class="absolute -top-24 -left-24 h-96 w-96 rounded-full bg-white/40 blur-3xl"></div>
+        <div
+          class="absolute -bottom-24 -right-24 h-[28rem] w-[28rem] rounded-full bg-white/30 blur-3xl"></div>
+      </div>
+
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+        <div class="text-center space-y-6">
+          <!-- Badge -->
+          <span
+            class="inline-flex items-center gap-2 rounded-full bg-white/80 px-4 py-2 text-sm font-semibold text-slate-800 shadow ring-1 ring-white/60 backdrop-blur animate-fade-in">
+            <span class="text-lg">🏆</span>
+            <span>Web & SEO Studio — Tangier</span>
+          </span>
+
+          <!-- Heading -->
+          <h1
+            class="text-4xl sm:text-5xl font-extrabold tracking-tight leading-tight animate-rise">
+            <span class="block">We build websites that</span>
+            <span class="block">
+              <span
+                class="bg-clip-text text-transparent bg-gradient-to-r from-[#6D28D9] via-[#4338CA] to-[#0EA5E9]">
+                convert
+              </span>
+              — Tangier Morocco
+            </span>
+          </h1>
+
+          <!-- Subheading -->
+          <p
+            class="mx-auto max-w-3xl text-slate-700 text-base sm:text-lg animate-fade-in [animation-delay:120ms]">
+            Custom professional websites + AI + SEO. ⚡ Fast loading, elegant
+            design
+            and an SEO strategy built for the first page of Google. Quick audit
+            included.
+          </p>
+
+          <!-- CTAs -->
+          <div
+            class="flex items-center justify-center gap-3 pt-2 animate-fade-in [animation-delay:220ms]">
+            <a href="/contact.html"
+              class="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#C6B2FF] to-[#B0E0FF] px-5 py-3 text-sm font-semibold text-white shadow ring-1 ring-white/40 backdrop-blur hover:opacity-95 transition relative overflow-hidden">
+              <span class="relative z-10">Estimate in 24h</span>
+              <!-- shiny sweep -->
+              <span
+                class="absolute inset-y-0 -left-10 w-10 skew-x-[-20deg] bg-white/40 group-hover:translate-x-[220%] transition-transform duration-700"></span>
+            </a>
+            <a href="/services.html"
+              class="inline-flex items-center gap-2 rounded-full border border-white/70 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white transition">
+              Discover our services
+            </a>
+          </div>
+        </div>
+
+        <!-- Feature cards -->
+        <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+          <!-- WOW CARD 1 -->
+          <div
+            class="group card-wow relative overflow-hidden rounded-2xl bg-white/80 p-8 shadow-xl ring-1 ring-white/60 backdrop-blur
+              transition-transform duration-300 will-change-transform">
+            <!-- cursor glow + chroma edge -->
+            <span
+              class="pointer-events-none absolute -inset-px rounded-[22px] opacity-0 transition duration-500
+                 group-hover:opacity-100" style="background:
+            radial-gradient(220px 160px at var(--mx,50%) var(--my,30%), rgba(198,178,255,.35), transparent 60%),
+            conic-gradient(from 180deg at 50% 50%, #B0E0FF, #C6B2FF, #F6CED8, #B0E0FF);
+            mask: linear-gradient(#000,#000) exclude, linear-gradient(#000,#000) content-box;
+            -webkit-mask: linear-gradient(#000,#000) exclude, linear-gradient(#000,#000) content-box;
+            padding:1px;"></span>
+
+            <!-- diagonal shine -->
+            <span
+              class="pointer-events-none absolute -left-1/3 top-0 h-full w-1/3 -rotate-12 bg-white/35 blur-xl
+                 opacity-0 group-hover:opacity-100 group-hover:animate-shine"></span>
+
+            <div class="relative z-10">
+              <div
+                class="mb-5 inline-flex h-16 w-16 items-center justify-center rounded-2xl text-white shadow-lg
+                  bg-gradient-to-br from-indigo-500 to-violet-500 [animation:bob_2.2s_ease-in-out_infinite]">
+                <span class="text-3xl">🚀</span>
+              </div>
+              <h3
+                class="text-2xl font-extrabold tracking-tight text-slate-900">Custom
+                “ultra-fast” websites</h3>
+              <p class="mt-2 text-slate-600 leading-relaxed">
+                Modern front-end, smooth animations and strong SEO performance.
+                React/Next.js or WordPress depending on your needs.
+              </p>
+            </div>
+
+            <!-- progress bar -->
+            <div
+              class="relative mt-8 h-1.5 w-full rounded-full bg-slate-200/70 overflow-hidden">
+              <span
+                class="bar block h-full w-0 rounded-full transition-[width] duration-700 ease-out group-hover:w-full"
+                style="background:linear-gradient(90deg,#B0E0FF,#C6B2FF,#F6CED8);
+                   box-shadow:0 0 18px 2px rgba(198,178,255,.55);"></span>
+            </div>
+          </div>
+
+          <!-- WOW CARD 2 -->
+          <div
+            class="group card-wow relative overflow-hidden rounded-2xl bg-white/80 p-8 shadow-xl ring-1 ring-white/60 backdrop-blur
+              transition-transform duration-300 will-change-transform">
+            <span
+              class="pointer-events-none absolute -inset-px rounded-[22px] opacity-0 transition duration-500
+                 group-hover:opacity-100" style="background:
+            radial-gradient(220px 160px at var(--mx,50%) var(--my,30%), rgba(255,171,220,.35), transparent 60%),
+            conic-gradient(from 180deg at 50% 50%, #FDB8E2, #F6CED8, #B0E0FF, #FDB8E2);
+            mask: linear-gradient(#000,#000) exclude, linear-gradient(#000,#000) content-box;
+            -webkit-mask: linear-gradient(#000,#000) exclude, linear-gradient(#000,#000) content-box;
+            padding:1px;"></span>
+            <span
+              class="pointer-events-none absolute -left-1/3 top-0 h-full w-1/3 -rotate-12 bg-white/35 blur-xl
+                 opacity-0 group-hover:opacity-100 group-hover:animate-shine"></span>
+
+            <div class="relative z-10">
+              <div
+                class="mb-5 inline-flex h-16 w-16 items-center justify-center rounded-2xl text-white shadow-lg
+                  bg-gradient-to-br from-fuchsia-500 to-pink-500 [animation:bob_2.2s_ease-in-out_infinite]">
+                <span class="text-3xl">🤖</span>
+              </div>
+              <h3
+                class="text-2xl font-extrabold tracking-tight text-slate-900">Frictionless
+                AI automation</h3>
+              <p class="mt-2 text-slate-600 leading-relaxed">
+                Chatbots, auto-replies and no/low-code integrations to save
+                hours
+                every week.
+              </p>
+            </div>
+
+            <div
+              class="relative mt-8 h-1.5 w-full rounded-full bg-slate-200/70 overflow-hidden">
+              <span
+                class="bar block h-full w-0 rounded-full transition-[width] duration-700 ease-out group-hover:w-full"
+                style="background:linear-gradient(90deg,#F6CED8,#C6B2FF,#B0E0FF);
+                   box-shadow:0 0 18px 2px rgba(246,206,216,.55);"></span>
+            </div>
+          </div>
+
+          <!-- WOW CARD 3 -->
+          <div
+            class="group card-wow relative overflow-hidden rounded-2xl bg-white/80 p-8 shadow-xl ring-1 ring-white/60 backdrop-blur
+              transition-transform duration-300 will-change-transform">
+            <span
+              class="pointer-events-none absolute -inset-px rounded-[22px] opacity-0 transition duration-500
+                 group-hover:opacity-100" style="background:
+            radial-gradient(220px 160px at var(--mx,50%) var(--my,30%), rgba(176,224,255,.35), transparent 60%),
+            conic-gradient(from 180deg at 50% 50%, #B0E0FF, #7dd3fc, #C6B2FF, #B0E0FF);
+            mask: linear-gradient(#000,#000) exclude, linear-gradient(#000,#000) content-box;
+            -webkit-mask: linear-gradient(#000,#000) exclude, linear-gradient(#000,#000) content-box;
+            padding:1px;"></span>
+            <span
+              class="pointer-events-none absolute -left-1/3 top-0 h-full w-1/3 -rotate-12 bg-white/35 blur-xl
+                 opacity-0 group-hover:opacity-100 group-hover:animate-shine"></span>
+
+            <div class="relative z-10">
+              <div
+                class="mb-5 inline-flex h-16 w-16 items-center justify-center rounded-2xl text-white shadow-lg
+                  bg-gradient-to-br from-rose-500 to-amber-500 [animation:bob_2.2s_ease-in-out_infinite]">
+                <span class="text-3xl">📈</span>
+              </div>
+              <h3
+                class="text-2xl font-extrabold tracking-tight text-slate-900">SEO
+                & Google “page 1”</h3>
+              <p class="mt-2 text-slate-600 leading-relaxed">
+                Technical SEO + content + link building. Clear dashboards and
+                measurable progress.
+              </p>
+            </div>
+
+            <div
+              class="relative mt-8 h-1.5 w-full rounded-full bg-slate-200/70 overflow-hidden">
+              <span
+                class="bar block h-full w-0 rounded-full transition-[width] duration-700 ease-out group-hover:w-full"
+                style="background:linear-gradient(90deg,#B0E0FF,#7dd3fc,#C6B2FF);
+                   box-shadow:0 0 18px 2px rgba(176,224,255,.55);"></span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Small reassurance line -->
+        <p class="mt-8 text-center text-sm text-slate-600">
+          Trusted by businesses and startups in
+          <span class="font-semibold">Tangier</span> — delivered everywhere in
+          <span class="font-semibold">Morocco</span>.
+        </p>
+
+      </div>
+
+      <!-- Floating fun shapes -->
+      <div class="pointer-events-none absolute inset-0 -z-10">
+        <span class="floaty"></span>
+        <span class="floaty [--x:80%] [--y:20%] [--d:8s]"></span>
+        <span class="floaty [--x:20%] [--y:75%] [--d:9s]"></span>
+      </div>
+    </section>
+
+    <!-- Pourquoi Choisir – Section -->
+    <section class="why-choose" aria-labelledby="why-choose-title">
+      <!-- decorative animated orbs -->
+      <span class="orb orb--tl" aria-hidden="true"></span>
+      <span class="orb orb--tr" aria-hidden="true"></span>
+      <span class="orb orb--br" aria-hidden="true"></span>
+
+      <div class="wc-wrap" role="region" aria-label="Commercial arguments">
+        <!-- badge -->
+        <div class="wc-badge" aria-label="Leader in Tangier">
+          <span class="wc-badge__icon" aria-hidden="true">🏆</span>
+          <span>Leader in Tangier</span>
+        </div>
+
+        <h2 id="why-choose-title" class="wc-title">
+          Why <span>Choose</span> TechnoPro Web in Tangier?
+        </h2>
+
+        <p class="wc-lead">
+          Web agency <strong>#1 in Tangier</strong> with <strong>50+
+            websites</strong>
+          delivered. Local Moroccan expertise, modern technologies, 24/7
+          support,
+          guaranteed results.
+          <a href="#realisations" class="wc-link">Your digital success starts
+            here!</a>
+        </p>
+
+        <!-- metrics -->
+        <div class="wc-metrics">
+          <article class="wc-metric">
+            <div class="wc-metric__icon" aria-hidden="true">🚀</div>
+            <div class="wc-metric__value" data-count="50" data-plus="+">0</div>
+            <div class="wc-metric__label">Websites Created</div>
+          </article>
+
+          <article class="wc-metric">
+            <div class="wc-metric__icon" aria-hidden="true">⭐</div>
+            <div class="wc-metric__value" data-count="100"
+              data-suffix="%">0</div>
+            <div class="wc-metric__label">Satisfied Clients</div>
+          </article>
+
+          <article class="wc-metric">
+            <div class="wc-metric__icon" aria-hidden="true">💬</div>
+            <div class="wc-metric__value" data-count="24"
+              data-suffix="h">0</div>
+            <div class="wc-metric__label">Premium Support</div>
+          </article>
+
+          <article class="wc-metric">
+            <div class="wc-metric__icon" aria-hidden="true">🏅</div>
+            <div class="wc-metric__value" data-count="5" data-suffix="★">0</div>
+            <div class="wc-metric__label">Average Rating</div>
+          </article>
+        </div>
+
+        <!-- CTA row -->
+        <div class="wc-ctas" role="group" aria-label="Call to actions">
+          <a href="contact.html" class="wc-btn wc-btn--primary" data-confetti>
+            <span class="wc-btn__emoji" aria-hidden="true">🎯</span>
+            Start Your Project
+          </a>
+          <a href="portfolio.html" class="wc-btn wc-btn--ghost">
+            <span class="wc-btn__emoji" aria-hidden="true">👀</span>
+            View Our Work
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BRANDING SERVICES SECTION (3D VERSION) -->
+    <section class="relative py-20 bg-[#050816] overflow-hidden">
+      <!-- blurry decorations -->
+      <div
+        class="pointer-events-none absolute -top-40 -left-32 w-72 h-72 rounded-full opacity-40"
+        style="background: radial-gradient(circle, #F6CED8, #C6B2FF, #B0E0FF); filter: blur(50px);"></div>
+      <div
+        class="pointer-events-none absolute -bottom-40 right-0 w-80 h-80 rounded-full opacity-40"
+        style="background: radial-gradient(circle, #B0E0FF, #C6B2FF, #F6CED8); filter: blur(60px);"></div>
+
+      <div class="relative max-w-6xl mx-auto px-4">
+
+        <!-- Title + intro -->
+        <div class="text-center space-y-4 reveal">
+          <span
+            class="inline-flex items-center gap-2 rounded-full px-4 py-1 text-xs sm:text-sm font-medium
+               bg-white/5 border border-white/10 text-[#C6B2FF]">
+            🛠️ Our Process
+          </span>
+
+          <h2
+            class="text-3xl sm:text-4xl font-extrabold tracking-tight bg-clip-text text-transparent
+             bg-gradient-to-r from-[#F6CED8] via-[#C6B2FF] to-[#B0E0FF]">
+            Our Collaboration Method
+          </h2>
+
+          <p class="max-w-2xl mx-auto text-sm sm:text-base text-slate-300">
+            From the first discussion to ongoing support, we build with you a
+            clear,
+            high-performing web project aligned with your business goals.
+          </p>
+        </div>
+
+        <!-- Progress line -->
+        <div class="relative mt-16 hidden md:block">
+          <div class="absolute inset-x-10 top-1/2 h-px -translate-y-1/2
+              bg-gradient-to-r from-[#F6CED8] via-[#C6B2FF] to-[#B0E0FF] opacity-60"></div>
+        </div>
+
+        <!-- Step cards -->
+        <div class="mt-10 grid gap-8 md:grid-cols-3">
+
+          <!-- STEP 1 -->
+          <div class="relative reveal step-delay-1">
+            <div class="absolute -top-12 left-1/2 -translate-x-1/2">
+              <span class="inline-flex items-center rounded-full 
+        px-8 py-3 
+        text-sm sm:text-base font-bold
+        bg-gradient-to-r from-[#F6CED8] via-[#C6B2FF] to-[#B0E0FF] 
+        text-white
+        shadow-[0_0_25px_rgba(198,178,255,0.6)]
+        tracking-wide
+        backdrop-blur-xl">
+                Step 01
+              </span>
+            </div>
+
+            <article
+              class="group rounded-3xl bg-white/5 border border-white/10 px-6 pt-10 pb-8 backdrop-blur-lg
+             shadow-[0_18px_45px_rgba(0,0,0,0.45)]
+             transition-transform duration-500 hover:-translate-y-3 hover:shadow-[0_24px_60px_rgba(0,0,0,0.7)]
+             hover:border-[#C6B2FF]/80 floating">
+
+              <div class="mb-5 flex items-center justify-between">
+                <div class="relative">
+                  <div class="w-14 h-14 rounded-full p-[2px]
+                      bg-gradient-to-br from-[#F6CED8] via-[#C6B2FF] to-[#B0E0FF]">
+                    <div
+                      class="w-full h-full rounded-full bg-[#050816] flex items-center justify-center text-white text-lg font-bold">
+                      01
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-lg shadow-md
+                 group-hover:scale-110 group-hover:bg-white/20 transition">
+                  🧭
+                </div>
+              </div>
+
+              <h3 class="text-lg font-semibold text-white mb-2">
+                Exploration & Strategy
+              </h3>
+              <p class="text-sm text-slate-300 leading-relaxed">
+                We clarify your idea, audience and priorities. From this
+                discussion,
+                we build a clear roadmap for your future website or redesign.
+              </p>
+            </article>
+          </div>
+
+          <!-- STEP 2 -->
+          <div class="relative reveal step-delay-2">
+            <div class="absolute -top-12 left-1/2 -translate-x-1/2">
+              <span class="inline-flex items-center rounded-full 
+        px-8 py-3 
+        text-sm sm:text-base font-bold
+                   bg-gradient-to-r from-[#C6B2FF] via-[#B0E0FF] to-[#F6CED8] text-white
+        shadow-[0_0_25px_rgba(198,178,255,0.6)]
+        tracking-wide
+        backdrop-blur-xl">
+                Step 02
+              </span>
+            </div>
+
+            <article
+              class="group rounded-3xl bg-white/5 border border-white/10 px-6 pt-10 pb-8 backdrop-blur-lg
+             shadow-[0_18px_45px_rgba(0,0,0,0.45)]
+             transition-transform duration-500 hover:-translate-y-3 hover:shadow-[0_24px_60px_rgba(0,0,0,0.7)]
+             hover:border-[#B0E0FF]/80 floating-slower">
+
+              <div class="mb-5 flex items-center justify-between">
+                <div class="relative">
+                  <div class="w-14 h-14 rounded-full p-[2px]
+                      bg-gradient-to-br from-[#C6B2FF] via-[#B0E0FF] to-[#F6CED8]">
+                    <div
+                      class="w-full h-full rounded-full bg-[#050816] flex items-center justify-center text-white text-lg font-bold">
+                      02
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-lg shadow-md
+                 group-hover:scale-110 group-hover:bg-white/20 transition">
+                  🧩
+                </div>
+              </div>
+
+              <h3 class="text-lg font-semibold text-white mb-2">
+                Design & Development
+              </h3>
+              <p class="text-sm text-slate-300 leading-relaxed">
+                We turn your ideas into modern interfaces: mockups, integration,
+                custom development and full testing to ensure performance,
+                security
+                and usability.
+              </p>
+            </article>
+          </div>
+
+          <!-- STEP 3 -->
+          <div class="relative reveal step-delay-3">
+            <div class="absolute -top-12 left-1/2 -translate-x-1/2">
+              <span class="inline-flex items-center rounded-full 
+        px-8 py-3 
+        text-sm sm:text-base font-bold
+                   bg-gradient-to-r from-[#B0E0FF] via-[#F6CED8] to-[#C6B2FF] text-white
+        shadow-[0_0_25px_rgba(198,178,255,0.6)]
+        tracking-wide
+        backdrop-blur-xl">
+                Step 03
+              </span>
+            </div>
+
+            <article
+              class="group rounded-3xl bg-white/5 border border-white/10 px-6 pt-10 pb-8 backdrop-blur-lg
+             shadow-[0_18px_45px_rgba(0,0,0,0.45)]
+             transition-transform duration-500 hover:-translate-y-3 hover:shadow-[0_24px_60px_rgba(0,0,0,0.7)]
+             hover:border-[#F6CED8]/80 floating">
+
+              <div class="mb-5 flex items-center justify-between">
+                <div class="relative">
+                  <div class="w-14 h-14 rounded-full p-[2px]
+                      bg-gradient-to-br from-[#B0E0FF] via-[#F6CED8] to-[#C6B2FF]">
+                    <div
+                      class="w-full h-full rounded-full bg-[#050816] flex items-center justify-center text-white text-lg font-bold">
+                      03
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-lg shadow-md
+                 group-hover:scale-110 group-hover:bg-white/20 transition">
+                  🚀
+                </div>
+              </div>
+
+              <h3 class="text-lg font-semibold text-white mb-2">
+                Launch & Ongoing Support
+              </h3>
+              <p class="text-sm text-slate-300 leading-relaxed">
+                We deploy your website, configure analytics tools, and stay with
+                you
+                to optimize, add features and grow your online presence.
+              </p>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+     SERVICES — premium grid
+========================= -->
+
+    <section id="services" class="relative overflow-hidden py-20">
+      <!-- soft background wash -->
+      <div
+        class="absolute inset-0 -z-10 bg-gradient-to-b from-white/50 via-[#F6CED8]/12 to-[#B0E0FF]/12"></div>
+      <div
+        class="absolute -top-28 right-10 h-72 w-72 rounded-full bg-white/40 blur-3xl"></div>
+
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <!-- Header -->
+        <div class="text-center mb-14">
+          <span
+            class="inline-flex items-center gap-2 rounded-full bg-white/80 px-4 py-2 text-sm font-semibold text-slate-800 shadow ring-1 ring-white/60 backdrop-blur">
+            ✨ Services <span data-year></span>
+          </span>
+          <h2 class="mt-4 text-3xl sm:text-4xl font-extrabold tracking-tight">
+            Web Services
+            <span
+              class="bg-clip-text text-transparent bg-gradient-to-r from-[#F6CED8] via-[#C6B2FF] to-[#B0E0FF]">
+              Tangier Morocco
+            </span>
+          </h2>
+          <p class="mx-auto mt-3 max-w-3xl text-slate-600">
+            High-performing & elegant digital experiences: fast websites,
+            e-commerce, AI and SEO — all designed to convert.
+          </p>
+        </div>
+
+        <!-- Grid -->
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+          <!-- Card -->
+          <article
+            class="svc-card group reveal relative overflow-hidden rounded-2xl bg-white/80 p-7 shadow-xl ring-1 ring-white/60 backdrop-blur">
+            <!-- gradient edge -->
+            <span
+              class="svc-edge pointer-events-none absolute -inset-px rounded-[22px] opacity-0 transition duration-500 group-hover:opacity-100"></span>
+            <!-- moving halo -->
+            <span
+              class="svc-spot pointer-events-none absolute opacity-0 group-hover:opacity-100"></span>
+            <!-- shine sweep -->
+            <span
+              class="svc-shine pointer-events-none absolute -left-1/3 top-0 h-full w-1/3 -rotate-12 bg-white/50 blur-xl opacity-0 group-hover:opacity-100"></span>
+
+            <div class="relative z-10">
+              <div
+                class="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-xl text-white shadow-lg bg-gradient-to-br from-[#C6B2FF] to-[#B0E0FF]">
+                <span class="text-2xl">🚀</span>
+              </div>
+              <h3
+                class="text-xl font-extrabold tracking-tight text-slate-900">“Turbo”
+                websites</h3>
+              <p class="mt-2 text-slate-600">
+                Ultra-fast landing pages & showcase sites. Smooth animations,
+                green
+                Core Web Vitals and express go-live.
+              </p>
+              <div class="mt-3 flex flex-wrap gap-2">
+                <span
+                  class="rounded-full bg-[#B0E0FF]/25 px-3 py-1 text-xs font-medium text-[#0F5F89]">Perf
+                  95+</span>
+                <span
+                  class="rounded-full bg-[#C6B2FF]/25 px-3 py-1 text-xs font-medium text-[#4B3B76]">Premium
+                  design</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card -->
+          <article
+            class="svc-card group reveal relative overflow-hidden rounded-2xl bg-white/80 p-7 shadow-xl ring-1 ring-white/60 backdrop-blur">
+            <span
+              class="svc-edge pointer-events-none absolute -inset-px rounded-[22px] opacity-0 transition duration-500 group-hover:opacity-100"></span>
+            <span
+              class="svc-spot pointer-events-none absolute opacity-0 group-hover:opacity-100"></span>
+            <span
+              class="svc-shine pointer-events-none absolute -left-1/3 top-0 h-full w-1/3 -rotate-12 bg-white/50 blur-xl opacity-0 group-hover:opacity-100"></span>
+
+            <div class="relative z-10">
+              <div
+                class="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-xl text-white shadow bg-gradient-to-br from-[#F6CED8] to-[#C6B2FF]">
+                <span class="text-2xl">🛒</span>
+              </div>
+              <h3
+                class="text-xl font-extrabold tracking-tight text-slate-900">E-commerce
+                “à la carte”</h3>
+              <p class="mt-2 text-slate-600">
+                Frictionless purchase funnels, payments (CMI/Stripe), SEO-ready
+                product pages and upsell/cross-sell flows.
+              </p>
+              <div class="mt-3 flex flex-wrap gap-2">
+                <span
+                  class="rounded-full bg-[#F6CED8]/25 px-3 py-1 text-xs font-medium text-[#7a4050]">CMI
+                  / Stripe</span>
+                <span
+                  class="rounded-full bg-[#C6B2FF]/25 px-3 py-1 text-xs font-medium text-[#4B3B76]">Upsell</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card -->
+          <article
+            class="svc-card group reveal relative overflow-hidden rounded-2xl bg-white/80 p-7 shadow-xl ring-1 ring-white/60 backdrop-blur">
+            <span
+              class="svc-edge pointer-events-none absolute -inset-px rounded-[22px] opacity-0 transition duration-500 group-hover:opacity-100"></span>
+            <span
+              class="svc-spot pointer-events-none absolute opacity-0 group-hover:opacity-100"></span>
+            <span
+              class="svc-shine pointer-events-none absolute -left-1/3 top-0 h-full w-1/3 -rotate-12 bg-white/50 blur-xl opacity-0 group-hover:opacity-100"></span>
+
+            <div class="relative z-10">
+              <div
+                class="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-xl text-white shadow bg-gradient-to-br from-[#B0E0FF] to-[#C6B2FF]">
+                <span class="text-2xl">🔍</span>
+              </div>
+              <h3
+                class="text-xl font-extrabold tracking-tight text-slate-900">Strategic
+                SEO</h3>
+              <p class="mt-2 text-slate-600">
+                Architecture, content, link building and clear reporting. Goal:
+                steady leads and long-term visibility.
+              </p>
+              <div class="mt-3 flex flex-wrap gap-2">
+                <span
+                  class="rounded-full bg-[#B0E0FF]/25 px-3 py-1 text-xs font-medium text-[#0F5F89]">Audit</span>
+                <span
+                  class="rounded-full bg-[#C6B2FF]/25 px-3 py-1 text-xs font-medium text-[#4B3B76]">Content
+                  plan</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card -->
+          <article
+            class="svc-card group reveal relative overflow-hidden rounded-2xl bg-white/80 p-7 shadow-xl ring-1 ring-white/60 backdrop-blur">
+            <span
+              class="svc-edge pointer-events-none absolute -inset-px rounded-[22px] opacity-0 transition duration-500 group-hover:opacity-100"></span>
+            <span
+              class="svc-spot pointer-events-none absolute opacity-0 group-hover:opacity-100"></span>
+            <span
+              class="svc-shine pointer-events-none absolute -left-1/3 top-0 h-full w-1/3 -rotate-12 bg-white/50 blur-xl opacity-0 group-hover:opacity-100"></span>
+
+            <div class="relative z-10">
+              <div
+                class="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-xl text-white shadow bg-gradient-to-br from-[#C6B2FF] to-[#F6CED8]">
+                <span class="text-2xl">🤖</span>
+              </div>
+              <h3
+                class="text-xl font-extrabold tracking-tight text-slate-900">AI
+                automation</h3>
+              <p class="mt-2 text-slate-600">
+                Chatbots, auto-replies and no/low-code integrations. Save hours
+                every week.
+              </p>
+              <div class="mt-3 flex flex-wrap gap-2">
+                <span
+                  class="rounded-full bg-[#C6B2FF]/25 px-3 py-1 text-xs font-medium text-[#4B3B76]">Chatbot
+                  leads</span>
+                <span
+                  class="rounded-full bg-[#F6CED8]/25 px-3 py-1 text-xs font-medium text-[#7a4050]">Workflows</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card -->
+          <article
+            class="svc-card group reveal relative overflow-hidden rounded-2xl bg-white/80 p-7 shadow-xl ring-1 ring-white/60 backdrop-blur">
+            <span
+              class="svc-edge pointer-events-none absolute -inset-px rounded-[22px] opacity-0 transition duration-500 group-hover:opacity-100"></span>
+            <span
+              class="svc-spot pointer-events-none absolute opacity-0 group-hover:opacity-100"></span>
+            <span
+              class="svc-shine pointer-events-none absolute -left-1/3 top-0 h-full w-1/3 -rotate-12 bg-white/50 blur-xl opacity-0 group-hover:opacity-100"></span>
+
+            <div class="relative z-10">
+              <div
+                class="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-xl text-white shadow bg-gradient-to-br from-[#B0E0FF] to-[#C6B2FF]">
+                <span class="text-2xl">📱</span>
+              </div>
+              <h3
+                class="text-xl font-extrabold tracking-tight text-slate-900">Mobile-first</h3>
+              <p class="mt-2 text-slate-600">
+                Interfaces adapted to every screen. Clear forms, carefully
+                crafted
+                speed and accessibility.
+              </p>
+              <div class="mt-3 flex flex-wrap gap-2">
+                <span
+                  class="rounded-full bg-[#B0E0FF]/25 px-3 py-1 text-xs font-medium text-[#0F5F89]">Clear
+                  UX</span>
+                <span
+                  class="rounded-full bg-[#C6B2FF]/25 px-3 py-1 text-xs font-medium text-[#4B3B76]">A11y</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card -->
+          <article
+            class="svc-card group reveal relative overflow-hidden rounded-2xl bg-white/80 p-7 shadow-xl ring-1 ring-white/60 backdrop-blur">
+            <span
+              class="svc-edge pointer-events-none absolute -inset-px rounded-[22px] opacity-0 transition duration-500 group-hover:opacity-100"></span>
+            <span
+              class="svc-spot pointer-events-none absolute opacity-0 group-hover:opacity-100"></span>
+            <span
+              class="svc-shine pointer-events-none absolute -left-1/3 top-0 h-full w-1/3 -rotate-12 bg-white/50 blur-xl opacity-0 group-hover:opacity-100"></span>
+
+            <div class="relative z-10">
+              <div
+                class="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-xl text-white shadow bg-gradient-to-br from-[#C6B2FF] to-[#B0E0FF]">
+                <span class="text-2xl">🧩</span>
+              </div>
+              <h3
+                class="text-xl font-extrabold tracking-tight text-slate-900">Custom
+                development</h3>
+              <p class="mt-2 text-slate-600">
+                Custom apps (React, Next.js, Laravel). APIs, dashboards and
+                advanced
+                business integrations.
+              </p>
+              <div class="mt-3 flex flex-wrap gap-2">
+                <span
+                  class="rounded-full bg-[#C6B2FF]/25 px-3 py-1 text-xs font-medium text-[#4B3B76]">APIs</span>
+                <span
+                  class="rounded-full bg-[#B0E0FF]/25 px-3 py-1 text-xs font-medium text-[#0F5F89]">Dashboards</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- (Optional) sections anchors -->
+    <!-- <section id="about" class="py-24"></section>
+  <section id="services" class="py-24"></section>
+  <section id="portfolio" class="py-24"></section>
+  <section id="team" class="py-24"></section>
+  <section id="contact" class="py-24"></section> -->
+
+    <!-- PRICING SECTION -->
+    <section class="relative py-20 overflow-hidden pricing-section">
+
+      <!-- Floating gradient dots -->
+      <span class="pricing-dot dot-1 top-10 left-1/4"></span>
+      <span class="pricing-dot dot-2 top-1/3 right-12"></span>
+      <span class="pricing-dot dot-3 bottom-10 left-10"></span>
+
+      <!-- Background blobs -->
+      <div
+        class="pointer-events-none absolute -top-40 -left-32 w-72 h-72 rounded-full opacity-50"
+        style="background: radial-gradient(circle, #F6CED8, #C6B2FF, #B0E0FF); filter: blur(60px);"></div>
+      <div
+        class="pointer-events-none absolute -bottom-40 right-0 w-80 h-80 rounded-full opacity-40"
+        style="background: radial-gradient(circle, #B0E0FF, #C6B2FF, #F6CED8); filter: blur(70px);"></div>
+
+      <div class="relative max-w-6xl mx-auto px-4">
+
+        <!-- HEADER -->
+        <div class="text-center max-w-3xl mx-auto space-y-4 pricing-reveal">
+          <span
+            class="inline-flex items-center gap-2 rounded-full px-4 py-1 text-xs sm:text-sm font-medium
+               bg-white shadow-sm border border-[#E5E7FB] text-[#7b6ee6]">
+            💡 Our offers <span class="year" data-year></span>
+          </span>
+          <h2
+            class="text-3xl sm:text-4xl font-extrabold tracking-tight text-[#1A1740]">
+            Our Website Creation Packs
+          </h2>
+          <p class="text-sm sm:text-base text-slate-500">
+            Clear packages to launch, grow or scale your online presence.
+            Custom design, performance, security and ongoing guidance included.
+          </p>
+
+          <!-- BILLING TOGGLE -->
+          <!-- <div class="mt-5 flex flex-col items-center gap-3">
+            <span
+              class="text-[11px] sm:text-xs text-slate-400 uppercase tracking-[0.14em]">
+              Billing mode
+            </span>
+
+            <div id="billingToggle"
+              class="billing-toggle relative inline-flex items-center rounded-full bg-white shadow-[0_12px_30px_rgba(15,23,42,0.12)]
+                border border-[#E0E3FF] px-1 py-1 text-xs sm:text-[13px] font-medium text-slate-500 overflow-hidden">
+              <div id="billingHighlight"
+                class="billing-highlight absolute inset-y-1 left-1 w-1/2 rounded-full
+                  bg-gradient-to-r from-[#F6CED8] via-[#C6B2FF] to-[#B0E0FF]
+                  shadow-[0_0_18px_rgba(141,120,255,0.7)]
+                  transition-transform duration-300 ease-out"></div>
+
+              <button type="button"
+                class="billing-option relative z-10 px-4 py-1 rounded-full flex items-center gap-1 text-[#1A1740]">
+                <span class="text-[11px]">Per project</span>
+              </button>
+              <button type="button"
+                class="billing-option relative z-10 px-4 py-1 rounded-full flex items-center gap-1 opacity-70">
+                <span class="text-[11px]">Monthly</span>
+              </button>
+            </div>
+
+            <p class="text-[11px] text-slate-400">
+              Compare the cost as a <span class="font-semibold">one-off
+                project</span> or as a <span class="font-semibold">monthly
+                subscription</span>.
+            </p>
+          </div> -->
+        </div>
+
+        <!-- CARDS GRID -->
+        <div class="mt-14 grid gap-6 lg:gap-8 lg:grid-cols-3 items-stretch">
+
+          <!-- PACK STARTER -->
+          <article
+            class="pricing-card pricing-reveal rounded-[28px] bg-white shadow-[0_18px_60px_rgba(15,23,42,0.12)]
+               border border-[#E1E3FA] flex flex-col overflow-hidden relative">
+            <!-- Head -->
+            <div class="px-6 pt-6 pb-3 flex items-center justify-between">
+              <div class="flex flex-col gap-1">
+                <span
+                  class="inline-flex items-center gap-1 text-[11px] font-semibold text-[#1A1740]">
+                  🪄 Starter Pack
+                </span>
+                <span class="text-[11px] text-slate-400">
+                  Ideal for small businesses and independents
+                </span>
+              </div>
+              <span class="tag-pill">
+                Essential
+              </span>
+            </div>
+
+            <div class="px-6 pb-6 pt-1 flex-1 flex flex-col">
+              <!-- Price -->
+              <div class="flex items-baseline gap-1 mb-4">
+                <span class="text-3xl font-extrabold text-[#1A1740] price"
+                  data-project="2490" data-monthly="149">
+                  2 490
+                </span>
+                <span class="text-base font-semibold text-[#1A1740]">MAD</span>
+                <span class="text-[11px] text-slate-400 price-label">
+                  / project
+                </span>
+              </div>
+
+              <p class="text-sm text-slate-500 mb-4">
+                Perfect first step to get your business online quickly and
+                professionally.
+              </p>
+
+              <ul class="space-y-2 text-sm text-slate-600 mb-5">
+                <li class="flex gap-2 items-start">
+                  <span class="check-pill">✓</span>
+                  <span>1 landing page
+                  </span>
+                </li>
+                <li class="flex gap-2 items-start">
+                  <span class="check-pill">✓</span>
+                  <span>Responsive design</span>
+                </li>
+                <li class="flex gap-2 items-start">
+                  <span class="check-pill">✓</span>
+                  <span>Contact form</span>
+                </li>
+                <li class="flex gap-2 items-start">
+                  <span class="check-pill">✓</span>
+                  <span>Basic SEO optimisation</span>
+                </li>
+                <li class="flex gap-2 items-start">
+                  <span class="check-pill">✓</span>
+                  <span>1 year hosting included</span>
+                </li>
+                <li class="flex gap-2 items-start">
+                  <span class="check-pill">✓</span>
+                  <span>1 month support</span>
+                </li>
+                <li class="flex gap-2 items-start">
+                  <span class="check-pill">✓</span>
+                  <span>Professional image (Freepik - etc.)</span>
+                </li>
+              </ul>
+
+              <a
+                href="https://wa.me/212621691502?text=Hello,%20I%27m%20interested%20in%20the%20Starter%20Pack%20for%20a%20website.%20Could%20we%20talk%20about%20the%20project%20details%3F"
+                target="_blank"
+                rel="noopener"
+                class="mt-auto inline-flex justify-center items-center w-full rounded-full border border-[#E3E5FF]
+          py-2.5 text-sm font-semibold text-[#6C63FF] hover:border-[#C6B2FF] hover:bg-[#F5F3FF]
+          transition">
+                Choose Starter Pack
+              </a>
+
+            </div>
+          </article>
+
+          <!-- PACK BUSINESS (POPULAR) -->
+          <article
+            class="pricing-card pricing-reveal relative rounded-[32px] bg-[#05081F] text-white
+               shadow-[0_24px_80px_rgba(15,23,42,0.55)] border border-transparent
+               lg:-mt-6 lg:mb-2">
+            <!-- Outer halo -->
+            <div class="pointer-events-none absolute inset-0 rounded-[32px]
+                 bg-gradient-to-br from-[#F6CED8] via-[#C6B2FF] to-[#B0E0FF] opacity-60 blur-xl"></div>
+
+            <div
+              class="relative z-10 overflow-hidden rounded-[32px] shine-card">
+              <!-- Top drip + badge -->
+              <div class="relative h-28 overflow-hidden">
+                <div
+                  class="pricing-drip pricing-drip-animated bg-gradient-to-r from-[#F6CED8] via-[#C6B2FF] to-[#B0E0FF]
+                     w-full h-24"></div>
+                <div class="drip-circle drip-1"></div>
+                <div class="drip-circle drip-2"></div>
+                <div class="drip-circle drip-3"></div>
+
+                <!-- Popular badge -->
+                <div class="absolute inset-x-0 top-6 flex justify-center z-20">
+                  <span class="popular-badge-pill">
+                    ⭐ Most popular
+                  </span>
+                </div>
+              </div>
+
+              <div class="px-7 pb-7 pt-4 flex flex-col">
+                <!-- Title -->
+                <div class="flex items-baseline justify-between mb-3">
+                  <div>
+                    <h3 class="text-lg font-semibold tracking-tight">Business
+                      Pack</h3>
+                    <p class="text-[11px] text-slate-300">
+                      Ideal for growing businesses that want to convert more
+                      clients.
+                    </p>
+                  </div>
+                  <span class="tag-pill tag-pill-soft">
+                    Recommended
+                  </span>
+                </div>
+
+                <!-- Price -->
+                <div class="flex items-baseline gap-1 mb-4">
+                  <span class="text-4xl font-extrabold price"
+                    data-project="4990" data-monthly="289">
+                    4 990
+                  </span>
+                  <span class="text-base font-semibold">MAD</span>
+                  <span class="text-[11px] text-slate-300 price-label">
+                    / project
+                  </span>
+                </div>
+
+                <ul class="space-y-2 text-sm text-slate-100 mb-5">
+                  <li class="flex gap-2 items-start">
+                    <span class="check-pill">✓</span>
+                    <span>10-page showcase website + blog</span>
+                  </li>
+                  <li class="flex gap-2 items-start">
+                    <span class="check-pill">✓</span>
+                    <span>Premium design with animations</span>
+                  </li>
+                  <li class="flex gap-2 items-start">
+                    <span class="check-pill">✓</span>
+                    <span>Advanced SEO + keyword tracking</span>
+                    <!-- SEO avancé -->
+                  </li>
+                  <li class="flex gap-2 items-start">
+                    <span class="check-pill">✓</span>
+                    <span>CRM &amp; marketing tools integration</span>
+                  </li>
+                  <li class="flex gap-2 items-start">
+                    <span class="check-pill">✓</span>
+                    <span>Simple AI automations (forms, emails…)</span>
+                  </li>
+                  <li class="flex gap-2 items-start">
+                    <span class="check-pill">✓</span>
+                    <span>1 year hosting + 6 months support</span>
+                  </li>
+                </ul>
+
+                <!-- Info band -->
+                <div
+                  class="mb-4 rounded-2xl border border-[#B0E0FF]/60 bg-white/5 px-4 py-3 text-[11px] sm:text-xs text-slate-100 flex items-start gap-2">
+                  <span class="check-pill"
+                    style="width:16px;height:16px;font-size:0.7rem;">!</span>
+                  <p>
+                    Reinforced security (HTTPS, backups, anti-spam). Ideal for
+                    companies handling customer data.
+                  </p>
+                </div>
+
+                <a
+                  href="https://wa.me/212621691502?text=Hello,%20I%27m%20interested%20in%20the%20Business%20Pack.%20Could%20you%20provide%20me%20with%20more%20details%20so%20we%20can%20discuss%20my%20project%3F"
+                  target="_blank"
+                  rel="noopener"
+                  class="mt-auto inline-flex justify-center items-center w-full rounded-full py-3 text-sm font-semibold
+          bg-gradient-to-r from-[#F6CED8] via-[#C6B2FF] to-[#B0E0FF]
+          shadow-[0_18px_40px_rgba(0,0,0,0.65)]
+          hover:shadow-[0_22px_55px_rgba(0,0,0,0.8)]
+          transition-transform duration-300 hover:-translate-y-0.5">
+                  Choose Business Pack
+                </a>
+
+                <p class="mt-2 text-[11px] text-slate-300 text-center">
+                  Perfect balance of quality and price for most businesses.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- PACK PREMIUM -->
+          <article
+            class="pricing-card pricing-reveal rounded-[28px] bg-white shadow-[0_18px_60px_rgba(15,23,42,0.12)]
+               border border-[#E1E3FA] flex flex-col overflow-hidden relative">
+            <!-- Head -->
+            <div class="px-6 pt-6 pb-3 flex items-center justify-between">
+              <div class="flex flex-col gap-1">
+                <span
+                  class="inline-flex items-center gap-1 text-[11px] font-semibold text-[#1A1740]">
+                  🏆 Premium Pack
+                </span>
+                <span class="text-[11px] text-slate-400">
+                  For ambitious brands and advanced projects
+                </span>
+              </div>
+              <span class="tag-pill">
+                High level
+              </span>
+            </div>
+
+            <div class="px-6 pb-6 pt-1 flex-1 flex flex-col">
+              <!-- Price -->
+              <div class="flex items-baseline gap-1 mb-4">
+                <span class="text-3xl font-extrabold text-[#1A1740] price"
+                  data-project="8990" data-monthly="499">
+                  8 990
+                </span>
+                <span class="text-base font-semibold text-[#1A1740]">MAD</span>
+                <span class="text-[11px] text-slate-400 price-label">
+                  / project
+                </span>
+              </div>
+
+              <p class="text-sm text-slate-500 mb-4">
+                Complete solution for ambitious brands, online shops and
+                projects that need more advanced features.
+              </p>
+
+              <ul class="space-y-2 text-sm text-slate-600 mb-5">
+                <li class="flex gap-2 items-start">
+                  <span class="check-pill">✓</span>
+                  <span>Unlimited pages with client area or online store</span>
+                </li>
+                <li class="flex gap-2 items-start">
+                  <span class="check-pill">✓</span>
+                  <span>Clear journey to guide visitors from first visit to
+                    contact or purchase</span>
+                </li>
+                <li class="flex gap-2 items-start">
+                  <span class="check-pill">✓</span>
+                  <span>Smart AI helpers (chatbots, automatic replies, simple
+                    follow-ups)</span>
+                </li>
+                <li class="flex gap-2 items-start">
+                  <span class="check-pill">✓</span>
+                  <span>API connections with your tools (online payment, ERP,
+                    CRM, etc.)</span>
+                </li>
+                <li class="flex gap-2 items-start">
+                  <span class="check-pill">✓</span>
+                  <span>Regular checks to keep the site fast, safe and up to
+                    date</span>
+                </li>
+                <li class="flex gap-2 items-start">
+                  <span class="check-pill">✓</span>
+                  <span>1 year hosting included + 12 months support</span>
+                </li>
+              </ul>
+              <a
+                href="https://wa.me/212621691502?text=Hello,%20I%27m%20interested%20in%20the%20Premium%20Pack.%20I%20would%20like%20to%20discuss%20the%20advanced%20features%20and%20see%20how%20it%20fits%20my%20project.%20Can%20you%20provide%20me%20with%20more%20details%3F"
+                target="_blank"
+                rel="noopener"
+                class="mt-auto inline-flex justify-center items-center w-full rounded-full border border-[#E3E5FF]
+          py-2.5 text-sm font-semibold text-[#1A1740] hover:border-[#C6B2FF] hover:bg-[#F5F3FF]
+          transition">
+                Choose Premium Pack
+              </a>
+
+            </div>
+          </article>
+
+        </div>
+
+        <!-- FOOT NOTE -->
+        <div class="mt-10 text-center text-sm text-slate-500 pricing-reveal">
+          Do you have a specific need (intranet, web application, custom
+          platform)?
+          <a href="contact.html"
+            class="font-semibold text-[#6C63FF] hover:underline transition">
+            Contact us for a personalised proposal.
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <section
+      class="relative overflow-hidden bg-gradient-to-br from-[#F6CED8] via-[#C6B2FF] to-[#B0E0FF] text-slate-900">
+      <!-- Animated dots -->
+      <div class="pointer-events-none absolute inset-0 overflow-hidden">
+        <span
+          class="dot dot-fast absolute top-8 left-10 w-2 h-2 rounded-full bg-white/60"></span>
+        <span
+          class="dot dot-slow absolute top-1/4 right-16 w-3 h-3 rounded-full bg-white/50"></span>
+        <span
+          class="dot absolute bottom-16 left-1/3 w-1.5 h-1.5 rounded-full bg-white/40"></span>
+        <span
+          class="dot dot-fast absolute top-1/3 left-1/4 w-2 h-2 rounded-full bg-white/40"></span>
+        <span
+          class="dot dot-slow absolute bottom-10 right-10 w-2.5 h-2.5 rounded-full bg-white/50"></span>
+        <span
+          class="dot absolute top-1/2 right-1/3 w-1.5 h-1.5 rounded-full bg-white/40"></span>
+        <span
+          class="dot dot-fast absolute bottom-1/3 left-8 w-2 h-2 rounded-full bg-white/50"></span>
+        <span
+          class="dot dot-slow absolute top-6 right-1/2 w-1.5 h-1.5 rounded-full bg-white/40"></span>
+      </div>
+
+      <div
+        class="relative mx-auto flex min-h-[80vh] max-w-6xl flex-col items-center gap-12 px-4 py-16 lg:flex-row lg:items-center lg:gap-16">
+        <!-- LEFT : TEXT -->
+        <div class="w-full max-w-xl space-y-6">
+          <p
+            class="inline-flex items-center gap-2 rounded-full bg-white/30 px-4 py-1 text-[11px] font-semibold uppercase tracking-[0.25em] text-slate-900/80 backdrop-blur">
+            <span
+              class="inline-block h-2 w-2 rounded-full bg-emerald-400"></span>
+            Responsive design & multilingual
+          </p>
+
+          <!-- Title -->
+          <h1 class="text-[2.4rem] font-extrabold leading-tight sm:text-5xl">
+            <span class="block text-slate-900">
+              A website that adapts
+            </span>
+
+            <!-- animated line word by word -->
+            <span id="heading-animated"
+              data-text="to every screen & every language"
+              class="block"></span>
+          </h1>
+
+          <!-- Sentence that will be animated word by word -->
+          <p id="animated-line"
+            class="mt-2 text-sm leading-relaxed text-slate-800/85 sm:text-base">
+            Desktop, tablet, mobile… plus language switching in one click. Clear
+            interface, translated content and identical navigation for all your
+            visitors.
+          </p>
+
+          <!-- Tech pills -->
+          <div class="pt-4 space-y-2">
+            <p
+              class="text-[11px] font-semibold uppercase tracking-[0.25em] text-slate-900/70">
+              Tech stack
+            </p>
+            <div id="tech-pills" class="flex flex-wrap gap-2">
+              <span class="pill pill-active">HTML5</span>
+              <span class="pill pill-active">CSS3</span>
+              <span class="pill pill-active">Tailwind CSS</span>
+              <span class="pill pill-active">JavaScript</span>
+              <span class="pill pill-active">PHP</span>
+              <span class="pill pill-active">Laravel</span>
+              <span class="pill pill-active">React</span>
+            </div>
+          </div>
+
+          <!-- CTA -->
+          <div class="flex flex-wrap items-center gap-4 pt-4">
+            <a href="portfolio.html"
+              class="rounded-full bg-slate-900 px-6 py-2.5 text-sm font-semibold text-white shadow-lg shadow-slate-900/25 transition hover:-translate-y-0.5 hover:bg-slate-800">
+              View a project example
+            </a>
+          </div>
+
+          <p class="pt-2 text-[12px] text-slate-900/70">
+            Powered by <span class="font-semibold">Laravel</span>,
+            <span class="font-semibold">React</span> &
+            <span class="font-semibold">Tailwind CSS</span> for a smooth
+            experience
+            on every device.
+          </p>
+        </div>
+
+        <!-- RIGHT : CREATIVE CARD -->
+        <div class="w-full relative">
+          <div class="absolute inset-0 -z-10 blur-2xl rounded-3xl"></div>
+
+          <img src="assets/img/responsive.png" alt="Creative preview"
+            class="rounded-3xl w-full object-cover" />
+        </div>
+
+      </div>
+    </section>
+
+    <section class="acc-section">
+      <div class="acc-inner">
+
+        <!-- Dots on the left of the title -->
+        <div class="acc-dots">
+          <span class="acc-dot acc-dot--pink"></span>
+          <span class="acc-dot acc-dot--lav"></span>
+          <span class="acc-dot acc-dot--sky"></span>
+        </div>
+
+        <h2 class="acc-title">Frequently Asked Questions</h2>
+        <p class="acc-subtitle">
+          Clear answers to the questions our clients ask the most.
+        </p>
+
+        <div class="acc-list">
+
+          <!-- FAQ 1 (open by default) -->
+          <article class="acc-item acc-item-active">
+            <button class="acc-item-header" type="button">
+              <div class="acc-avatar">Q1</div>
+              <div class="acc-headline">
+                <h3>Can I build a website myself?</h3>
+              </div>
+              <div class="acc-toggle-icon">−</div>
+            </button>
+            <div class="acc-item-body">
+              <p>
+                Yes, technically you can — just like you can try to repair your
+                own car.
+                But trusting a professional guarantees a faster, safer and more
+                polished result. Our added value? Helping you save time and win
+                clients.
+              </p>
+            </div>
+          </article>
+
+          <!-- FAQ 2 -->
+          <article class="acc-item">
+            <button class="acc-item-header" type="button">
+              <div class="acc-avatar">Q2</div>
+              <div class="acc-headline">
+                <h3>What budget should I plan for a professional website?</h3>
+              </div>
+              <div class="acc-toggle-icon">+</div>
+            </button>
+            <div class="acc-item-body">
+              <p>
+                It depends on your needs: a simple showcase website costs less
+                than an online store
+                or a custom platform. We provide clear, transparent pricing with
+                no hidden fees.
+              </p>
+            </div>
+          </article>
+
+          <!-- FAQ 3 -->
+          <article class="acc-item">
+            <button class="acc-item-header" type="button">
+              <div class="acc-avatar">Q3</div>
+              <div class="acc-headline">
+                <h3>How long does it take to build my website?</h3>
+              </div>
+              <div class="acc-toggle-icon">+</div>
+            </button>
+            <div class="acc-item-body">
+              <p>
+                Depending on complexity, a website normally takes between a few
+                days
+                and a few weeks. We share a timeline with you before starting.
+              </p>
+            </div>
+          </article>
+
+          <!-- FAQ 4 -->
+          <article class="acc-item">
+            <button class="acc-item-header" type="button">
+              <div class="acc-avatar">Q4</div>
+              <div class="acc-headline">
+                <h3>Can I follow the creation process?</h3>
+              </div>
+              <div class="acc-toggle-icon">+</div>
+            </button>
+            <div class="acc-item-body">
+              <p>
+                Yes. You receive updates at each key stage and can request
+                adjustments
+                whenever needed. You remain fully involved.
+              </p>
+            </div>
+          </article>
+
+          <!-- FAQ 5 -->
+          <article class="acc-item">
+            <button class="acc-item-header" type="button">
+              <div class="acc-avatar">Q5</div>
+              <div class="acc-headline">
+                <h3>Will my website be responsive (mobile/tablet)?</h3>
+              </div>
+              <div class="acc-toggle-icon">+</div>
+            </button>
+            <div class="acc-item-body">
+              <p>
+                Absolutely. All our websites are fully responsive and optimized
+                for
+                every device: mobile, tablet, and desktop.
+              </p>
+            </div>
+          </article>
+
+          <!-- FAQ 6 -->
+          <article class="acc-item">
+            <button class="acc-item-header" type="button">
+              <div class="acc-avatar">Q6</div>
+              <div class="acc-headline">
+                <h3>Will the website belong to me?</h3>
+              </div>
+              <div class="acc-toggle-icon">+</div>
+            </button>
+            <div class="acc-item-body">
+              <p>
+                Yes. Once delivered, the website, content, and domain are fully
+                yours.
+              </p>
+            </div>
+          </article>
+
+          <!-- FAQ 7 -->
+          <article class="acc-item">
+            <button class="acc-item-header" type="button">
+              <div class="acc-avatar">Q7</div>
+              <div class="acc-headline">
+                <h3>What should I do once my website is online?</h3>
+              </div>
+              <div class="acc-toggle-icon">+</div>
+            </button>
+            <div class="acc-item-body">
+              <p>
+                We guide you with SEO, content strategy and essential tools so
+                your
+                website attracts visitors and converts them into clients.
+              </p>
+            </div>
+          </article>
+
+          <!-- FAQ 8 -->
+          <article class="acc-item">
+            <button class="acc-item-header" type="button">
+              <div class="acc-avatar">Q8</div>
+              <div class="acc-headline">
+                <h3>How can I attract visitors to my website?</h3>
+              </div>
+              <div class="acc-toggle-icon">+</div>
+            </button>
+            <div class="acc-item-body">
+              <p>
+                Through SEO, Google indexing, high-quality content, social
+                media,
+                email campaigns and targeted ads. We help you set everything up.
+              </p>
+            </div>
+          </article>
+
+          <!-- FAQ 9 -->
+          <article class="acc-item">
+            <button class="acc-item-header" type="button">
+              <div class="acc-avatar">Q9</div>
+              <div class="acc-headline">
+                <h3>What if I need changes later?</h3>
+              </div>
+              <div class="acc-toggle-icon">+</div>
+            </button>
+            <div class="acc-item-body">
+              <p>
+                No problem. You can update your content yourself or use our
+                support
+                service for fast, professional modifications.
+              </p>
+            </div>
+          </article>
+
+          <!-- FAQ 10 -->
+          <article class="acc-item">
+            <button class="acc-item-header" type="button">
+              <div class="acc-avatar">Q10</div>
+              <div class="acc-headline">
+                <h3>Will my website be indexed on Google?</h3>
+              </div>
+              <div class="acc-toggle-icon">+</div>
+            </button>
+            <div class="acc-item-body">
+              <p>
+                Yes. We optimize your pages for search engines and submit your
+                website
+                to Google Search Console to ensure proper indexing.
+              </p>
+            </div>
+          </article>
+
+          <!-- FAQ 11 -->
+          <article class="acc-item">
+            <button class="acc-item-header" type="button">
+              <div class="acc-avatar">Q11</div>
+              <div class="acc-headline">
+                <h3>Can I sell products on my website?</h3>
+              </div>
+              <div class="acc-toggle-icon">+</div>
+            </button>
+            <div class="acc-item-body">
+              <p>
+                Yes. We can integrate a full e-commerce system with secure
+                online
+                payments (Stripe, PayPal, Apple Pay, etc.).
+              </p>
+            </div>
+          </article>
+
+          <!-- FAQ 12 -->
+          <article class="acc-item">
+            <button class="acc-item-header" type="button">
+              <div class="acc-avatar">Q12</div>
+              <div class="acc-headline">
+                <h3>Can I manage the website myself?</h3>
+              </div>
+              <div class="acc-toggle-icon">+</div>
+            </button>
+            <div class="acc-item-body">
+              <p>
+                Yes. You’ll receive access to a simple dashboard to manage text,
+                images, blog posts, products and more.
+              </p>
+            </div>
+          </article>
+
+          <!-- FAQ 13 -->
+          <article class="acc-item">
+            <button class="acc-item-header" type="button">
+              <div class="acc-avatar">Q13</div>
+              <div class="acc-headline">
+                <h3>Do you provide hosting and domain names?</h3>
+              </div>
+              <div class="acc-toggle-icon">+</div>
+            </button>
+            <div class="acc-item-body">
+              <p>
+                Yes. We can take care of everything: hosting, domain
+                registration,
+                SSL certificate and security setup.
+              </p>
+            </div>
+          </article>
+
+          <!-- FAQ 14 -->
+          <article class="acc-item">
+            <button class="acc-item-header" type="button">
+              <div class="acc-avatar">Q14</div>
+              <div class="acc-headline">
+                <h3>Can I connect my site to WhatsApp, Instagram or
+                  Facebook?</h3>
+              </div>
+              <div class="acc-toggle-icon">+</div>
+            </button>
+            <div class="acc-item-body">
+              <p>
+                Yes. We integrate messaging buttons, social links, Facebook
+                Pixel,
+                tracking and Instagram feeds to boost engagement.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="crv-section">
+
+      <div class="crv-header">
+        <div class="crv-title-badge">
+          <span class="crv-title-icon">💬</span>
+          <span class="crv-title-text">What our clients say</span>
+        </div>
+      </div>
+
+      <!-- floating dots -->
+      <div class="crv-orbit">
+        <span class="crv-orbit-dot crv-orbit-dot--pink"></span>
+        <span class="crv-orbit-dot crv-orbit-dot--lav"></span>
+        <span class="crv-orbit-dot crv-orbit-dot--sky"></span>
+      </div>
+
+      <div class="crv-inner">
+        <header class="crv-header">
+          <p class="crv-subtitle">
+            Real feedback from real people. These stories show how we help
+            brands feel more
+            trusted, modern and easy to work with.
+          </p>
+        </header>
+
+        <div class="crv-card-shell">
+          <div class="crv-card">
+            <!-- slider -->
+            <div class="crv-slider" data-slider="main">
+
+              <!-- Review 1 -->
+              <article class="crv-slide crv-slide-active">
+                <div class="crv-top">
+                  <div class="crv-avatar">SM</div>
+                  <div class="crv-ident">
+                    <div class="crv-name">Sarah Mitchell</div>
+                    <div class="crv-role">Brand Owner • Paris</div>
+                    <div class="crv-stars">★★★★★</div>
+                  </div>
+                  <span class="crv-tag">Featured</span>
+                </div>
+
+                <p class="crv-text">
+                  “From the first call to the final result everything felt
+                  smooth and simple.
+                  Our clients now see a professional image the second they land
+                  on our page.”
+                </p>
+              </article>
+
+              <!-- Review 2 -->
+              <article class="crv-slide">
+                <div class="crv-top">
+                  <div class="crv-avatar">JC</div>
+                  <div class="crv-ident">
+                    <div class="crv-name">James Carter</div>
+                    <div class="crv-role">E-commerce Founder</div>
+                    <div class="crv-stars">★★★★★</div>
+                  </div>
+                  <span class="crv-tag">5★ rated</span>
+                </div>
+
+                <p class="crv-text">
+                  “We saw an instant lift in trust. The new design looks like a
+                  real product,
+                  and the review section is the part customers mention the
+                  most.”
+                </p>
+              </article>
+
+              <!-- Review 3 -->
+              <article class="crv-slide">
+                <div class="crv-top">
+                  <div class="crv-avatar">AN</div>
+                  <div class="crv-ident">
+                    <div class="crv-name">Amina Nouiri</div>
+                    <div class="crv-role">Marketing Lead • Casablanca</div>
+                    <div class="crv-stars">★★★★★</div>
+                  </div>
+                  <span class="crv-tag">New</span>
+                </div>
+
+                <p class="crv-text">
+                  “Animations, colors and layout feel very premium but still
+                  light.
+                  It looks great on laptop and mobile without us having to think
+                  about it.”
+                </p>
+              </article>
+
+            </div>
+
+            <!-- dots -->
+            <div class="crv-dots" data-dots="main">
+              <span class="crv-dot crv-dot-active"></span>
+              <span class="crv-dot"></span>
+              <span class="crv-dot"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cookie-banner" id="cookie-banner"
+      aria-label="Cookie consent">
+      <div class="cookie-content">
+        <div class="cookie-icon">🍪</div>
+
+        <h3 class="cookie-title">We Use Cookies</h3>
+
+        <p class="cookie-text">
+          We use cookies to give you the best experience, analyze traffic,
+          and improve our services. You can accept or decline non-essential
+          cookies.
+        </p>
+
+        <div class="cookie-actions">
+          <button type="button" class="cookie-accept">Accept</button>
+          <button type="button" class="cookie-decline">Decline</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer
+      class="relative text-slate-100 pt-16 pb-10 overflow-hidden animated-footer-bg"
+      role="contentinfo"
+      itemscope
+      itemtype="https://schema.org/Organization">
+
+      <!-- ========================= -->
+      <!-- BILINGUAL SEO METADATA -->
+      <!-- ========================= -->
+
+      <meta itemprop="name" content="TechnoPro Web">
+
+      <!-- Website URL -->
+      <meta itemprop="url" content="https://technoproweb.com">
+
+      <!-- Contact Info -->
+      <meta itemprop="email" content="contact@technoproweb.com">
+      <meta itemprop="telephone" content="+212621691502">
+
+      <!-- English description -->
+      <meta itemprop="description"
+        content="TechnoPro Web is a modern Web & AI agency creating high-performance websites, e-commerce solutions, SEO strategies, and business automation." />
+
+      <!-- French description -->
+      <meta itemprop="description"
+        content="TechnoPro Web est une agence Web & IA moderne spécialisée dans la création de sites web performants, solutions e-commerce, SEO, et automatisation professionnelle." />
+
+      <!-- English keywords -->
+      <meta itemprop="keywords"
+        content="web agency Morocco, web development Tangier, website design, ecommerce development, SEO Morocco, AI automation, digital marketing Tangier, custom website, professional website, UI UX design, Technopro Web" />
+
+      <!-- French keywords -->
+      <meta itemprop="keywords"
+        content="agence web Maroc, création site web Tanger, développement web, site vitrine, site e-commerce Maroc, agence digitale Tanger, référencement naturel SEO Maroc, automatisation IA, conception site internet, Technopro Web" />
+
+      <!-- Logo -->
+      <meta itemprop="logo" content="https://technoproweb.com/assets/logo.png">
+
+      <!-- Service Areas -->
+      <meta itemprop="areaServed" content="Morocco" />
+      <meta itemprop="areaServed" content="Maroc" />
+      <meta itemprop="areaServed" content="Europe" />
+
+      <!-- English service types -->
+      <meta itemprop="serviceType" content="Website creation" />
+      <meta itemprop="serviceType" content="Custom showcase websites" />
+      <meta itemprop="serviceType" content="E-commerce development" />
+      <meta itemprop="serviceType" content="SEO optimization" />
+      <meta itemprop="serviceType" content="AI automation" />
+      <meta itemprop="serviceType" content="Landing pages" />
+      <meta itemprop="serviceType" content="UI/UX design" />
+
+      <!-- French service types -->
+      <meta itemprop="serviceType" content="Création de site web" />
+      <meta itemprop="serviceType" content="Site vitrine personnalisé" />
+      <meta itemprop="serviceType" content="Développement e-commerce" />
+      <meta itemprop="serviceType" content="Optimisation SEO" />
+      <meta itemprop="serviceType" content="Automatisation IA" />
+      <meta itemprop="serviceType" content="Pages d’atterrissage" />
+      <meta itemprop="serviceType" content="Design UI/UX" />
+
+      <!-- Social profiles -->
+      <link itemprop="sameAs" href="https://facebook.com">
+      <link itemprop="sameAs" href="https://instagram.com">
+      <link itemprop="sameAs" href="https://linkedin.com">
+      <link itemprop="sameAs" href="https://wa.me/212621691502">
+
+      <!-- ========================= -->
+      <!-- Decorative particles / UI -->
+      <!-- ========================= -->
+
+      <div
+        class="pointer-events-none absolute -top-20 left-10 w-3 h-3 rounded-full particle"></div>
+      <div
+        class="pointer-events-none absolute top-1/3 right-10 w-2 h-2 rounded-full particle delay-1"></div>
+      <div
+        class="pointer-events-none absolute bottom-10 left-1/4 w-2.5 h-2.5 rounded-full particle delay-2"></div>
+      <div
+        class="pointer-events-none absolute bottom-1/3 right-1/3 w-3 h-3 rounded-full particle delay-3"></div>
+
+      <!-- Animated gradient line on top -->
+      <div class="absolute inset-x-0 top-0 h-[2px] animated-gradient"></div>
+
+      <div class="relative max-w-6xl mx-auto px-4 space-y-12">
+
+        <!-- ========= TOP SECTION ========= -->
+        <div
+          class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between reveal-footer">
+          <div class="space-y-2">
+            <div class="inline-flex items-center gap-2">
+              <span
+                class="text-xl font-black tracking-tight bg-clip-text text-transparent
+               bg-gradient-to-r from-[#F6CED8] via-[#C6B2FF] to-[#B0E0FF]"
+                itemprop="name">
+                TechnoPro Web
+              </span>
+              <span
+                class="text-xs px-2 py-0.5 rounded-full bg-white/10 border border-white/10 text-slate-200">
+                Web & AI Agency
+              </span>
+            </div>
+            <p class="max-w-xl text-sm text-slate-300">
+              We create modern websites, smart automation and premium SEO
+              to boost your results online.
+            </p>
+          </div>
+
+          <a href="/contact.html"
+            class="relative inline-flex items-center gap-2 rounded-full px-7 py-3 text-sm font-semibold
+       text-white shadow-[0_12px_35px_rgba(0,0,0,0.6)]
+       bg-gradient-to-r from-[#F6CED8] via-[#C6B2FF] to-[#B0E0FF]
+       hover:shadow-[0_18px_45px_rgba(0,0,0,0.8)]
+       transition-transform duration-300 hover:-translate-y-1 cta-pulse">
+            <span>💬 Get a free project estimate</span>
+          </a>
+        </div>
+
+        <!-- ========= GRID SECTION ========= -->
+        <div class="grid gap-10 md:grid-cols-4">
+
+          <!-- About -->
+          <div class="space-y-4 reveal-footer">
+            <h4
+              class="text-sm font-semibold tracking-wide text-slate-200 uppercase">About</h4>
+            <p class="text-sm text-slate-300">
+              We support ambitious businesses in building high-performing
+              digital solutions.
+            </p>
+            <div class="flex gap-4">
+              <div
+                class="footer-card px-4 py-3 rounded-2xl floating-footer text-center min-w-[90px]">
+                <div class="text-xs text-slate-200">+50</div>
+                <div class="text-[11px] text-slate-400">Projects</div>
+              </div>
+              <div
+                class="footer-card px-4 py-3 rounded-2xl floating-footer-slow text-center min-w-[90px]">
+                <div class="text-xs text-slate-200">24/7</div>
+                <div class="text-[11px] text-slate-400">Support</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Web Services -->
+          <nav class="space-y-4 reveal-footer" aria-label="Web services">
+            <h4
+              class="text-sm font-semibold tracking-wide text-slate-200 uppercase">Web
+              Services</h4>
+            <ul class="space-y-2 text-sm text-slate-300">
+              <li class="flex items-center gap-2 hover:text-white transition">
+                <span aria-hidden="true">💻</span> <span>Custom showcase
+                  website</span>
+              </li>
+              <li class="flex items-center gap-2 hover:text-white transition">
+                <span aria-hidden="true">🛒</span> <span>Optimized
+                  e-commerce</span>
+              </li>
+              <li class="flex items-center gap-2 hover:text-white transition">
+                <span aria-hidden="true">⚙️</span> <span>Automation & AI</span>
+              </li>
+              <li class="flex items-center gap-2 hover:text-white transition">
+                <span aria-hidden="true">📈</span> <span>SEO & content
+                  strategy</span>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Company -->
+          <nav class="space-y-4 reveal-footer" aria-label="Company pages">
+            <h4
+              class="text-sm font-semibold tracking-wide text-slate-200 uppercase">Company</h4>
+            <ul class="space-y-2 text-sm text-slate-300">
+
+              <li class="group">
+                <a href="/portfolio.html"
+                  class="relative inline-block transition text-slate-300 hover:text-white">
+                  Our projects
+                  <span
+                    class="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+                </a>
+              </li>
+
+              <li class="group">
+                <a href="/about.html"
+                  class="relative inline-block transition text-slate-300 hover:text-white">
+                  About the agency
+                  <span
+                    class="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+                </a>
+              </li>
+
+              <li class="group">
+                <a href="/services.html"
+                  class="relative inline-block transition text-slate-300 hover:text-white">
+                  Services
+                  <span
+                    class="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+                </a>
+              </li>
+
+              <li class="group">
+                <a href="/contact.html"
+                  class="relative inline-block transition text-slate-300 hover:text-white">
+                  Contact
+                  <span
+                    class="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+                </a>
+              </li>
+
+            </ul>
+          </nav>
+
+          <!-- Contact -->
+          <div class="space-y-4 reveal-footer">
+            <h4
+              class="text-sm font-semibold tracking-wide text-slate-200 uppercase">Direct
+              contact</h4>
+
+            <div class="space-y-3 text-sm">
+
+              <div
+                class="footer-card rounded-2xl px-4 py-3 flex items-start gap-3">
+                <div
+                  class="w-8 h-8 rounded-full flex items-center justify-center text-lg bg-white/10">
+                  <span aria-hidden="true">📍</span>
+                </div>
+                <div itemprop="address" itemscope
+                  itemtype="https://schema.org/PostalAddress">
+                  <div class="text-slate-200 font-medium">
+                    <span itemprop="addressLocality">Tanger</span>,
+                    <span itemprop="addressCountry">Morocco</span>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="footer-card rounded-2xl px-4 py-3 flex items-start gap-3">
+                <div
+                  class="w-8 h-8 rounded-full flex items-center justify-center text-lg bg-white/10">
+                  <span aria-hidden="true">📞</span>
+                </div>
+                <div>
+                  <a href="tel:+212621691502"
+                    class="text-slate-200 font-medium hover:text-white transition"
+                    itemprop="telephone">
+                    +212 6 21 69 15 02
+                  </a>
+                  <div class="text-slate-400 text-xs">Call & WhatsApp</div>
+                </div>
+              </div>
+
+              <div
+                class="footer-card rounded-2xl px-4 py-3 flex items-start gap-3">
+                <div
+                  class="w-8 h-8 rounded-full flex items-center justify-center text-lg bg-white/10">
+                  <span aria-hidden="true">✉️</span>
+                </div>
+                <div>
+                  <a href="mailto:contact@technoproweb.com"
+                    class="text-slate-200 font-medium hover:text-white transition"
+                    itemprop="email">
+                    contact@technoproweb.com
+                  </a>
+                  <div class="text-slate-400 text-xs">Reply within 24h</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Social media + bottom -->
+        <div
+          class="pt-6 border-t border-white/10 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+
+          <div class="flex items-center gap-3 reveal-footer">
+            <span class="text-xs text-slate-400">Follow us:</span>
+            <div class="flex gap-3" aria-label="TechnoPro Web social media">
+
+              <!-- FACEBOOK -->
+              <a href="https://facebook.com"
+                aria-label="Visit TechnoPro Web on Facebook"
+                class="social-orb social-orb--orbit"
+                style="--accent:#1877F2;"
+                target="_blank"
+                rel="noopener noreferrer"
+                itemprop="sameAs">
+                <svg viewBox="0 0 24 24" class="social-orb__icon" width="18"
+                  height="18" aria-hidden="true">
+                  <path fill="currentColor"
+                    d="M13 22v-8h2.5l.5-3H13V8.5A1.5 1.5 0 0 1 14.5 7H16V4h-1.5A4.5 4.5 0 0 0 10 8.5V11H8v3h2v8z" />
+                </svg>
+                <span class="social-orb__label">Facebook</span>
+
+                <!-- DOTS -->
+                <span class="social-orb__dot social-orb__dot--1"></span>
+                <span class="social-orb__dot social-orb__dot--2"></span>
+                <span class="social-orb__dot social-orb__dot--3"></span>
+                <span class="social-orb__dot social-orb__dot--4"></span>
+              </a>
+
+              <!-- INSTAGRAM -->
+              <a href="https://instagram.com"
+                aria-label="Visit TechnoPro Web on Instagram"
+                class="social-orb social-orb--orbit"
+                style="--accent:#F56040;"
+                target="_blank"
+                rel="noopener noreferrer"
+                itemprop="sameAs">
+                <svg viewBox="0 0 24 24" class="social-orb__icon" width="18"
+                  height="18" aria-hidden="true">
+                  <path fill="currentColor"
+                    d="M8 3h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8zm4 2.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5zM16.5 7a.9.9 0 1 1-.9.9.9.9 0 0 1 .9-.9z" />
+                </svg>
+                <span class="social-orb__label">Instagram</span>
+
+                <span class="social-orb__dot social-orb__dot--1"></span>
+                <span class="social-orb__dot social-orb__dot--2"></span>
+                <span class="social-orb__dot social-orb__dot--3"></span>
+                <span class="social-orb__dot social-orb__dot--4"></span>
+              </a>
+
+              <!-- LINKEDIN -->
+              <a href="https://www.linkedin.com/in/nada-el-moudden-229606285/"
+                aria-label="Visit TechnoPro Web on LinkedIn"
+                class="social-orb social-orb--orbit"
+                style="--accent:#0A66C2;"
+                target="_blank"
+                rel="noopener noreferrer"
+                itemprop="sameAs">
+                <svg viewBox="0 0 24 24" class="social-orb__icon" width="18"
+                  height="18" aria-hidden="true">
+                  <path fill="currentColor"
+                    d="M6 6a2 2 0 1 1-2 2 2 2 0 0 1 2-2zM4 10h4v10H4zm6 0h3.8v1.7h.1A4.1 4.1 0 0 1 18 9.9C20.6 9.9 21 11.6 21 14.1V20h-4v-5.1c0-1.2 0-2.7-1.7-2.7S13 13.5 13 14.8V20h-3z" />
+                </svg>
+                <span class="social-orb__label">LinkedIn</span>
+
+                <span class="social-orb__dot social-orb__dot--1"></span>
+                <span class="social-orb__dot social-orb__dot--2"></span>
+                <span class="social-orb__dot social-orb__dot--3"></span>
+                <span class="social-orb__dot social-orb__dot--4"></span>
+              </a>
+
+              <!-- WhatsApp -->
+              <a
+                href="https://wa.me/212621691502?text=Hey%20TechnoPro%20Web,%20I%20would%20like%20to%20build%20a%20website.%20Can%20we%20talk%3F"
+                aria-label="Contact TechnoPro Web on WhatsApp"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-orb social-orb--orbit"
+                style="--accent:#25D366;"
+                itemprop="sameAs">
+
+                <!-- WhatsApp Icon -->
+                <svg viewBox="0 0 32 32" class="social-orb__icon" width="18"
+                  height="18" aria-hidden="true">
+                  <path fill="currentColor"
+                    d="M16.027 3c-7.003 0-12.68 5.677-12.68 12.68 0 2.235.584 4.416 1.7 6.346L3 29l7.18-2.015a12.63 12.63 0 0 0 5.847 1.492h.007c7.003 0 12.68-5.677 12.68-12.68C28.714 8.677 23.03 3 16.027 3zm7.41 17.884c-.31.868-1.81 1.678-2.51 1.785-.643.097-1.474.138-2.375-.148-.547-.173-1.253-.405-2.163-.79-3.807-1.641-6.283-5.44-6.476-5.693-.19-.254-1.544-2.054-1.544-3.92 0-1.866.978-2.781 1.323-3.157.345-.376.75-.47 1.003-.47.253 0 .5.003.717.013.23.01.538-.087.842.642.31.744 1.053 2.575 1.145 2.76.09.187.15.402.03.654-.12.25-.18.403-.35.62-.18.23-.37.51-.53.685-.175.19-.355.4-.152.78.203.376.903 1.487 1.94 2.41 1.334 1.186 2.46 1.556 2.84 1.73.38.173.608.15.83-.09.22-.24.953-1.112 1.207-1.497.254-.385.505-.32.842-.19.345.127 2.18 1.027 2.55 1.213.376.187.63.28.72.435.09.157.09.91-.22 1.78z" />
+                </svg>
+
+                <span class="social-orb__label">WhatsApp</span>
+
+                <span class="social-orb__dot social-orb__dot--1"></span>
+                <span class="social-orb__dot social-orb__dot--2"></span>
+                <span class="social-orb__dot social-orb__dot--3"></span>
+                <span class="social-orb__dot social-orb__dot--4"></span>
+              </a>
+
+            </div>
+
+          </div>
+
+          <div
+            class="flex items-center justify-between md:justify-end gap-4 reveal-footer w-full md:w-auto">
+            <span class="text-[11px] text-slate-400">
+              ©️ <span class="year" data-year></span> TechnoPro Web — All rights
+              reserved
+            </span>
+
+            <button id="backToTop"
+              class="backtotop-btn inline-flex items-center gap-2 rounded-full px-4 py-2 text-[11px] font-medium
+         text-slate-100 bg-white/5 border border-white/15
+         shadow-[0_8px_20px_rgba(0,0,0,0.6)]
+         hover:bg-white/10 hover:border-[#C6B2FF] hover:text-white
+         transition-all duration-300 opacity-0 pointer-events-none">
+              <span class="relative flex items-center gap-1">
+                <span
+                  class="inline-flex h-4 w-4 items-center justify-center rounded-full bg-gradient-to-br from-[#F6CED8] via-[#C6B2FF] to-[#B0E0FF] text-[10px]">
+                  ↑
+                </span>
+                <span>Back to top</span>
+                <span class="dot-move"></span>
+              </span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ========================= -->
+      <!-- BILINGUAL JSON-LD SCHEMA -->
+      <!-- ========================= -->
+      <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "TechnoPro Web",
+    "url": "https://technoproweb.com",
+    "logo": "https://technoproweb.com/assets/logo.png",
+    "description": "TechnoPro Web is a modern Web & AI agency. TechnoPro Web est une agence Web & IA moderne à Tanger.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Tanger",
+      "addressCountry": "MA"
+    },
+    "email": "contact@technoproweb.com",
+    "telephone": "+212621691502",
+    "areaServed": [
+      "Morocco",
+      "Maroc",
+      "Europe"
+    ],
+    "sameAs": [
+      "https://facebook.com",
+      "https://instagram.com",
+      "https://www.linkedin.com/in/nada-el-moudden-229606285/",
+      "https://wa.me/212621691502"
+    ],
+    "serviceType": [
+      "Website creation",
+      "Custom showcase websites",
+      "E-commerce development",
+      "SEO optimization",
+      "AI automation",
+      "Landing pages",
+      "UI/UX design",
+      "Création de site web",
+      "Développement e-commerce",
+      "Optimisation SEO",
+      "Automatisation IA",
+      "Landing pages",
+      "Design UI/UX"
+    ]
+  }
+  </script>
+
+    </footer>
+
+    <!-- =========================
+            SCRIPTS
+  ========================== -->
+
+    <script src="en.js"></script>
+    <script src="fr.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+
+</html>
