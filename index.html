@@ -1,21 +1,439 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en" class="antialiased">
 
   <head>
+    <!-- Basic -->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>TechnoPro Web</title>
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" />
+    <title>TechnoPro Web | Modern Websites & Web Apps in Morocco</title>
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png"
-      href="assets/img/logos/formatLogo-no-bg.png.png" sizes="192x192">
+    <!-- Primary SEO -->
+    <meta http-equiv="Content-Language" content="en" />
 
-    <!-- Tailwind CDN -->
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 
-    <link rel="stylesheet" href="dist/output.css">
-    <link href="/css/style.css" rel="stylesheet" />
+    <meta
+      name="description"
+      content="TechnoPro Web is a modern web agency in Tangier, Morocco. We build fast, responsive websites, e-commerce stores and web apps with clean code, SEO and hosting for businesses in Morocco and abroad. وكالة إنشاء مواقع في المغرب: مواقع عصرية واحترافية بأسعار مناسبة." />
+    <meta name="keywords"
+      content="web agency Morocco, web developer Tangier, create website, landing page, SEO friendly website, responsive web design, TechnoPro Web,creation site web maroc,
+creation de site web maroc prix,
+creation site web maroc gratuit,
+creation site web maroc app,
+creation site web casablanca,
+creation site web maroc pas cher,
+createur de site web maroc,
+agence de creation site web,
+creation de site web marrakech,
+creation site web maroc freelance,
+creation site web vitrine maroc,
+creation site web e commerce maroc,
+prix creation site web maroc,
+devis creation site web maroc,
+avis sur creation site web maroc,
+agence creation site web maroc,
+creation de site web au maroc,
+creation de site web maroc,
+web maroc,
+creation site web darija,
+creation site web wordpress darija,
 
+create website morocco,
+create website morocco online,
+create website morocco app,
+hosting morocco,
+ma hosting,
+web hosting morocco,
+digital agency morocco,
+digital marketing agency morocco,
+web agency morocco,
+web agency in morocco,
+ways to create a website,
+how to create a wix website from scratch,
+how to build a website template from scratch,
+where to create a website from scratch,
+how to build a website from scratch,
+
+morroco payment methods,
+morocco payment methods,
+طرق إنشاء موقع في المغرب,
+خدمات إنشاء مواقع المغرب,
+إنشاء موقع إلكتروني المغرب,
+وكالة تصميم مواقع المغرب" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot"
+      content="index, follow, max-image-preview:large, max-snippet:-1" />
+
+    <!-- Site identity -->
+    <meta name="application-name" content="TechnoPro Web" />
+    <meta name="author" content="Nada El Moudden – TechnoPro Web" />
+    <link rel="author"
+      href="https://www.linkedin.com/in/nada-el-moudden-229606285/" />
+
+    <meta name="creator" content="TechnoPro Web" />
+    <meta name="publisher" content="TechnoPro Web" />
+    <meta name="theme-color" content="#0f172a" />
+    <meta name="format-detection"
+      content="telephone=no, address=no, email=no" />
+
+    <!-- Canonical (CHANGE THIS TO YOUR REAL DOMAIN) -->
+    <link rel="canonical" href="https://www.technoproweb.com/" />
+
+    <!-- Favicons (adapt paths to your project) -->
+    <link rel="icon" href="assets/img/logos/formatLogo-no-bg.png"
+      sizes="32x32" type="image/png" />
+    <link rel="icon" href="assets/img/logos/formatLogo-no-bg.png"
+      sizes="192x192" type="image/png" />
+    <link rel="apple-touch-icon"
+      href="assets/img/logos/formatLogo-no-bg.png" sizes="180x180" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title"
+      content="TechnoPro Web | Modern Websites & Web Apps" />
+    <meta
+      property="og:description"
+      content="TechnoPro Web — leading web agency in Morocco for website creation, e-commerce sites, SEO, hosting and digital marketing. Création de site web au Maroc, sites vitrines, boutiques en ligne, WordPress. وكالة تطوير مواقع في المغرب: مواقع عصرية واحترافية بأسعار مناسبة." />
+    <meta property="og:url" content="https://www.technoproweb.com/" />
+    <meta property="og:image"
+      content="https://www.technoproweb.com/assets/img/og/technoproweb-og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt"
+      content="TechnoPro Web - modern website design screenshot" />
+    <meta property="og:site_name" content="TechnoPro Web" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="fr_FR" />
+    <meta property="og:locale:alternate" content="ar_AR" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title"
+      content="TechnoPro Web | Modern Websites & Web Apps" />
+    <meta name="twitter:description"
+      content="Modern and responsive websites, landing pages and web applications, built with performance and SEO in mind." />
+    <meta name="twitter:image"
+      content="https://www.technoproweb.com/assets/img/og/technoproweb-og-image.jpg" />
+    <meta name="twitter:image:alt"
+      content="Preview of a TechnoPro Web project" />
+
+    <!-- Web App Manifest (optional – create manifest.json if you want PWA) -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <link rel="sitemap" type="application/xml" title="Sitemap"
+      href="https://www.technoproweb.com/sitemap.xml" />
+    <meta name="referrer" content="origin-when-cross-origin" />
+
+    <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://www.technoproweb.com/#organization",
+    "name": "TechnoPro Web - Web Agency Morocco",
+    "alternateName": [
+      "TechnoPro Web",
+      "TechnoPro Web Agence Web",
+      "TechnoPro Web Tanger",
+      "TechnoPro Web Morocco",
+      "وكالة TechnoPro Web"
+    ],
+    "url": "https://www.technoproweb.com",
+    "logo": {
+      "@type": "ImageObject",
+      "@id": "https://www.technoproweb.com/assets/img/logos/technoproweb-logo-1200.png",
+      "url": "https://www.technoproweb.com/assets/img/logos/technoproweb-logo-1200.png",
+      "contentUrl": "https://www.technoproweb.com/assets/img/logos/technoproweb-logo-1200.png",
+      "width": 1200,
+      "height": 1200,
+      "caption": "TechnoPro Web Logo - Web Agency Morocco",
+      "name": "TechnoPro Web Logo High Resolution",
+      "description": "Official high resolution logo of TechnoPro Web, a modern web agency based in Morocco."
+    },
+    "image": [
+      "https://www.technoproweb.com/assets/img/logos/technoproweb-logo-512.png",
+      "https://www.technoproweb.com/assets/img/logos/technoproweb-favicon-32.png",
+      "https://www.technoproweb.com/assets/img/og/technoproweb-og-image.jpg"
+    ],
+    "sameAs": [
+      "https://www.facebook.com/technoproweb",
+      "https://www.instagram.com/technoproweb",
+      "https://www.linkedin.com/company/technoproweb"
+    ],
+    "founder": {
+      "@id": "https://www.technoproweb.com/#founder"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://www.technoproweb.com/#founder",
+    "name": "Nada El Moudden",
+    "jobTitle": "Founder & Web Developer",
+    "url": "https://www.linkedin.com/in/nada-el-moudden-229606285/",
+    "sameAs": [
+      "https://www.linkedin.com/in/nada-el-moudden-229606285/"
+    ],
+    "worksFor": {
+      "@id": "https://www.technoproweb.com/#organization"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://www.technoproweb.com/#localbusiness",
+    "name": "TechnoPro Web - Web Agency | Agence Web | وكالة تطوير مواقع",
+    "parentOrganization": {
+      "@id": "https://www.technoproweb.com/#organization"
+    },
+    "alternateName": [
+      "TechnoPro Web Tanger",
+      "TechnoPro Web Agence Web",
+      "TechnoPro Web Morocco",
+      "وكالة TechnoPro Web طنجة",
+      "TechnoPro Web المغرب"
+    ],
+    "description": "Modern web agency in Morocco specialized in professional websites, web apps and SEO for SMEs and entrepreneurs. | Agence web moderne au Maroc spécialisée dans la création de sites web professionnels, d'applications web et du référencement SEO pour PME et entrepreneurs. | وكالة ويب حديثة في المغرب متخصّصة في إنشاء المواقع الاحترافية، وتطوير تطبيقات الويب، وتحسين الظهور في محرّكات البحث للشركات والمقاولين.",
+    "url": "https://www.technoproweb.com",
+    "telephone": [
+      "+212 6 21 69 15 02"
+    ],
+    "email": [
+      "contact@technoproweb.com"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Tanger-Tétouan-Al Hoceïma",
+      "addressLocality": "Tangier",
+      "addressRegion": "Tanger-Tétouan-Al Hoceïma",
+      "postalCode": "90000",
+      "addressCountry": "MA"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 35.776187,
+      "longitude": -5.796148
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "09:00",
+        "closes": "20:00"
+      }
+    ],
+    "areaServed": [
+      { "@type": "City", "name": "Tangier" },
+      { "@type": "City", "name": "Casablanca" },
+      { "@type": "City", "name": "Rabat" },
+      { "@type": "City", "name": "Marrakesh" },
+      { "@type": "City", "name": "Agadir" },
+      { "@type": "Country", "name": "Morocco" },
+      { "@type": "Country", "name": "France" },
+      { "@type": "Country", "name": "Spain" }
+    ],
+    "priceRange": "2499 MAD - 4999 MAD",
+    "paymentAccepted": [
+      "Cash",
+      "Credit Card",
+      "Bank Transfer",
+      "PayPal",
+      "Visa",
+      "MasterCard"
+    ],
+    "currenciesAccepted": [
+      "MAD",
+      "EUR",
+      "USD",
+      "GBP"
+    ],
+    "serviceType": [
+      "Professional website creation | Création de sites web professionnels | إنشاء مواقع إلكترونية احترافية",
+      "Custom web development | Développement web sur mesure | تطوير مواقع حسب الطلب",
+      "Business showcase website | Site vitrine entreprise | موقع تعريفي للشركات والأعمال",
+      "E-commerce website | Boutique en ligne e-commerce | متجر إلكتروني احترافي",
+      "Google SEO optimization | Référencement SEO Google | تحسين محركات البحث في جوجل",
+      "Web design & UI/UX | Design UI/UX moderne | تصميم واجهات وتجربة مستخدم حديثة",
+      "Web app & dashboards | Applications web et tableaux de bord | تطبيقات ويب ولوحات تحكم",
+      "Maintenance & hosting | Maintenance et hébergement web | الصيانة والاستضافة",
+      "Digital strategy & consulting | Stratégie digitale et consulting | الاستشارة والاستراتيجية الرقمية"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "TechnoPro Web Services | Services TechnoPro Web | خدمات TechnoPro Web",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Website creation | Création de site web | إنشاء موقع إلكتروني",
+            "description": "Modern and responsive websites tailored to your brand and business goals. | Sites web modernes et responsives adaptés à votre marque et vos objectifs. | مواقع إلكترونية عصرية ومتجاوبة حسب هوية علامتك وأهداف نشاطك."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "SEO & performance | SEO et performance | تحسين محركات البحث والأداء",
+            "description": "On-page SEO and performance optimization for better rankings and speed. | Optimisation SEO on-page et performances pour de meilleurs classements et une meilleure vitesse. | تحسين SEO داخل الصفحات وتحسين السرعة للحصول على نتائج أفضل في محركات البحث."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "E-commerce | E-commerce | التجارة الإلكترونية",
+            "description": "Design and development of secure, conversion-oriented online shops. | Conception et développement de boutiques en ligne sécurisées et optimisées pour la conversion. | تصميم وتطوير متاجر إلكترونية آمنة ومهيأة للتحويل والمبيعات."
+          }
+        }
+      ]
+    },
+    "knowsLanguage": [
+      "en",
+      "fr",
+      "ar"
+    ],
+    "slogan": "Your modern web partner | Votre partenaire web moderne | شريكك الرقمي الحديث",
+    "keywords": "web agency Morocco, création site web Maroc, تطوير مواقع المغرب, SEO Tanger, agence web Tanger, responsive websites, مواقع إلكترونية احترافية, TechnoPro Web",
+    "image": [
+      "https://www.technoproweb.com/assets/img/portfolio/technoproweb-project-1.jpg",
+      "https://www.technoproweb.com/assets/img/portfolio/technoproweb-project-2.jpg",
+      "https://www.technoproweb.com/assets/img/og/technoproweb-og-image.jpg"
+    ],
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.technoproweb.com/assets/img/logos/technoproweb-logo-512.png",
+      "width": 400,
+      "height": 400
+    },
+    "sameAs": [
+      "https://www.linkedin.com/company/technoproweb",
+      "https://twitter.com/technoproweb",
+      "https://www.facebook.com/technoproweb",
+      "https://www.instagram.com/technoproweb"
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 4.9,
+      "reviewCount": 25,
+      "bestRating": 5,
+      "worstRating": 1
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://www.technoproweb.com/#website",
+    "name": "TechnoPro Web - Web Agency Morocco | Agence Web Maroc | وكالة تطوير مواقع بالمغرب",
+    "alternateName": "TechnoPro Web Portfolio & Services",
+    "url": "https://www.technoproweb.com",
+    "description": "Official website of TechnoPro Web, a modern web agency specialized in website creation, web apps and SEO in Morocco. | Site officiel de TechnoPro Web, agence web moderne spécialisée en création de sites web, applications web et SEO au Maroc. | الموقع الرسمي لـ TechnoPro Web، وكالة ويب حديثة متخصّصة في إنشاء المواقع، وتطوير تطبيقات الويب، وتحسين محركات البحث في المغرب.",
+    "inLanguage": [
+      "en",
+      "fr-MA",
+      "ar-MA"
+    ],
+    "publisher": {
+      "@id": "https://www.technoproweb.com/#organization"
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://www.technoproweb.com/search?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.technoproweb.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "About",
+        "item": "https://www.technoproweb.com/about"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Services",
+        "item": "https://www.technoproweb.com/services"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Portfolio",
+        "item": "https://www.technoproweb.com/portfolio"
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "Contact",
+        "item": "https://www.technoproweb.com/contact"
+      }
+    ]
+  }
+]
+</script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a website cost in Morocco? | Combien coûte la création d'un site web au Maroc ? | كم يكلف إنشاء موقع إلكتروني في المغرب؟",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "EN: At TechnoPro Web, most professional websites in Morocco start around 2 499 MAD and usually range between 2 499 MAD and 4 999 MAD, depending on the number of pages, design, and extra features such as e-commerce or multilingual support. FR: Chez TechnoPro Web, la majorité des sites professionnels au Maroc commencent à environ 2 499 MAD et se situent souvent entre 2 499 MAD et 4 999 MAD, selon le nombre de pages, le design et les fonctionnalités supplémentaires comme l'e-commerce ou le multilingue. AR: في TechnoPro Web، تبدأ أغلب المواقع الاحترافية في المغرب من حوالي 2499 درهم وتتراوح غالبًا بين 2499 و4999 درهم حسب عدد الصفحات، التصميم، والخصائص الإضافية مثل المتجر الإلكتروني أو تعدد اللغات."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to build a website? | Combien de temps faut-il pour créer un site web ? | كم يستغرق إنشاء موقع إلكتروني؟",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "EN: A standard showcase website usually takes 7 to 14 days once the content is ready. E-commerce projects or custom web apps can take from 3 to 6 weeks depending on complexity and integrations. FR: Un site vitrine standard prend généralement entre 7 et 14 jours une fois le contenu prêt. Les projets e-commerce ou les applications web sur mesure peuvent prendre de 3 à 6 semaines selon la complexité et les intégrations. AR: عادةً ما يستغرق إنشاء موقع تعريفي بين 7 و14 يومًا بعد توفر المحتوى، بينما قد تستغرق مشاريع المتاجر الإلكترونية أو تطبيقات الويب المخصصة من 3 إلى 6 أسابيع حسب درجة التعقيد والتكاملات المطلوبة."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you create websites in French, English and Arabic? | Créez-vous des sites en français, anglais et arabe ? | هل تقومون بإنشاء مواقع بالفرنسية والإنجليزية والعربية؟",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "EN: Yes, TechnoPro Web builds multilingual websites in French, English, Arabic and Darija, with language switchers and SEO-friendly URLs for each language. FR: Oui, TechnoPro Web réalise des sites multilingues en français, anglais, arabe et darija, avec sélecteur de langue et URLs optimisées pour le SEO. AR: نعم، تقوم TechnoPro Web بإنشاء مواقع متعددة اللغات بالفرنسية والإنجليزية والعربية والدارجة، مع زر تغيير اللغة وروابط محسّنة لمحركات البحث لكل لغة."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What payment methods do you accept in Morocco? | Quels moyens de paiement acceptez-vous au Maroc ? | ما هي طرق الدفع المتاحة في المغرب؟",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "EN: In Morocco we accept payments in MAD by bank transfer, cash, and Moroccan bank cards (Visa, Mastercard). For international clients we can also work with EUR or USD via bank transfer or PayPal. FR: Au Maroc, nous acceptons les paiements en MAD par virement bancaire, espèces et cartes bancaires marocaines (Visa, Mastercard). Pour les clients internationaux, nous pouvons également travailler en EUR ou USD via virement bancaire ou PayPal. AR: في المغرب نقبل المدفوعات بالدرهم عن طريق التحويل البنكي، الدفع نقدًا، وبطاقات البنوك المغربية (فيزا، ماستر كارد). أما العملاء الدوليون فيمكنهم الدفع باليورو أو الدولار عن طريق التحويل البنكي أو باي بال."
+      }
+    }
+  ]
+}
+</script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
 
   <body class="antialiased text-slate-800">
@@ -30,8 +448,8 @@
         <div class="flex h-20 items-center justify-between gap-3">
 
           <!-- Brand -->
-          <a href="#" class="flex items-center gap-2">
-            <img src="assets/img/logos/formatLogo-no-bg.png.png"
+          <a href="/" class="flex items-center gap-2">
+            <img src="assets/img/logos/formatLogo-no-bg.png"
               alt="Techno Pro Web Logo"
               class="h-20 w-20 rounded-lg object-cover img-logo">
           </a>
@@ -89,9 +507,7 @@
             </a>
 
             <!-- Mobile toggle -->
-            <button id="mobToggle"
-              type="button"
-              aria-expanded="false"
+            <button id="mobToggle" type="button" aria-expanded="false"
               aria-label="Toggle navigation"
               class="lg:hidden inline-flex h-10 w-10 items-center justify-center rounded-lg border border-slate-300 bg-white shadow-sm">
               <span class="sr-only">Toggle navigation</span>
@@ -1148,8 +1564,7 @@
 
               <a
                 href="https://wa.me/212621691502?text=Hello,%20I%27m%20interested%20in%20the%20Starter%20Pack%20for%20a%20website.%20Could%20we%20talk%20about%20the%20project%20details%3F"
-                target="_blank"
-                rel="noopener"
+                target="_blank" rel="noopener"
                 class="mt-auto inline-flex justify-center items-center w-full rounded-full border border-[#E3E5FF]
           py-2.5 text-sm font-semibold text-[#6C63FF] hover:border-[#C6B2FF] hover:bg-[#F5F3FF]
           transition">
@@ -1256,8 +1671,7 @@
 
                 <a
                   href="https://wa.me/212621691502?text=Hello,%20I%27m%20interested%20in%20the%20Business%20Pack.%20Could%20you%20provide%20me%20with%20more%20details%20so%20we%20can%20discuss%20my%20project%3F"
-                  target="_blank"
-                  rel="noopener"
+                  target="_blank" rel="noopener"
                   class="mt-auto inline-flex justify-center items-center w-full rounded-full py-3 text-sm font-semibold
           bg-gradient-to-r from-[#F6CED8] via-[#C6B2FF] to-[#B0E0FF]
           shadow-[0_18px_40px_rgba(0,0,0,0.65)]
@@ -1343,8 +1757,7 @@
               </ul>
               <a
                 href="https://wa.me/212621691502?text=Hello,%20I%27m%20interested%20in%20the%20Premium%20Pack.%20I%20would%20like%20to%20discuss%20the%20advanced%20features%20and%20see%20how%20it%20fits%20my%20project.%20Can%20you%20provide%20me%20with%20more%20details%3F"
-                target="_blank"
-                rel="noopener"
+                target="_blank" rel="noopener"
                 class="mt-auto inline-flex justify-center items-center w-full rounded-full border border-[#E3E5FF]
           py-2.5 text-sm font-semibold text-[#1A1740] hover:border-[#C6B2FF] hover:bg-[#F5F3FF]
           transition">
@@ -1410,8 +1823,7 @@
 
             <!-- animated line word by word -->
             <span id="heading-animated"
-              data-text="to every screen & every language"
-              class="block"></span>
+              data-text="to every screen & every language" class="block"></span>
           </h1>
 
           <!-- Sentence that will be animated word by word -->
@@ -1868,8 +2280,7 @@
     <!-- FOOTER -->
     <footer
       class="relative text-slate-100 pt-16 pb-10 overflow-hidden animated-footer-bg"
-      role="contentinfo"
-      itemscope
+      role="contentinfo" itemscope
       itemtype="https://schema.org/Organization">
 
       <!-- ========================= -->
@@ -2148,10 +2559,8 @@
               <!-- FACEBOOK -->
               <a href="https://facebook.com"
                 aria-label="Visit TechnoPro Web on Facebook"
-                class="social-orb social-orb--orbit"
-                style="--accent:#1877F2;"
-                target="_blank"
-                rel="noopener noreferrer"
+                class="social-orb social-orb--orbit" style="--accent:#1877F2;"
+                target="_blank" rel="noopener noreferrer"
                 itemprop="sameAs">
                 <svg viewBox="0 0 24 24" class="social-orb__icon" width="18"
                   height="18" aria-hidden="true">
@@ -2170,10 +2579,8 @@
               <!-- INSTAGRAM -->
               <a href="https://instagram.com"
                 aria-label="Visit TechnoPro Web on Instagram"
-                class="social-orb social-orb--orbit"
-                style="--accent:#F56040;"
-                target="_blank"
-                rel="noopener noreferrer"
+                class="social-orb social-orb--orbit" style="--accent:#F56040;"
+                target="_blank" rel="noopener noreferrer"
                 itemprop="sameAs">
                 <svg viewBox="0 0 24 24" class="social-orb__icon" width="18"
                   height="18" aria-hidden="true">
@@ -2192,10 +2599,8 @@
               <a href="https://www.linkedin.com/in/nada-el-moudden-229606285/"
                 aria-label="Visit TechnoPro Web on LinkedIn"
                 class="social-orb social-orb--orbit"
-                style="--accent:#0A66C2;"
-                target="_blank"
-                rel="noopener noreferrer"
-                itemprop="sameAs">
+                style="--accent:#0A66C2;" target="_blank"
+                rel="noopener noreferrer" itemprop="sameAs">
                 <svg viewBox="0 0 24 24" class="social-orb__icon" width="18"
                   height="18" aria-hidden="true">
                   <path fill="currentColor"
@@ -2212,11 +2617,9 @@
               <!-- WhatsApp -->
               <a
                 href="https://wa.me/212621691502?text=Hey%20TechnoPro%20Web,%20I%20would%20like%20to%20build%20a%20website.%20Can%20we%20talk%3F"
-                aria-label="Contact TechnoPro Web on WhatsApp"
-                target="_blank"
+                aria-label="Contact TechnoPro Web on WhatsApp" target="_blank"
                 rel="noopener noreferrer"
-                class="social-orb social-orb--orbit"
-                style="--accent:#25D366;"
+                class="social-orb social-orb--orbit" style="--accent:#25D366;"
                 itemprop="sameAs">
 
                 <!-- WhatsApp Icon -->
