@@ -11,7 +11,6 @@
     <!-- Primary SEO -->
     <meta http-equiv="Content-Language" content="en" />
 
-
     <meta
       name="description"
       content="TechnoPro Web is a modern web agency in Tangier, Morocco. We build fast, responsive websites, e-commerce stores and web apps with clean code, SEO and hosting for businesses in Morocco and abroad. وكالة إنشاء مواقع في المغرب: مواقع عصرية واحترافية بأسعار مناسبة." />
@@ -316,7 +315,7 @@ morocco payment methods,
     "sameAs": [
       "https://www.linkedin.com/company/technoproweb",
       "https://twitter.com/technoproweb",
-      "https://www.facebook.com/technoproweb",
+      "https://www.facebook.com/people/TechnoPro-Web/61584682072813/?locale=fr_FR",
       "https://www.instagram.com/technoproweb"
     ],
     "aggregateRating": {
@@ -443,112 +442,170 @@ morocco payment methods,
        LIGHT NAVBAR (sticky)
   ========================== -->
     <header
-      class="sticky top-0 z-50 border-b border-slate-200 bg-white/80 backdrop-blur">
+      class="sticky top-0 z-50 border-b border-slate-200 bg-white/80 backdrop-blur"
+      role="banner">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="flex h-20 items-center justify-between gap-3">
 
           <!-- Brand -->
-          <a href="/" class="flex items-center gap-2">
-            <img src="assets/img/logos/formatLogo-no-bg.png"
-              alt="Techno Pro Web Logo"
+          <a
+            href="/"
+            class="flex items-center gap-2"
+            aria-label="Techno Pro Web – Home"
+            title="Techno Pro Web – Home">
+            <img
+              src="assets/img/logos/formatLogo-no-bg.png"
+              alt="Techno Pro Web – Web development & modern websites"
               class="h-20 w-20 rounded-lg object-cover img-logo">
           </a>
 
           <!-- Desktop Navigation -->
-          <nav class="hidden lg:block">
+          <nav class="hidden lg:block" aria-label="Primary navigation">
             <ul
               class="flex items-center gap-1 rounded-full bg-slate-100 py-1 shadow-sm ring-1 ring-slate-200">
-              <!-- ACTIVE (ACCUEIL) -->
+              <!-- ACTIVE (HOME) -->
               <li>
-                <a href="/"
-                  class="rounded-full px-4 py-2 text-sm font-medium bg-white text-slate-900 shadow-sm">
+                <a
+                  href="/"
+                  class="rounded-full px-4 py-2 text-sm font-medium bg-white text-slate-900 shadow-sm"
+                  aria-current="page"
+                  title="Home – Techno Pro Web">
                   Home
                 </a>
               </li>
-              <li><a href="about.html"
-                  class="rounded-full px-4 py-2 text-sm font-medium text-slate-600 hover:text-slate-900">About</a></li>
-              <li><a href="/services.html" data-i18n="nav.services"
-                  class="rounded-full px-4 py-2 text-sm font-medium text-slate-600 hover:text-slate-900">Services</a></li>
-              <li><a href="portfolio.html" data-i18n="nav.portfolio"
-                  class="rounded-full px-4 py-2 text-sm font-medium text-slate-600 hover:text-slate-900">Portfolio</a>
+
+              <li>
+                <a
+                  href="about.html"
+                  class="rounded-full px-4 py-2 text-sm font-medium text-slate-600 hover:text-slate-900"
+                  title="About Techno Pro Web">
+                  About
+                </a>
               </li>
-              <li><a href="/contact.html" data-i18n="nav.contact"
-                  class="rounded-full px-4 py-2 text-sm font-medium text-slate-600 hover:text-slate-900">Contact</a></li>
+
+              <li>
+                <a
+                  href="/services.html"
+                  data-i18n="nav.services"
+                  class="rounded-full px-4 py-2 text-sm font-medium text-slate-600 hover:text-slate-900"
+                  title="Web development & digital services">
+                  Services
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="portfolio.html"
+                  data-i18n="nav.portfolio"
+                  class="rounded-full px-4 py-2 text-sm font-medium text-slate-600 hover:text-slate-900"
+                  title="Portfolio – Recent projects">
+                  Portfolio
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="/contact.html"
+                  data-i18n="nav.contact"
+                  class="rounded-full px-4 py-2 text-sm font-medium text-slate-600 hover:text-slate-900"
+                  title="Contact Techno Pro Web">
+                  Contact
+                </a>
+              </li>
             </ul>
           </nav>
 
           <div class="flex items-center gap-2">
-            <!-- Language Switcher (Desktop) -->
-            <!-- Inline Flag Switcher -->
-            <!-- <div id="langSwitcher" class="flex items-center gap-3">
-              <button type="button" data-lang="fr" aria-pressed="false"
-                title="Français"
-                class="inline-flex h-6 w-8 items-center justify-center rounded-md bg-white/80 ring-1 ring-slate-200 shadow-sm hover:bg-white transition">
-                <span class="text-base leading-none">🇫🇷</span>
-                <span class="sr-only">Français</span>
-              </button>
-
-              <button type="button" data-lang="en" aria-pressed="false"
-                title="English (US)"
-                class="inline-flex h-6 w-8 items-center justify-center rounded-md bg-white/80 ring-1 ring-slate-200 shadow-sm hover:bg-white transition">
-                <span class="text-base leading-none">🇺🇸</span>
-                <span class="sr-only">English</span>
-              </button>
-            </div> -->
-
             <!-- CTA -->
-            <!-- <a href="/contact.html" data-i18n="cta.get_started"
-              class="hidden sm:inline-flex items-center rounded-full bg-gradient-to-r from-[#C6B2FF] to-[#B0E0FF] px-4 py-2 text-sm font-semibold text-white shadow-sm hover:opacity-90">
-              Get Started
-            </a> -->
-            <a href="/contact.html"
-              class="hidden sm:inline-flex items-center rounded-full bg-gradient-to-r from-[#C6B2FF] to-[#B0E0FF] px-4 py-2 text-sm font-semibold text-white shadow-sm hover:opacity-90">
+            <a
+              href="/contact.html"
+              class="hidden sm:inline-flex items-center rounded-full bg-gradient-to-r from-[#C6B2FF] to-[#B0E0FF] px-4 py-2 text-sm font-semibold text-white shadow-sm hover:opacity-90"
+              title="Start your web project with Techno Pro Web">
               Get Started
             </a>
 
             <!-- Mobile toggle -->
-            <button id="mobToggle" type="button" aria-expanded="false"
-              aria-label="Toggle navigation"
+            <button
+              id="mobToggle"
+              type="button"
+              aria-expanded="false"
+              aria-label="Toggle navigation menu"
+              aria-controls="mobMenu"
               class="lg:hidden inline-flex h-10 w-10 items-center justify-center rounded-lg border border-slate-300 bg-white shadow-sm">
               <span class="sr-only">Toggle navigation</span>
 
-              <!-- Fries lines -->
+              <!-- Burger lines -->
               <span class="burger-line line-1 block w-5 rounded-full"></span>
               <span class="burger-line line-2 block w-4 rounded-full"></span>
               <span class="burger-line line-3 block w-6 rounded-full"></span>
             </button>
-
           </div>
         </div>
       </div>
 
       <!-- Mobile Menu -->
-      <div id="mobMenu"
+      <div
+        id="mobMenu"
         class="lg:hidden hidden border-t border-slate-200 bg-white">
         <div class="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
-
-          <ul class="space-y-3">
-            <li><a href="/" data-i18n="nav.home"
-                class="block text-sm font-medium">Home</a></li>
-            <li><a href="/about.html" data-i18n="nav.about"
-                class="block text-sm font-medium">About</a></li>
-            <li><a href="/services.html" data-i18n="nav.services"
-                class="block text-sm font-medium">Services</a></li>
-            <li><a href="portfolio.html" data-i18n="nav.portfolio"
-                class="block text-sm font-medium">Portfolio</a></li>
-            <li><a href="/contact.html" data-i18n="nav.contact"
-                class="block text-sm font-medium">Contact</a></li>
-            <li>
-              <!-- <a href="/contact.html" data-i18n="cta.get_started"
-                class="inline-flex rounded-full bg-gradient-to-r from-[#C6B2FF] to-[#B0E0FF] px-4 py-2 text-sm font-semibold text-white">
-                Get Started
-              </a> -->
-              <a href="/contact.html"
-                class="inline-flex rounded-full bg-gradient-to-r from-[#C6B2FF] to-[#B0E0FF] px-4 py-2 text-sm font-semibold text-white">
-                Get Started
-              </a>
-            </li>
-          </ul>
+          <nav aria-label="Mobile primary navigation">
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="/"
+                  data-i18n="nav.home"
+                  class="block text-sm font-medium"
+                  aria-current="page"
+                  title="Home – Techno Pro Web">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/about.html"
+                  data-i18n="nav.about"
+                  class="block text-sm font-medium"
+                  title="About Techno Pro Web">
+                  About
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/services.html"
+                  data-i18n="nav.services"
+                  class="block text-sm font-medium"
+                  title="Web development & digital services">
+                  Services
+                </a>
+              </li>
+              <li>
+                <a
+                  href="portfolio.html"
+                  data-i18n="nav.portfolio"
+                  class="block text-sm font-medium"
+                  title="Portfolio – Recent projects">
+                  Portfolio
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/contact.html"
+                  data-i18n="nav.contact"
+                  class="block text-sm font-medium"
+                  title="Contact Techno Pro Web">
+                  Contact
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/contact.html"
+                  class="inline-flex rounded-full bg-gradient-to-r from-[#C6B2FF] to-[#B0E0FF] px-4 py-2 text-sm font-semibold text-white"
+                  title="Start your web project with Techno Pro Web">
+                  Get Started
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
@@ -580,7 +637,7 @@ morocco payment methods,
               <!-- Slide 1 — Website creation -->
               <div
                 class="copy-slide absolute inset-0 opacity-0 transition-opacity duration-500">
-                <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl">
+                <h2 class="text-4xl font-extrabold tracking-tight sm:text-5xl">
                   <span class="block">WEBSITE</span>
                   <span class="block">CREATION</span>
                   <span class="block mt-3">
@@ -589,7 +646,7 @@ morocco payment methods,
                       MODERN & FAST DESIGN
                     </span>
                   </span>
-                </h1>
+                </h2>
                 <p
                   class="mt-5 max-w-2xl text-base leading-relaxed text-slate-700">
                   We create modern, fast websites optimized to turn your
@@ -602,7 +659,7 @@ morocco payment methods,
               <!-- Slide 2 — SEO -->
               <div
                 class="copy-slide absolute inset-0 opacity-0 transition-opacity duration-500">
-                <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl">
+                <h2 class="text-4xl font-extrabold tracking-tight sm:text-5xl">
                   <span class="block">SEO RANKING</span>
                   <span class="block">
                     <span
@@ -615,7 +672,7 @@ morocco payment methods,
                       FIRST PAGE ON GOOGLE
                     </span>
                   </span>
-                </h1>
+                </h2>
                 <p
                   class="mt-5 max-w-2xl text-base leading-relaxed text-slate-700">
                   Boost your visibility on Google with a complete SEO strategy:
@@ -627,7 +684,7 @@ morocco payment methods,
               <!-- Slide 3 — Google Ads -->
               <div
                 class="copy-slide absolute inset-0 opacity-0 transition-opacity duration-500">
-                <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl">
+                <h2 class="text-4xl font-extrabold tracking-tight sm:text-5xl">
                   <span class="block">ADVERTISING</span>
                   <span class="block">
                     <span
@@ -640,7 +697,7 @@ morocco payment methods,
                       MORE CLIENTS IMMEDIATELY
                     </span>
                   </span>
-                </h1>
+                </h2>
                 <p
                   class="mt-5 max-w-2xl text-base leading-relaxed text-slate-700">
                   Attract clients quickly with optimized Google Ads campaigns.
@@ -653,13 +710,17 @@ morocco payment methods,
 
             <div class="mt-8 flex flex-wrap items-center gap-3">
               <a href="/contact.html"
-                class="inline-flex items-center gap-2 rounded-full bg-white/80 px-5 py-3 text-sm font-semibold text-slate-900 shadow ring-1 ring-black/5 backdrop-blur hover:bg-white">
+                class="inline-flex items-center gap-2 rounded-full bg-white/80 px-5 py-3 text-sm font-semibold text-slate-900 shadow ring-1 ring-black/5 backdrop-blur hover:bg-white"
+                aria-label="Get a free SEO audit for your website">
                 Free SEO Audit
               </a>
-              <a href="portfolio.html"
-                class="inline-flex items-center gap-2 rounded-full border border-white/70 bg-transparent px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/30">
+
+              <a href="/portfolio.html"
+                class="inline-flex items-center gap-2 rounded-full border border-white/70 bg-transparent px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white/30"
+                aria-label="View our website and SEO portfolio examples">
                 View Demo
               </a>
+
             </div>
 
             <!-- Dots (control both sliders) -->
@@ -709,11 +770,17 @@ morocco payment methods,
     <!-- =========================
      HERO — playful & animated
 ========================== -->
-    <section class="relative overflow-hidden">
-      <!-- Soft gradient background -->
+    <section id="hero"
+      class="relative overflow-hidden"
+      aria-label="Web design and SEO studio in Tangier, Morocco"
+      itemscope
+      itemtype="https://schema.org/ProfessionalService">
+
+      <!-- Soft gradient background (purely decorative) -->
       <div
-        class="absolute inset-0 -z-10 bg-gradient-to-br from-[#F6CED8] via-[#C6B2FF]/40 to-[#B0E0FF]"></div>
-      <div class="absolute inset-0 -z-10 opacity-60">
+        class="absolute inset-0 -z-10 bg-gradient-to-br from-[#F6CED8] via-[#C6B2FF]/40 to-[#B0E0FF]"
+        aria-hidden="true"></div>
+      <div class="absolute inset-0 -z-10 opacity-60" aria-hidden="true">
         <!-- subtle light spots -->
         <div
           class="absolute -top-24 -left-24 h-96 w-96 rounded-full bg-white/40 blur-3xl"></div>
@@ -722,180 +789,221 @@ morocco payment methods,
       </div>
 
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
-        <div class="text-center space-y-6">
+
+        <!-- LOGO + BRAND (helps brand/entity recognition) -->
+        <div class="mb-6 flex flex-col items-center gap-4">
+          <!-- Optional hero mockup image (great for LCP if you have it) -->
+          <!--
+      <img
+        src="/images/hero-web-agency-tangier.webp"
+        alt="Modern website design preview created by TechnoProWeb for a local business in Tangier"
+        loading="eager"
+        fetchpriority="high"
+        decoding="async"
+        width="960"
+        height="540"
+        class="max-w-2xl rounded-3xl shadow-2xl">
+      -->
+        </div>
+
+        <div class="text-center space-y-6" itemprop="description">
           <!-- Badge -->
           <span
             class="inline-flex items-center gap-2 rounded-full bg-white/80 px-4 py-2 text-sm font-semibold text-slate-800 shadow ring-1 ring-white/60 backdrop-blur animate-fade-in">
-            <span class="text-lg">🏆</span>
-            <span>Web & SEO Studio — Tangier</span>
+            <span class="text-lg" aria-hidden="true">🏆</span>
+            <span>Web &amp; SEO Studio — Tangier</span>
           </span>
 
-          <!-- Heading -->
+          <!-- Main SEO H1 -->
           <h1
             class="text-4xl sm:text-5xl font-extrabold tracking-tight leading-tight animate-rise">
-            <span class="block">We build websites that</span>
+            <span class="block">
+              Web design &amp; SEO agency in Tangier
+            </span>
             <span class="block">
               <span
                 class="bg-clip-text text-transparent bg-gradient-to-r from-[#6D28D9] via-[#4338CA] to-[#0EA5E9]">
-                convert
+                we build websites that convert
               </span>
-              — Tangier Morocco
+              — Morocco
             </span>
           </h1>
 
-          <!-- Subheading -->
+          <!-- Subheading (keywords + natural language) -->
           <p
             class="mx-auto max-w-3xl text-slate-700 text-base sm:text-lg animate-fade-in [animation-delay:120ms]">
-            Custom professional websites + AI + SEO. ⚡ Fast loading, elegant
-            design
-            and an SEO strategy built for the first page of Google. Quick audit
-            included.
+            Custom professional websites + AI + SEO.
+            ⚡ Fast loading, elegant design and an SEO strategy built for the
+            first page of Google. Quick audit included.
           </p>
 
           <!-- CTAs -->
           <div
             class="flex items-center justify-center gap-3 pt-2 animate-fade-in [animation-delay:220ms]">
             <a href="/contact.html"
-              class="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#C6B2FF] to-[#B0E0FF] px-5 py-3 text-sm font-semibold text-white shadow ring-1 ring-white/40 backdrop-blur hover:opacity-95 transition relative overflow-hidden">
+              class="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#C6B2FF] to-[#B0E0FF] px-5 py-3 text-sm font-semibold text-white shadow ring-1 ring-white/40 backdrop-blur hover:opacity-95 transition relative overflow-hidden"
+              aria-label="Request a free website and SEO quote for your business in Tangier, Morocco">
               <span class="relative z-10">Estimate in 24h</span>
               <!-- shiny sweep -->
               <span
                 class="absolute inset-y-0 -left-10 w-10 skew-x-[-20deg] bg-white/40 group-hover:translate-x-[220%] transition-transform duration-700"></span>
             </a>
             <a href="/services.html"
-              class="inline-flex items-center gap-2 rounded-full border border-white/70 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white transition">
+              class="inline-flex items-center gap-2 rounded-full border border-white/70 bg-white/70 px-5 py-3 text-sm font-semibold text-slate-900 backdrop-blur hover:bg-white transition"
+              aria-label="Discover our web design, SEO and AI services in Tangier, Morocco">
               Discover our services
             </a>
           </div>
         </div>
 
         <!-- Feature cards -->
-        <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3" role="list">
 
           <!-- WOW CARD 1 -->
-          <div
+          <article
             class="group card-wow relative overflow-hidden rounded-2xl bg-white/80 p-8 shadow-xl ring-1 ring-white/60 backdrop-blur
-              transition-transform duration-300 will-change-transform">
-            <!-- cursor glow + chroma edge -->
+          transition-transform duration-300 will-change-transform"
+            aria-label="Custom ultra-fast websites"
+            role="listitem">
+            <!-- cursor glow + chroma edge (decorative) -->
             <span
               class="pointer-events-none absolute -inset-px rounded-[22px] opacity-0 transition duration-500
-                 group-hover:opacity-100" style="background:
-            radial-gradient(220px 160px at var(--mx,50%) var(--my,30%), rgba(198,178,255,.35), transparent 60%),
-            conic-gradient(from 180deg at 50% 50%, #B0E0FF, #C6B2FF, #F6CED8, #B0E0FF);
-            mask: linear-gradient(#000,#000) exclude, linear-gradient(#000,#000) content-box;
-            -webkit-mask: linear-gradient(#000,#000) exclude, linear-gradient(#000,#000) content-box;
-            padding:1px;"></span>
+             group-hover:opacity-100"
+              aria-hidden="true"
+              style="background:
+          radial-gradient(220px 160px at var(--mx,50%) var(--my,30%), rgba(198,178,255,.35), transparent 60%),
+          conic-gradient(from 180deg at 50% 50%, #B0E0FF, #C6B2FF, #F6CED8, #B0E0FF);
+          mask: linear-gradient(#000,#000) exclude, linear-gradient(#000,#000) content-box;
+          -webkit-mask: linear-gradient(#000,#000) exclude, linear-gradient(#000,#000) content-box;
+          padding:1px;"></span>
 
-            <!-- diagonal shine -->
+            <!-- diagonal shine (decorative) -->
             <span
               class="pointer-events-none absolute -left-1/3 top-0 h-full w-1/3 -rotate-12 bg-white/35 blur-xl
-                 opacity-0 group-hover:opacity-100 group-hover:animate-shine"></span>
+             opacity-0 group-hover:opacity-100 group-hover:animate-shine"
+              aria-hidden="true"></span>
 
             <div class="relative z-10">
               <div
                 class="mb-5 inline-flex h-16 w-16 items-center justify-center rounded-2xl text-white shadow-lg
-                  bg-gradient-to-br from-indigo-500 to-violet-500 [animation:bob_2.2s_ease-in-out_infinite]">
-                <span class="text-3xl">🚀</span>
+              bg-gradient-to-br from-indigo-500 to-violet-500 [animation:bob_2.2s_ease-in-out_infinite]">
+                <span class="text-3xl" aria-hidden="true">🚀</span>
               </div>
-              <h3
-                class="text-2xl font-extrabold tracking-tight text-slate-900">Custom
-                “ultra-fast” websites</h3>
+              <h2
+                class="text-2xl font-extrabold tracking-tight text-slate-900">
+                Custom “ultra-fast” websites
+              </h2>
               <p class="mt-2 text-slate-600 leading-relaxed">
                 Modern front-end, smooth animations and strong SEO performance.
-                React/Next.js or WordPress depending on your needs.
+                Built with React, Next.js or WordPress depending on your
+                business goals and budget.
               </p>
             </div>
 
             <!-- progress bar -->
             <div
-              class="relative mt-8 h-1.5 w-full rounded-full bg-slate-200/70 overflow-hidden">
+              class="relative mt-8 h-1.5 w-full rounded-full bg-slate-200/70 overflow-hidden"
+              aria-hidden="true">
               <span
                 class="bar block h-full w-0 rounded-full transition-[width] duration-700 ease-out group-hover:w-full"
                 style="background:linear-gradient(90deg,#B0E0FF,#C6B2FF,#F6CED8);
-                   box-shadow:0 0 18px 2px rgba(198,178,255,.55);"></span>
+               box-shadow:0 0 18px 2px rgba(198,178,255,.55);"></span>
             </div>
-          </div>
+          </article>
 
           <!-- WOW CARD 2 -->
-          <div
+          <article
             class="group card-wow relative overflow-hidden rounded-2xl bg-white/80 p-8 shadow-xl ring-1 ring-white/60 backdrop-blur
-              transition-transform duration-300 will-change-transform">
+          transition-transform duration-300 will-change-transform"
+            aria-label="AI automation for your website and business"
+            role="listitem">
             <span
               class="pointer-events-none absolute -inset-px rounded-[22px] opacity-0 transition duration-500
-                 group-hover:opacity-100" style="background:
-            radial-gradient(220px 160px at var(--mx,50%) var(--my,30%), rgba(255,171,220,.35), transparent 60%),
-            conic-gradient(from 180deg at 50% 50%, #FDB8E2, #F6CED8, #B0E0FF, #FDB8E2);
-            mask: linear-gradient(#000,#000) exclude, linear-gradient(#000,#000) content-box;
-            -webkit-mask: linear-gradient(#000,#000) exclude, linear-gradient(#000,#000) content-box;
-            padding:1px;"></span>
+             group-hover:opacity-100"
+              aria-hidden="true"
+              style="background:
+          radial-gradient(220px 160px at var(--mx,50%) var(--my,30%), rgba(255,171,220,.35), transparent 60%),
+          conic-gradient(from 180deg at 50% 50%, #FDB8E2, #F6CED8, #B0E0FF, #FDB8E2);
+          mask: linear-gradient(#000,#000) exclude, linear-gradient(#000,#000) content-box;
+          -webkit-mask: linear-gradient(#000,#000) exclude, linear-gradient(#000,#000) content-box;
+          padding:1px;"></span>
             <span
               class="pointer-events-none absolute -left-1/3 top-0 h-full w-1/3 -rotate-12 bg-white/35 blur-xl
-                 opacity-0 group-hover:opacity-100 group-hover:animate-shine"></span>
+             opacity-0 group-hover:opacity-100 group-hover:animate-shine"
+              aria-hidden="true"></span>
 
             <div class="relative z-10">
               <div
                 class="mb-5 inline-flex h-16 w-16 items-center justify-center rounded-2xl text-white shadow-lg
-                  bg-gradient-to-br from-fuchsia-500 to-pink-500 [animation:bob_2.2s_ease-in-out_infinite]">
-                <span class="text-3xl">🤖</span>
+              bg-gradient-to-br from-fuchsia-500 to-pink-500 [animation:bob_2.2s_ease-in-out_infinite]">
+                <span class="text-3xl" aria-hidden="true">🤖</span>
               </div>
-              <h3
-                class="text-2xl font-extrabold tracking-tight text-slate-900">Frictionless
-                AI automation</h3>
+              <h2
+                class="text-2xl font-extrabold tracking-tight text-slate-900">
+                Frictionless AI automation
+              </h2>
               <p class="mt-2 text-slate-600 leading-relaxed">
-                Chatbots, auto-replies and no/low-code integrations to save
-                hours
-                every week.
+                Chatbots, auto-replies and no/low-code integrations that save
+                hours every week and improve your customer support.
               </p>
             </div>
 
             <div
-              class="relative mt-8 h-1.5 w-full rounded-full bg-slate-200/70 overflow-hidden">
+              class="relative mt-8 h-1.5 w-full rounded-full bg-slate-200/70 overflow-hidden"
+              aria-hidden="true">
               <span
                 class="bar block h-full w-0 rounded-full transition-[width] duration-700 ease-out group-hover:w-full"
                 style="background:linear-gradient(90deg,#F6CED8,#C6B2FF,#B0E0FF);
-                   box-shadow:0 0 18px 2px rgba(246,206,216,.55);"></span>
+               box-shadow:0 0 18px 2px rgba(246,206,216,.55);"></span>
             </div>
-          </div>
+          </article>
 
           <!-- WOW CARD 3 -->
-          <div
+          <article
             class="group card-wow relative overflow-hidden rounded-2xl bg-white/80 p-8 shadow-xl ring-1 ring-white/60 backdrop-blur
-              transition-transform duration-300 will-change-transform">
+          transition-transform duration-300 will-change-transform"
+            aria-label="SEO services to reach page one on Google"
+            role="listitem">
             <span
               class="pointer-events-none absolute -inset-px rounded-[22px] opacity-0 transition duration-500
-                 group-hover:opacity-100" style="background:
-            radial-gradient(220px 160px at var(--mx,50%) var(--my,30%), rgba(176,224,255,.35), transparent 60%),
-            conic-gradient(from 180deg at 50% 50%, #B0E0FF, #7dd3fc, #C6B2FF, #B0E0FF);
-            mask: linear-gradient(#000,#000) exclude, linear-gradient(#000,#000) content-box;
-            -webkit-mask: linear-gradient(#000,#000) exclude, linear-gradient(#000,#000) content-box;
-            padding:1px;"></span>
+             group-hover:opacity-100"
+              aria-hidden="true"
+              style="background:
+          radial-gradient(220px 160px at var(--mx,50%) var(--my,30%), rgba(176,224,255,.35), transparent 60%),
+          conic-gradient(from 180deg at 50% 50%, #B0E0FF, #7dd3fc, #C6B2FF, #B0E0FF);
+          mask: linear-gradient(#000,#000) exclude, linear-gradient(#000,#000) content-box;
+          -webkit-mask: linear-gradient(#000,#000) exclude, linear-gradient(#000,#000) content-box;
+          padding:1px;"></span>
             <span
               class="pointer-events-none absolute -left-1/3 top-0 h-full w-1/3 -rotate-12 bg-white/35 blur-xl
-                 opacity-0 group-hover:opacity-100 group-hover:animate-shine"></span>
+             opacity-0 group-hover:opacity-100 group-hover:animate-shine"
+              aria-hidden="true"></span>
 
             <div class="relative z-10">
               <div
                 class="mb-5 inline-flex h-16 w-16 items-center justify-center rounded-2xl text-white shadow-lg
-                  bg-gradient-to-br from-rose-500 to-amber-500 [animation:bob_2.2s_ease-in-out_infinite]">
-                <span class="text-3xl">📈</span>
+              bg-gradient-to-br from-rose-500 to-amber-500 [animation:bob_2.2s_ease-in-out_infinite]">
+                <span class="text-3xl" aria-hidden="true">📈</span>
               </div>
-              <h3
-                class="text-2xl font-extrabold tracking-tight text-slate-900">SEO
-                & Google “page 1”</h3>
+              <h2
+                class="text-2xl font-extrabold tracking-tight text-slate-900">
+                SEO &amp; Google “page 1”
+              </h2>
               <p class="mt-2 text-slate-600 leading-relaxed">
-                Technical SEO + content + link building. Clear dashboards and
-                measurable progress.
+                Technical SEO, content strategy and link building with clear
+                dashboards and measurable progress for your business.
               </p>
             </div>
 
             <div
-              class="relative mt-8 h-1.5 w-full rounded-full bg-slate-200/70 overflow-hidden">
+              class="relative mt-8 h-1.5 w-full rounded-full bg-slate-200/70 overflow-hidden"
+              aria-hidden="true">
               <span
                 class="bar block h-full w-0 rounded-full transition-[width] duration-700 ease-out group-hover:w-full"
                 style="background:linear-gradient(90deg,#B0E0FF,#7dd3fc,#C6B2FF);
-                   box-shadow:0 0 18px 2px rgba(176,224,255,.55);"></span>
+               box-shadow:0 0 18px 2px rgba(176,224,255,.55);"></span>
             </div>
-          </div>
+          </article>
 
         </div>
 
@@ -909,7 +1017,8 @@ morocco payment methods,
       </div>
 
       <!-- Floating fun shapes -->
-      <div class="pointer-events-none absolute inset-0 -z-10">
+      <div class="pointer-events-none absolute inset-0 -z-10"
+        aria-hidden="true">
         <span class="floaty"></span>
         <span class="floaty [--x:80%] [--y:20%] [--d:8s]"></span>
         <span class="floaty [--x:20%] [--y:75%] [--d:9s]"></span>
@@ -917,15 +1026,20 @@ morocco payment methods,
     </section>
 
     <!-- Pourquoi Choisir – Section -->
-    <section class="why-choose" aria-labelledby="why-choose-title">
+    <section id="why-choose"
+      class="why-choose"
+      aria-labelledby="why-choose-title">
       <!-- decorative animated orbs -->
       <span class="orb orb--tl" aria-hidden="true"></span>
       <span class="orb orb--tr" aria-hidden="true"></span>
       <span class="orb orb--br" aria-hidden="true"></span>
 
-      <div class="wc-wrap" role="region" aria-label="Commercial arguments">
+      <div class="wc-wrap"
+        role="region"
+        aria-label="Commercial arguments for choosing TechnoPro Web, web agency in Tangier">
         <!-- badge -->
-        <div class="wc-badge" aria-label="Leader in Tangier">
+        <div class="wc-badge"
+          aria-label="Leader in Tangier for web design and SEO">
           <span class="wc-badge__icon" aria-hidden="true">🏆</span>
           <span>Leader in Tangier</span>
         </div>
@@ -935,38 +1049,44 @@ morocco payment methods,
         </h2>
 
         <p class="wc-lead">
-          Web agency <strong>#1 in Tangier</strong> with <strong>50+
-            websites</strong>
-          delivered. Local Moroccan expertise, modern technologies, 24/7
-          support,
+          Web agency <strong>#1 in Tangier</strong> with
+          <strong>50+ websites</strong> delivered.
+          Local Moroccan expertise, modern technologies, 24/7 support,
           guaranteed results.
-          <a href="#realisations" class="wc-link">Your digital success starts
-            here!</a>
+          <a href="contact.html"
+            class="wc-link"
+            aria-label="See our latest website realizations and projects in Tangier and Morocco">
+            Your digital success starts here!
+          </a>
         </p>
 
         <!-- metrics -->
         <div class="wc-metrics">
-          <article class="wc-metric">
+          <article class="wc-metric"
+            aria-label="More than 50 custom websites created for clients in Tangier and Morocco">
             <div class="wc-metric__icon" aria-hidden="true">🚀</div>
             <div class="wc-metric__value" data-count="50" data-plus="+">0</div>
             <div class="wc-metric__label">Websites Created</div>
           </article>
 
-          <article class="wc-metric">
+          <article class="wc-metric"
+            aria-label="100 percent of our clients are satisfied with our web and SEO services">
             <div class="wc-metric__icon" aria-hidden="true">⭐</div>
             <div class="wc-metric__value" data-count="100"
               data-suffix="%">0</div>
             <div class="wc-metric__label">Satisfied Clients</div>
           </article>
 
-          <article class="wc-metric">
+          <article class="wc-metric"
+            aria-label="24 hour premium support for your website">
             <div class="wc-metric__icon" aria-hidden="true">💬</div>
             <div class="wc-metric__value" data-count="24"
               data-suffix="h">0</div>
             <div class="wc-metric__label">Premium Support</div>
           </article>
 
-          <article class="wc-metric">
+          <article class="wc-metric"
+            aria-label="Average rating of 5 stars for TechnoPro Web">
             <div class="wc-metric__icon" aria-hidden="true">🏅</div>
             <div class="wc-metric__value" data-count="5" data-suffix="★">0</div>
             <div class="wc-metric__label">Average Rating</div>
@@ -975,11 +1095,16 @@ morocco payment methods,
 
         <!-- CTA row -->
         <div class="wc-ctas" role="group" aria-label="Call to actions">
-          <a href="contact.html" class="wc-btn wc-btn--primary" data-confetti>
+          <a href="contact.html"
+            class="wc-btn wc-btn--primary"
+            data-confetti
+            aria-label="Start your website or SEO project with TechnoPro Web in Tangier">
             <span class="wc-btn__emoji" aria-hidden="true">🎯</span>
             Start Your Project
           </a>
-          <a href="portfolio.html" class="wc-btn wc-btn--ghost">
+          <a href="portfolio.html"
+            class="wc-btn wc-btn--ghost"
+            aria-label="View our portfolio of websites and SEO projects created in Tangier and Morocco">
             <span class="wc-btn__emoji" aria-hidden="true">👀</span>
             View Our Work
           </a>
@@ -988,19 +1113,27 @@ morocco payment methods,
     </section>
 
     <!-- BRANDING SERVICES SECTION (3D VERSION) -->
-    <section class="relative py-20 bg-[#050816] overflow-hidden">
+    <section id="process"
+      class="relative py-20 bg-[#050816] overflow-hidden"
+      aria-labelledby="process-title"
+      itemscope
+      itemtype="https://schema.org/HowTo">
+
       <!-- blurry decorations -->
       <div
         class="pointer-events-none absolute -top-40 -left-32 w-72 h-72 rounded-full opacity-40"
-        style="background: radial-gradient(circle, #F6CED8, #C6B2FF, #B0E0FF); filter: blur(50px);"></div>
+        style="background: radial-gradient(circle, #F6CED8, #C6B2FF, #B0E0FF); filter: blur(50px);"
+        aria-hidden="true"></div>
       <div
         class="pointer-events-none absolute -bottom-40 right-0 w-80 h-80 rounded-full opacity-40"
-        style="background: radial-gradient(circle, #B0E0FF, #C6B2FF, #F6CED8); filter: blur(60px);"></div>
+        style="background: radial-gradient(circle, #B0E0FF, #C6B2FF, #F6CED8); filter: blur(60px);"
+        aria-hidden="true"></div>
 
       <div class="relative max-w-6xl mx-auto px-4">
 
         <!-- Title + intro -->
-        <div class="text-center space-y-4 reveal">
+        <div class="text-center space-y-4 reveal" role="group"
+          aria-label="Collaboration method for website projects at TechnoPro Web in Tangier, Morocco">
           <span
             class="inline-flex items-center gap-2 rounded-full px-4 py-1 text-xs sm:text-sm font-medium
                bg-white/5 border border-white/10 text-[#C6B2FF]">
@@ -1008,12 +1141,15 @@ morocco payment methods,
           </span>
 
           <h2
+            id="process-title"
             class="text-3xl sm:text-4xl font-extrabold tracking-tight bg-clip-text text-transparent
-             bg-gradient-to-r from-[#F6CED8] via-[#C6B2FF] to-[#B0E0FF]">
+             bg-gradient-to-r from-[#F6CED8] via-[#C6B2FF] to-[#B0E0FF]"
+            itemprop="name">
             Our Collaboration Method
           </h2>
 
-          <p class="max-w-2xl mx-auto text-sm sm:text-base text-slate-300">
+          <p class="max-w-2xl mx-auto text-sm sm:text-base text-slate-300"
+            itemprop="description">
             From the first discussion to ongoing support, we build with you a
             clear,
             high-performing web project aligned with your business goals.
@@ -1021,16 +1157,16 @@ morocco payment methods,
         </div>
 
         <!-- Progress line -->
-        <div class="relative mt-16 hidden md:block">
+        <div class="relative mt-16 hidden md:block" aria-hidden="true">
           <div class="absolute inset-x-10 top-1/2 h-px -translate-y-1/2
               bg-gradient-to-r from-[#F6CED8] via-[#C6B2FF] to-[#B0E0FF] opacity-60"></div>
         </div>
 
         <!-- Step cards -->
-        <div class="mt-10 grid gap-8 md:grid-cols-3">
+        <div class="mt-10 grid gap-8 md:grid-cols-3" role="list">
 
           <!-- STEP 1 -->
-          <div class="relative reveal step-delay-1">
+          <div class="relative reveal step-delay-1" role="listitem">
             <div class="absolute -top-12 left-1/2 -translate-x-1/2">
               <span class="inline-flex items-center rounded-full 
         px-8 py-3 
@@ -1048,7 +1184,10 @@ morocco payment methods,
               class="group rounded-3xl bg-white/5 border border-white/10 px-6 pt-10 pb-8 backdrop-blur-lg
              shadow-[0_18px_45px_rgba(0,0,0,0.45)]
              transition-transform duration-500 hover:-translate-y-3 hover:shadow-[0_24px_60px_rgba(0,0,0,0.7)]
-             hover:border-[#C6B2FF]/80 floating">
+             hover:border-[#C6B2FF]/80 floating"
+              itemscope
+              itemprop="step"
+              itemtype="https://schema.org/HowToStep">
 
               <div class="mb-5 flex items-center justify-between">
                 <div class="relative">
@@ -1062,15 +1201,16 @@ morocco payment methods,
                 </div>
                 <div
                   class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-lg shadow-md
-                 group-hover:scale-110 group-hover:bg-white/20 transition">
+                 group-hover:scale-110 group-hover:bg-white/20 transition"
+                  aria-hidden="true">
                   🧭
                 </div>
               </div>
 
-              <h3 class="text-lg font-semibold text-white mb-2">
+              <h3 class="text-lg font-semibold text-white mb-2" itemprop="name">
                 Exploration & Strategy
               </h3>
-              <p class="text-sm text-slate-300 leading-relaxed">
+              <p class="text-sm text-slate-300 leading-relaxed" itemprop="text">
                 We clarify your idea, audience and priorities. From this
                 discussion,
                 we build a clear roadmap for your future website or redesign.
@@ -1079,7 +1219,7 @@ morocco payment methods,
           </div>
 
           <!-- STEP 2 -->
-          <div class="relative reveal step-delay-2">
+          <div class="relative reveal step-delay-2" role="listitem">
             <div class="absolute -top-12 left-1/2 -translate-x-1/2">
               <span class="inline-flex items-center rounded-full 
         px-8 py-3 
@@ -1096,7 +1236,10 @@ morocco payment methods,
               class="group rounded-3xl bg-white/5 border border-white/10 px-6 pt-10 pb-8 backdrop-blur-lg
              shadow-[0_18px_45px_rgba(0,0,0,0.45)]
              transition-transform duration-500 hover:-translate-y-3 hover:shadow-[0_24px_60px_rgba(0,0,0,0.7)]
-             hover:border-[#B0E0FF]/80 floating-slower">
+             hover:border-[#B0E0FF]/80 floating-slower"
+              itemscope
+              itemprop="step"
+              itemtype="https://schema.org/HowToStep">
 
               <div class="mb-5 flex items-center justify-between">
                 <div class="relative">
@@ -1110,15 +1253,16 @@ morocco payment methods,
                 </div>
                 <div
                   class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-lg shadow-md
-                 group-hover:scale-110 group-hover:bg-white/20 transition">
+                 group-hover:scale-110 group-hover:bg-white/20 transition"
+                  aria-hidden="true">
                   🧩
                 </div>
               </div>
 
-              <h3 class="text-lg font-semibold text-white mb-2">
+              <h3 class="text-lg font-semibold text-white mb-2" itemprop="name">
                 Design & Development
               </h3>
-              <p class="text-sm text-slate-300 leading-relaxed">
+              <p class="text-sm text-slate-300 leading-relaxed" itemprop="text">
                 We turn your ideas into modern interfaces: mockups, integration,
                 custom development and full testing to ensure performance,
                 security
@@ -1128,7 +1272,7 @@ morocco payment methods,
           </div>
 
           <!-- STEP 3 -->
-          <div class="relative reveal step-delay-3">
+          <div class="relative reveal step-delay-3" role="listitem">
             <div class="absolute -top-12 left-1/2 -translate-x-1/2">
               <span class="inline-flex items-center rounded-full 
         px-8 py-3 
@@ -1145,7 +1289,10 @@ morocco payment methods,
               class="group rounded-3xl bg-white/5 border border-white/10 px-6 pt-10 pb-8 backdrop-blur-lg
              shadow-[0_18px_45px_rgba(0,0,0,0.45)]
              transition-transform duration-500 hover:-translate-y-3 hover:shadow-[0_24px_60px_rgba(0,0,0,0.7)]
-             hover:border-[#F6CED8]/80 floating">
+             hover:border-[#F6CED8]/80 floating"
+              itemscope
+              itemprop="step"
+              itemtype="https://schema.org/HowToStep">
 
               <div class="mb-5 flex items-center justify-between">
                 <div class="relative">
@@ -1159,15 +1306,16 @@ morocco payment methods,
                 </div>
                 <div
                   class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-lg shadow-md
-                 group-hover:scale-110 group-hover:bg-white/20 transition">
+                 group-hover:scale-110 group-hover:bg-white/20 transition"
+                  aria-hidden="true">
                   🚀
                 </div>
               </div>
 
-              <h3 class="text-lg font-semibold text-white mb-2">
+              <h3 class="text-lg font-semibold text-white mb-2" itemprop="name">
                 Launch & Ongoing Support
               </h3>
-              <p class="text-sm text-slate-300 leading-relaxed">
+              <p class="text-sm text-slate-300 leading-relaxed" itemprop="text">
                 We deploy your website, configure analytics tools, and stay with
                 you
                 to optimize, add features and grow your online presence.
@@ -1183,12 +1331,19 @@ morocco payment methods,
      SERVICES — premium grid
 ========================= -->
 
-    <section id="services" class="relative overflow-hidden py-20">
+    <section id="services"
+      class="relative overflow-hidden py-20"
+      aria-labelledby="services-title"
+      itemscope
+      itemtype="https://schema.org/ItemList">
+
       <!-- soft background wash -->
       <div
-        class="absolute inset-0 -z-10 bg-gradient-to-b from-white/50 via-[#F6CED8]/12 to-[#B0E0FF]/12"></div>
+        class="absolute inset-0 -z-10 bg-gradient-to-b from-white/50 via-[#F6CED8]/12 to-[#B0E0FF]/12"
+        aria-hidden="true"></div>
       <div
-        class="absolute -top-28 right-10 h-72 w-72 rounded-full bg-white/40 blur-3xl"></div>
+        class="absolute -top-28 right-10 h-72 w-72 rounded-full bg-white/40 blur-3xl"
+        aria-hidden="true"></div>
 
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <!-- Header -->
@@ -1197,44 +1352,55 @@ morocco payment methods,
             class="inline-flex items-center gap-2 rounded-full bg-white/80 px-4 py-2 text-sm font-semibold text-slate-800 shadow ring-1 ring-white/60 backdrop-blur">
             ✨ Services <span data-year></span>
           </span>
-          <h2 class="mt-4 text-3xl sm:text-4xl font-extrabold tracking-tight">
+          <h2 id="services-title"
+            class="mt-4 text-3xl sm:text-4xl font-extrabold tracking-tight"
+            itemprop="name">
             Web Services
             <span
               class="bg-clip-text text-transparent bg-gradient-to-r from-[#F6CED8] via-[#C6B2FF] to-[#B0E0FF]">
               Tangier Morocco
             </span>
           </h2>
-          <p class="mx-auto mt-3 max-w-3xl text-slate-600">
+          <p class="mx-auto mt-3 max-w-3xl text-slate-600"
+            itemprop="description">
             High-performing & elegant digital experiences: fast websites,
             e-commerce, AI and SEO — all designed to convert.
           </p>
         </div>
 
         <!-- Grid -->
-        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3" role="list">
 
           <!-- Card -->
           <article
-            class="svc-card group reveal relative overflow-hidden rounded-2xl bg-white/80 p-7 shadow-xl ring-1 ring-white/60 backdrop-blur">
+            class="svc-card group reveal relative overflow-hidden rounded-2xl bg-white/80 p-7 shadow-xl ring-1 ring-white/60 backdrop-blur"
+            role="listitem"
+            itemscope
+            itemprop="itemListElement"
+            itemtype="https://schema.org/Service">
             <!-- gradient edge -->
             <span
-              class="svc-edge pointer-events-none absolute -inset-px rounded-[22px] opacity-0 transition duration-500 group-hover:opacity-100"></span>
+              class="svc-edge pointer-events-none absolute -inset-px rounded-[22px] opacity-0 transition duration-500 group-hover:opacity-100"
+              aria-hidden="true"></span>
             <!-- moving halo -->
             <span
-              class="svc-spot pointer-events-none absolute opacity-0 group-hover:opacity-100"></span>
+              class="svc-spot pointer-events-none absolute opacity-0 group-hover:opacity-100"
+              aria-hidden="true"></span>
             <!-- shine sweep -->
             <span
-              class="svc-shine pointer-events-none absolute -left-1/3 top-0 h-full w-1/3 -rotate-12 bg-white/50 blur-xl opacity-0 group-hover:opacity-100"></span>
+              class="svc-shine pointer-events-none absolute -left-1/3 top-0 h-full w-1/3 -rotate-12 bg-white/50 blur-xl opacity-0 group-hover:opacity-100"
+              aria-hidden="true"></span>
 
             <div class="relative z-10">
               <div
                 class="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-xl text-white shadow-lg bg-gradient-to-br from-[#C6B2FF] to-[#B0E0FF]">
-                <span class="text-2xl">🚀</span>
+                <span class="text-2xl" aria-hidden="true">🚀</span>
               </div>
               <h3
-                class="text-xl font-extrabold tracking-tight text-slate-900">“Turbo”
+                class="text-xl font-extrabold tracking-tight text-slate-900"
+                itemprop="name">“Turbo”
                 websites</h3>
-              <p class="mt-2 text-slate-600">
+              <p class="mt-2 text-slate-600" itemprop="description">
                 Ultra-fast landing pages & showcase sites. Smooth animations,
                 green
                 Core Web Vitals and express go-live.
@@ -1252,23 +1418,31 @@ morocco payment methods,
 
           <!-- Card -->
           <article
-            class="svc-card group reveal relative overflow-hidden rounded-2xl bg-white/80 p-7 shadow-xl ring-1 ring-white/60 backdrop-blur">
+            class="svc-card group reveal relative overflow-hidden rounded-2xl bg-white/80 p-7 shadow-xl ring-1 ring-white/60 backdrop-blur"
+            role="listitem"
+            itemscope
+            itemprop="itemListElement"
+            itemtype="https://schema.org/Service">
             <span
-              class="svc-edge pointer-events-none absolute -inset-px rounded-[22px] opacity-0 transition duration-500 group-hover:opacity-100"></span>
+              class="svc-edge pointer-events-none absolute -inset-px rounded-[22px] opacity-0 transition duration-500 group-hover:opacity-100"
+              aria-hidden="true"></span>
             <span
-              class="svc-spot pointer-events-none absolute opacity-0 group-hover:opacity-100"></span>
+              class="svc-spot pointer-events-none absolute opacity-0 group-hover:opacity-100"
+              aria-hidden="true"></span>
             <span
-              class="svc-shine pointer-events-none absolute -left-1/3 top-0 h-full w-1/3 -rotate-12 bg-white/50 blur-xl opacity-0 group-hover:opacity-100"></span>
+              class="svc-shine pointer-events-none absolute -left-1/3 top-0 h-full w-1/3 -rotate-12 bg-white/50 blur-xl opacity-0 group-hover:opacity-100"
+              aria-hidden="true"></span>
 
             <div class="relative z-10">
               <div
                 class="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-xl text-white shadow bg-gradient-to-br from-[#F6CED8] to-[#C6B2FF]">
-                <span class="text-2xl">🛒</span>
+                <span class="text-2xl" aria-hidden="true">🛒</span>
               </div>
               <h3
-                class="text-xl font-extrabold tracking-tight text-slate-900">E-commerce
+                class="text-xl font-extrabold tracking-tight text-slate-900"
+                itemprop="name">E-commerce
                 “à la carte”</h3>
-              <p class="mt-2 text-slate-600">
+              <p class="mt-2 text-slate-600" itemprop="description">
                 Frictionless purchase funnels, payments (CMI/Stripe), SEO-ready
                 product pages and upsell/cross-sell flows.
               </p>
@@ -1284,23 +1458,31 @@ morocco payment methods,
 
           <!-- Card -->
           <article
-            class="svc-card group reveal relative overflow-hidden rounded-2xl bg-white/80 p-7 shadow-xl ring-1 ring-white/60 backdrop-blur">
+            class="svc-card group reveal relative overflow-hidden rounded-2xl bg-white/80 p-7 shadow-xl ring-1 ring-white/60 backdrop-blur"
+            role="listitem"
+            itemscope
+            itemprop="itemListElement"
+            itemtype="https://schema.org/Service">
             <span
-              class="svc-edge pointer-events-none absolute -inset-px rounded-[22px] opacity-0 transition duration-500 group-hover:opacity-100"></span>
+              class="svc-edge pointer-events-none absolute -inset-px rounded-[22px] opacity-0 transition duration-500 group-hover:opacity-100"
+              aria-hidden="true"></span>
             <span
-              class="svc-spot pointer-events-none absolute opacity-0 group-hover:opacity-100"></span>
+              class="svc-spot pointer-events-none absolute opacity-0 group-hover:opacity-100"
+              aria-hidden="true"></span>
             <span
-              class="svc-shine pointer-events-none absolute -left-1/3 top-0 h-full w-1/3 -rotate-12 bg-white/50 blur-xl opacity-0 group-hover:opacity-100"></span>
+              class="svc-shine pointer-events-none absolute -left-1/3 top-0 h-full w-1/3 -rotate-12 bg-white/50 blur-xl opacity-0 group-hover:opacity-100"
+              aria-hidden="true"></span>
 
             <div class="relative z-10">
               <div
                 class="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-xl text-white shadow bg-gradient-to-br from-[#B0E0FF] to-[#C6B2FF]">
-                <span class="text-2xl">🔍</span>
+                <span class="text-2xl" aria-hidden="true">🔍</span>
               </div>
               <h3
-                class="text-xl font-extrabold tracking-tight text-slate-900">Strategic
+                class="text-xl font-extrabold tracking-tight text-slate-900"
+                itemprop="name">Strategic
                 SEO</h3>
-              <p class="mt-2 text-slate-600">
+              <p class="mt-2 text-slate-600" itemprop="description">
                 Architecture, content, link building and clear reporting. Goal:
                 steady leads and long-term visibility.
               </p>
@@ -1316,23 +1498,31 @@ morocco payment methods,
 
           <!-- Card -->
           <article
-            class="svc-card group reveal relative overflow-hidden rounded-2xl bg-white/80 p-7 shadow-xl ring-1 ring-white/60 backdrop-blur">
+            class="svc-card group reveal relative overflow-hidden rounded-2xl bg-white/80 p-7 shadow-xl ring-1 ring-white/60 backdrop-blur"
+            role="listitem"
+            itemscope
+            itemprop="itemListElement"
+            itemtype="https://schema.org/Service">
             <span
-              class="svc-edge pointer-events-none absolute -inset-px rounded-[22px] opacity-0 transition duration-500 group-hover:opacity-100"></span>
+              class="svc-edge pointer-events-none absolute -inset-px rounded-[22px] opacity-0 transition duration-500 group-hover:opacity-100"
+              aria-hidden="true"></span>
             <span
-              class="svc-spot pointer-events-none absolute opacity-0 group-hover:opacity-100"></span>
+              class="svc-spot pointer-events-none absolute opacity-0 group-hover:opacity-100"
+              aria-hidden="true"></span>
             <span
-              class="svc-shine pointer-events-none absolute -left-1/3 top-0 h-full w-1/3 -rotate-12 bg-white/50 blur-xl opacity-0 group-hover:opacity-100"></span>
+              class="svc-shine pointer-events-none absolute -left-1/3 top-0 h-full w-1/3 -rotate-12 bg-white/50 blur-xl opacity-0 group-hover:opacity-100"
+              aria-hidden="true"></span>
 
             <div class="relative z-10">
               <div
                 class="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-xl text-white shadow bg-gradient-to-br from-[#C6B2FF] to-[#F6CED8]">
-                <span class="text-2xl">🤖</span>
+                <span class="text-2xl" aria-hidden="true">🤖</span>
               </div>
               <h3
-                class="text-xl font-extrabold tracking-tight text-slate-900">AI
+                class="text-xl font-extrabold tracking-tight text-slate-900"
+                itemprop="name">AI
                 automation</h3>
-              <p class="mt-2 text-slate-600">
+              <p class="mt-2 text-slate-600" itemprop="description">
                 Chatbots, auto-replies and no/low-code integrations. Save hours
                 every week.
               </p>
@@ -1348,22 +1538,30 @@ morocco payment methods,
 
           <!-- Card -->
           <article
-            class="svc-card group reveal relative overflow-hidden rounded-2xl bg-white/80 p-7 shadow-xl ring-1 ring-white/60 backdrop-blur">
+            class="svc-card group reveal relative overflow-hidden rounded-2xl bg-white/80 p-7 shadow-xl ring-1 ring-white/60 backdrop-blur"
+            role="listitem"
+            itemscope
+            itemprop="itemListElement"
+            itemtype="https://schema.org/Service">
             <span
-              class="svc-edge pointer-events-none absolute -inset-px rounded-[22px] opacity-0 transition duration-500 group-hover:opacity-100"></span>
+              class="svc-edge pointer-events-none absolute -inset-px rounded-[22px] opacity-0 transition duration-500 group-hover:opacity-100"
+              aria-hidden="true"></span>
             <span
-              class="svc-spot pointer-events-none absolute opacity-0 group-hover:opacity-100"></span>
+              class="svc-spot pointer-events-none absolute opacity-0 group-hover:opacity-100"
+              aria-hidden="true"></span>
             <span
-              class="svc-shine pointer-events-none absolute -left-1/3 top-0 h-full w-1/3 -rotate-12 bg-white/50 blur-xl opacity-0 group-hover:opacity-100"></span>
+              class="svc-shine pointer-events-none absolute -left-1/3 top-0 h-full w-1/3 -rotate-12 bg-white/50 blur-xl opacity-0 group-hover:opacity-100"
+              aria-hidden="true"></span>
 
             <div class="relative z-10">
               <div
                 class="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-xl text-white shadow bg-gradient-to-br from-[#B0E0FF] to-[#C6B2FF]">
-                <span class="text-2xl">📱</span>
+                <span class="text-2xl" aria-hidden="true">📱</span>
               </div>
               <h3
-                class="text-xl font-extrabold tracking-tight text-slate-900">Mobile-first</h3>
-              <p class="mt-2 text-slate-600">
+                class="text-xl font-extrabold tracking-tight text-slate-900"
+                itemprop="name">Mobile-first</h3>
+              <p class="mt-2 text-slate-600" itemprop="description">
                 Interfaces adapted to every screen. Clear forms, carefully
                 crafted
                 speed and accessibility.
@@ -1380,23 +1578,31 @@ morocco payment methods,
 
           <!-- Card -->
           <article
-            class="svc-card group reveal relative overflow-hidden rounded-2xl bg-white/80 p-7 shadow-xl ring-1 ring-white/60 backdrop-blur">
+            class="svc-card group reveal relative overflow-hidden rounded-2xl bg-white/80 p-7 shadow-xl ring-1 ring-white/60 backdrop-blur"
+            role="listitem"
+            itemscope
+            itemprop="itemListElement"
+            itemtype="https://schema.org/Service">
             <span
-              class="svc-edge pointer-events-none absolute -inset-px rounded-[22px] opacity-0 transition duration-500 group-hover:opacity-100"></span>
+              class="svc-edge pointer-events-none absolute -inset-px rounded-[22px] opacity-0 transition duration-500 group-hover:opacity-100"
+              aria-hidden="true"></span>
             <span
-              class="svc-spot pointer-events-none absolute opacity-0 group-hover:opacity-100"></span>
+              class="svc-spot pointer-events-none absolute opacity-0 group-hover:opacity-100"
+              aria-hidden="true"></span>
             <span
-              class="svc-shine pointer-events-none absolute -left-1/3 top-0 h-full w-1/3 -rotate-12 bg-white/50 blur-xl opacity-0 group-hover:opacity-100"></span>
+              class="svc-shine pointer-events-none absolute -left-1/3 top-0 h-full w-1/3 -rotate-12 bg-white/50 blur-xl opacity-0 group-hover:opacity-100"
+              aria-hidden="true"></span>
 
             <div class="relative z-10">
               <div
                 class="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-xl text-white shadow bg-gradient-to-br from-[#C6B2FF] to-[#B0E0FF]">
-                <span class="text-2xl">🧩</span>
+                <span class="text-2xl" aria-hidden="true">🧩</span>
               </div>
               <h3
-                class="text-xl font-extrabold tracking-tight text-slate-900">Custom
+                class="text-xl font-extrabold tracking-tight text-slate-900"
+                itemprop="name">Custom
                 development</h3>
-              <p class="mt-2 text-slate-600">
+              <p class="mt-2 text-slate-600" itemprop="description">
                 Custom apps (React, Next.js, Laravel). APIs, dashboards and
                 advanced
                 business integrations.
@@ -1422,20 +1628,28 @@ morocco payment methods,
   <section id="contact" class="py-24"></section> -->
 
     <!-- PRICING SECTION -->
-    <section class="relative py-20 overflow-hidden pricing-section">
+    <section id="pricing"
+      class="relative py-20 overflow-hidden pricing-section"
+      aria-labelledby="pricing-title"
+      itemscope
+      itemtype="https://schema.org/ItemList">
 
       <!-- Floating gradient dots -->
-      <span class="pricing-dot dot-1 top-10 left-1/4"></span>
-      <span class="pricing-dot dot-2 top-1/3 right-12"></span>
-      <span class="pricing-dot dot-3 bottom-10 left-10"></span>
+      <span class="pricing-dot dot-1 top-10 left-1/4" aria-hidden="true"></span>
+      <span class="pricing-dot dot-2 top-1/3 right-12"
+        aria-hidden="true"></span>
+      <span class="pricing-dot dot-3 bottom-10 left-10"
+        aria-hidden="true"></span>
 
       <!-- Background blobs -->
       <div
         class="pointer-events-none absolute -top-40 -left-32 w-72 h-72 rounded-full opacity-50"
-        style="background: radial-gradient(circle, #F6CED8, #C6B2FF, #B0E0FF); filter: blur(60px);"></div>
+        style="background: radial-gradient(circle, #F6CED8, #C6B2FF, #B0E0FF); filter: blur(60px);"
+        aria-hidden="true"></div>
       <div
         class="pointer-events-none absolute -bottom-40 right-0 w-80 h-80 rounded-full opacity-40"
-        style="background: radial-gradient(circle, #B0E0FF, #C6B2FF, #F6CED8); filter: blur(70px);"></div>
+        style="background: radial-gradient(circle, #B0E0FF, #C6B2FF, #F6CED8); filter: blur(70px);"
+        aria-hidden="true"></div>
 
       <div class="relative max-w-6xl mx-auto px-4">
 
@@ -1447,63 +1661,40 @@ morocco payment methods,
             💡 Our offers <span class="year" data-year></span>
           </span>
           <h2
-            class="text-3xl sm:text-4xl font-extrabold tracking-tight text-[#1A1740]">
+            id="pricing-title"
+            class="text-3xl sm:text-4xl font-extrabold tracking-tight text-[#1A1740]"
+            itemprop="name">
             Our Website Creation Packs
           </h2>
-          <p class="text-sm sm:text-base text-slate-500">
+          <p class="text-sm sm:text-base text-slate-500" itemprop="description">
             Clear packages to launch, grow or scale your online presence.
             Custom design, performance, security and ongoing guidance included.
           </p>
 
           <!-- BILLING TOGGLE -->
-          <!-- <div class="mt-5 flex flex-col items-center gap-3">
-            <span
-              class="text-[11px] sm:text-xs text-slate-400 uppercase tracking-[0.14em]">
-              Billing mode
-            </span>
-
-            <div id="billingToggle"
-              class="billing-toggle relative inline-flex items-center rounded-full bg-white shadow-[0_12px_30px_rgba(15,23,42,0.12)]
-                border border-[#E0E3FF] px-1 py-1 text-xs sm:text-[13px] font-medium text-slate-500 overflow-hidden">
-              <div id="billingHighlight"
-                class="billing-highlight absolute inset-y-1 left-1 w-1/2 rounded-full
-                  bg-gradient-to-r from-[#F6CED8] via-[#C6B2FF] to-[#B0E0FF]
-                  shadow-[0_0_18px_rgba(141,120,255,0.7)]
-                  transition-transform duration-300 ease-out"></div>
-
-              <button type="button"
-                class="billing-option relative z-10 px-4 py-1 rounded-full flex items-center gap-1 text-[#1A1740]">
-                <span class="text-[11px]">Per project</span>
-              </button>
-              <button type="button"
-                class="billing-option relative z-10 px-4 py-1 rounded-full flex items-center gap-1 opacity-70">
-                <span class="text-[11px]">Monthly</span>
-              </button>
-            </div>
-
-            <p class="text-[11px] text-slate-400">
-              Compare the cost as a <span class="font-semibold">one-off
-                project</span> or as a <span class="font-semibold">monthly
-                subscription</span>.
-            </p>
-          </div> -->
+          <!-- (kept commented out) -->
         </div>
 
         <!-- CARDS GRID -->
-        <div class="mt-14 grid gap-6 lg:gap-8 lg:grid-cols-3 items-stretch">
+        <div class="mt-14 grid gap-6 lg:gap-8 lg:grid-cols-3 items-stretch"
+          role="list">
 
           <!-- PACK STARTER -->
           <article
             class="pricing-card pricing-reveal rounded-[28px] bg-white shadow-[0_18px_60px_rgba(15,23,42,0.12)]
-               border border-[#E1E3FA] flex flex-col overflow-hidden relative">
+               border border-[#E1E3FA] flex flex-col overflow-hidden relative"
+            role="listitem"
+            itemscope
+            itemprop="itemListElement"
+            itemtype="https://schema.org/Offer">
             <!-- Head -->
             <div class="px-6 pt-6 pb-3 flex items-center justify-between">
               <div class="flex flex-col gap-1">
                 <span
                   class="inline-flex items-center gap-1 text-[11px] font-semibold text-[#1A1740]">
-                  🪄 Starter Pack
+                  🪄 <span itemprop="name">Starter Pack</span>
                 </span>
-                <span class="text-[11px] text-slate-400">
+                <span class="text-[11px] text-slate-400" itemprop="category">
                   Ideal for small businesses and independents
                 </span>
               </div>
@@ -1514,18 +1705,22 @@ morocco payment methods,
 
             <div class="px-6 pb-6 pt-1 flex-1 flex flex-col">
               <!-- Price -->
-              <div class="flex items-baseline gap-1 mb-4">
+              <div class="flex items-baseline gap-1 mb-4"
+                itemprop="priceSpecification" itemscope
+                itemtype="https://schema.org/PriceSpecification">
                 <span class="text-3xl font-extrabold text-[#1A1740] price"
-                  data-project="2490" data-monthly="149">
+                  data-project="2490" data-monthly="149"
+                  itemprop="price">
                   2 490
                 </span>
-                <span class="text-base font-semibold text-[#1A1740]">MAD</span>
+                <span class="text-base font-semibold text-[#1A1740]"
+                  itemprop="priceCurrency">MAD</span>
                 <span class="text-[11px] text-slate-400 price-label">
                   / project
                 </span>
               </div>
 
-              <p class="text-sm text-slate-500 mb-4">
+              <p class="text-sm text-slate-500 mb-4" itemprop="description">
                 Perfect first step to get your business online quickly and
                 professionally.
               </p>
@@ -1567,7 +1762,8 @@ morocco payment methods,
                 target="_blank" rel="noopener"
                 class="mt-auto inline-flex justify-center items-center w-full rounded-full border border-[#E3E5FF]
           py-2.5 text-sm font-semibold text-[#6C63FF] hover:border-[#C6B2FF] hover:bg-[#F5F3FF]
-          transition">
+          transition"
+                aria-label="Contact us on WhatsApp about the Starter Pack website creation offer">
                 Choose Starter Pack
               </a>
 
@@ -1578,10 +1774,15 @@ morocco payment methods,
           <article
             class="pricing-card pricing-reveal relative rounded-[32px] bg-[#05081F] text-white
                shadow-[0_24px_80px_rgba(15,23,42,0.55)] border border-transparent
-               lg:-mt-6 lg:mb-2">
+               lg:-mt-6 lg:mb-2"
+            role="listitem"
+            itemscope
+            itemprop="itemListElement"
+            itemtype="https://schema.org/Offer">
             <!-- Outer halo -->
             <div class="pointer-events-none absolute inset-0 rounded-[32px]
-                 bg-gradient-to-br from-[#F6CED8] via-[#C6B2FF] to-[#B0E0FF] opacity-60 blur-xl"></div>
+                 bg-gradient-to-br from-[#F6CED8] via-[#C6B2FF] to-[#B0E0FF] opacity-60 blur-xl"
+              aria-hidden="true"></div>
 
             <div
               class="relative z-10 overflow-hidden rounded-[32px] shine-card">
@@ -1606,9 +1807,10 @@ morocco payment methods,
                 <!-- Title -->
                 <div class="flex items-baseline justify-between mb-3">
                   <div>
-                    <h3 class="text-lg font-semibold tracking-tight">Business
+                    <h3 class="text-lg font-semibold tracking-tight"
+                      itemprop="name">Business
                       Pack</h3>
-                    <p class="text-[11px] text-slate-300">
+                    <p class="text-[11px] text-slate-300" itemprop="category">
                       Ideal for growing businesses that want to convert more
                       clients.
                     </p>
@@ -1619,18 +1821,23 @@ morocco payment methods,
                 </div>
 
                 <!-- Price -->
-                <div class="flex items-baseline gap-1 mb-4">
+                <div class="flex items-baseline gap-1 mb-4"
+                  itemprop="priceSpecification" itemscope
+                  itemtype="https://schema.org/PriceSpecification">
                   <span class="text-4xl font-extrabold price"
-                    data-project="4990" data-monthly="289">
+                    data-project="4990" data-monthly="289"
+                    itemprop="price">
                     4 990
                   </span>
-                  <span class="text-base font-semibold">MAD</span>
+                  <span class="text-base font-semibold"
+                    itemprop="priceCurrency">MAD</span>
                   <span class="text-[11px] text-slate-300 price-label">
                     / project
                   </span>
                 </div>
 
-                <ul class="space-y-2 text-sm text-slate-100 mb-5">
+                <ul class="space-y-2 text-sm text-slate-100 mb-5"
+                  itemprop="description">
                   <li class="flex gap-2 items-start">
                     <span class="check-pill">✓</span>
                     <span>10-page showcase website + blog</span>
@@ -1676,7 +1883,8 @@ morocco payment methods,
           bg-gradient-to-r from-[#F6CED8] via-[#C6B2FF] to-[#B0E0FF]
           shadow-[0_18px_40px_rgba(0,0,0,0.65)]
           hover:shadow-[0_22px_55px_rgba(0,0,0,0.8)]
-          transition-transform duration-300 hover:-translate-y-0.5">
+          transition-transform duration-300 hover:-translate-y-0.5"
+                  aria-label="Contact us on WhatsApp about the Business Pack website creation offer">
                   Choose Business Pack
                 </a>
 
@@ -1690,15 +1898,19 @@ morocco payment methods,
           <!-- PACK PREMIUM -->
           <article
             class="pricing-card pricing-reveal rounded-[28px] bg-white shadow-[0_18px_60px_rgba(15,23,42,0.12)]
-               border border-[#E1E3FA] flex flex-col overflow-hidden relative">
+               border border-[#E1E3FA] flex flex-col overflow-hidden relative"
+            role="listitem"
+            itemscope
+            itemprop="itemListElement"
+            itemtype="https://schema.org/Offer">
             <!-- Head -->
             <div class="px-6 pt-6 pb-3 flex items-center justify-between">
               <div class="flex flex-col gap-1">
                 <span
                   class="inline-flex items-center gap-1 text-[11px] font-semibold text-[#1A1740]">
-                  🏆 Premium Pack
+                  🏆 <span itemprop="name">Premium Pack</span>
                 </span>
-                <span class="text-[11px] text-slate-400">
+                <span class="text-[11px] text-slate-400" itemprop="category">
                   For ambitious brands and advanced projects
                 </span>
               </div>
@@ -1709,18 +1921,22 @@ morocco payment methods,
 
             <div class="px-6 pb-6 pt-1 flex-1 flex flex-col">
               <!-- Price -->
-              <div class="flex items-baseline gap-1 mb-4">
+              <div class="flex items-baseline gap-1 mb-4"
+                itemprop="priceSpecification" itemscope
+                itemtype="https://schema.org/PriceSpecification">
                 <span class="text-3xl font-extrabold text-[#1A1740] price"
-                  data-project="8990" data-monthly="499">
+                  data-project="8990" data-monthly="499"
+                  itemprop="price">
                   8 990
                 </span>
-                <span class="text-base font-semibold text-[#1A1740]">MAD</span>
+                <span class="text-base font-semibold text-[#1A1740]"
+                  itemprop="priceCurrency">MAD</span>
                 <span class="text-[11px] text-slate-400 price-label">
                   / project
                 </span>
               </div>
 
-              <p class="text-sm text-slate-500 mb-4">
+              <p class="text-sm text-slate-500 mb-4" itemprop="description">
                 Complete solution for ambitious brands, online shops and
                 projects that need more advanced features.
               </p>
@@ -1760,7 +1976,8 @@ morocco payment methods,
                 target="_blank" rel="noopener"
                 class="mt-auto inline-flex justify-center items-center w-full rounded-full border border-[#E3E5FF]
           py-2.5 text-sm font-semibold text-[#1A1740] hover:border-[#C6B2FF] hover:bg-[#F5F3FF]
-          transition">
+          transition"
+                aria-label="Contact us on WhatsApp about the Premium Pack advanced website creation offer">
                 Choose Premium Pack
               </a>
 
@@ -1774,7 +1991,8 @@ morocco payment methods,
           Do you have a specific need (intranet, web application, custom
           platform)?
           <a href="contact.html"
-            class="font-semibold text-[#6C63FF] hover:underline transition">
+            class="font-semibold text-[#6C63FF] hover:underline transition"
+            aria-label="Contact us to get a personalised proposal for a custom web application or platform">
             Contact us for a personalised proposal.
           </a>
         </div>
@@ -1782,10 +2000,13 @@ morocco payment methods,
       </div>
     </section>
 
-    <section
-      class="relative overflow-hidden bg-gradient-to-br from-[#F6CED8] via-[#C6B2FF] to-[#B0E0FF] text-slate-900">
+    <section id="responsive-design"
+      class="relative overflow-hidden bg-gradient-to-br from-[#F6CED8] via-[#C6B2FF] to-[#B0E0FF] text-slate-900"
+      aria-labelledby="responsive-title">
+
       <!-- Animated dots -->
-      <div class="pointer-events-none absolute inset-0 overflow-hidden">
+      <div class="pointer-events-none absolute inset-0 overflow-hidden"
+        aria-hidden="true">
         <span
           class="dot dot-fast absolute top-8 left-10 w-2 h-2 rounded-full bg-white/60"></span>
         <span
@@ -1816,7 +2037,8 @@ morocco payment methods,
           </p>
 
           <!-- Title -->
-          <h1 class="text-[2.4rem] font-extrabold leading-tight sm:text-5xl">
+          <h2 id="responsive-title"
+            class="text-[2.4rem] font-extrabold leading-tight sm:text-5xl">
             <span class="block text-slate-900">
               A website that adapts
             </span>
@@ -1824,7 +2046,7 @@ morocco payment methods,
             <!-- animated line word by word -->
             <span id="heading-animated"
               data-text="to every screen & every language" class="block"></span>
-          </h1>
+          </h2>
 
           <!-- Sentence that will be animated word by word -->
           <p id="animated-line"
@@ -1854,7 +2076,8 @@ morocco payment methods,
           <!-- CTA -->
           <div class="flex flex-wrap items-center gap-4 pt-4">
             <a href="portfolio.html"
-              class="rounded-full bg-slate-900 px-6 py-2.5 text-sm font-semibold text-white shadow-lg shadow-slate-900/25 transition hover:-translate-y-0.5 hover:bg-slate-800">
+              class="rounded-full bg-slate-900 px-6 py-2.5 text-sm font-semibold text-white shadow-lg shadow-slate-900/25 transition hover:-translate-y-0.5 hover:bg-slate-800"
+              aria-label="View an example of a responsive, multilingual website project built with Laravel, React and Tailwind CSS">
               View a project example
             </a>
           </div>
@@ -1870,26 +2093,37 @@ morocco payment methods,
 
         <!-- RIGHT : CREATIVE CARD -->
         <div class="w-full relative">
-          <div class="absolute inset-0 -z-10 blur-2xl rounded-3xl"></div>
+          <div class="absolute inset-0 -z-10 blur-2xl rounded-3xl"
+            aria-hidden="true"></div>
 
-          <img src="assets/img/responsive.png" alt="Creative preview"
-            class="rounded-3xl w-full object-cover" />
+          <img
+            src="assets/img/responsive.png"
+            alt="Preview of a responsive, multilingual website layout displayed on multiple devices"
+            class="rounded-3xl w-full object-cover"
+            loading="lazy"
+            decoding="async"
+            width="960"
+            height="540" />
         </div>
 
       </div>
     </section>
 
-    <section class="acc-section">
+    <section id="faq"
+      class="acc-section"
+      aria-labelledby="faq-title"
+      itemscope
+      itemtype="https://schema.org/FAQPage">
       <div class="acc-inner">
 
         <!-- Dots on the left of the title -->
-        <div class="acc-dots">
+        <div class="acc-dots" aria-hidden="true">
           <span class="acc-dot acc-dot--pink"></span>
           <span class="acc-dot acc-dot--lav"></span>
           <span class="acc-dot acc-dot--sky"></span>
         </div>
 
-        <h2 class="acc-title">Frequently Asked Questions</h2>
+        <h2 id="faq-title" class="acc-title">Frequently Asked Questions</h2>
         <p class="acc-subtitle">
           Clear answers to the questions our clients ask the most.
         </p>
@@ -1897,16 +2131,22 @@ morocco payment methods,
         <div class="acc-list">
 
           <!-- FAQ 1 (open by default) -->
-          <article class="acc-item acc-item-active">
+          <article class="acc-item acc-item-active"
+            itemscope
+            itemprop="mainEntity"
+            itemtype="https://schema.org/Question">
             <button class="acc-item-header" type="button">
               <div class="acc-avatar">Q1</div>
               <div class="acc-headline">
-                <h3>Can I build a website myself?</h3>
+                <h3 itemprop="name">Can I build a website myself?</h3>
               </div>
               <div class="acc-toggle-icon">−</div>
             </button>
-            <div class="acc-item-body">
-              <p>
+            <div class="acc-item-body"
+              itemscope
+              itemprop="acceptedAnswer"
+              itemtype="https://schema.org/Answer">
+              <p itemprop="text">
                 Yes, technically you can — just like you can try to repair your
                 own car.
                 But trusting a professional guarantees a faster, safer and more
@@ -1917,16 +2157,23 @@ morocco payment methods,
           </article>
 
           <!-- FAQ 2 -->
-          <article class="acc-item">
+          <article class="acc-item"
+            itemscope
+            itemprop="mainEntity"
+            itemtype="https://schema.org/Question">
             <button class="acc-item-header" type="button">
               <div class="acc-avatar">Q2</div>
               <div class="acc-headline">
-                <h3>What budget should I plan for a professional website?</h3>
+                <h3 itemprop="name">What budget should I plan for a professional
+                  website?</h3>
               </div>
               <div class="acc-toggle-icon">+</div>
             </button>
-            <div class="acc-item-body">
-              <p>
+            <div class="acc-item-body"
+              itemscope
+              itemprop="acceptedAnswer"
+              itemtype="https://schema.org/Answer">
+              <p itemprop="text">
                 It depends on your needs: a simple showcase website costs less
                 than an online store
                 or a custom platform. We provide clear, transparent pricing with
@@ -1936,16 +2183,23 @@ morocco payment methods,
           </article>
 
           <!-- FAQ 3 -->
-          <article class="acc-item">
+          <article class="acc-item"
+            itemscope
+            itemprop="mainEntity"
+            itemtype="https://schema.org/Question">
             <button class="acc-item-header" type="button">
               <div class="acc-avatar">Q3</div>
               <div class="acc-headline">
-                <h3>How long does it take to build my website?</h3>
+                <h3 itemprop="name">How long does it take to build my
+                  website?</h3>
               </div>
               <div class="acc-toggle-icon">+</div>
             </button>
-            <div class="acc-item-body">
-              <p>
+            <div class="acc-item-body"
+              itemscope
+              itemprop="acceptedAnswer"
+              itemtype="https://schema.org/Answer">
+              <p itemprop="text">
                 Depending on complexity, a website normally takes between a few
                 days
                 and a few weeks. We share a timeline with you before starting.
@@ -1954,16 +2208,22 @@ morocco payment methods,
           </article>
 
           <!-- FAQ 4 -->
-          <article class="acc-item">
+          <article class="acc-item"
+            itemscope
+            itemprop="mainEntity"
+            itemtype="https://schema.org/Question">
             <button class="acc-item-header" type="button">
               <div class="acc-avatar">Q4</div>
               <div class="acc-headline">
-                <h3>Can I follow the creation process?</h3>
+                <h3 itemprop="name">Can I follow the creation process?</h3>
               </div>
               <div class="acc-toggle-icon">+</div>
             </button>
-            <div class="acc-item-body">
-              <p>
+            <div class="acc-item-body"
+              itemscope
+              itemprop="acceptedAnswer"
+              itemtype="https://schema.org/Answer">
+              <p itemprop="text">
                 Yes. You receive updates at each key stage and can request
                 adjustments
                 whenever needed. You remain fully involved.
@@ -1972,16 +2232,23 @@ morocco payment methods,
           </article>
 
           <!-- FAQ 5 -->
-          <article class="acc-item">
+          <article class="acc-item"
+            itemscope
+            itemprop="mainEntity"
+            itemtype="https://schema.org/Question">
             <button class="acc-item-header" type="button">
               <div class="acc-avatar">Q5</div>
               <div class="acc-headline">
-                <h3>Will my website be responsive (mobile/tablet)?</h3>
+                <h3 itemprop="name">Will my website be responsive
+                  (mobile/tablet)?</h3>
               </div>
               <div class="acc-toggle-icon">+</div>
             </button>
-            <div class="acc-item-body">
-              <p>
+            <div class="acc-item-body"
+              itemscope
+              itemprop="acceptedAnswer"
+              itemtype="https://schema.org/Answer">
+              <p itemprop="text">
                 Absolutely. All our websites are fully responsive and optimized
                 for
                 every device: mobile, tablet, and desktop.
@@ -1990,16 +2257,22 @@ morocco payment methods,
           </article>
 
           <!-- FAQ 6 -->
-          <article class="acc-item">
+          <article class="acc-item"
+            itemscope
+            itemprop="mainEntity"
+            itemtype="https://schema.org/Question">
             <button class="acc-item-header" type="button">
               <div class="acc-avatar">Q6</div>
               <div class="acc-headline">
-                <h3>Will the website belong to me?</h3>
+                <h3 itemprop="name">Will the website belong to me?</h3>
               </div>
               <div class="acc-toggle-icon">+</div>
             </button>
-            <div class="acc-item-body">
-              <p>
+            <div class="acc-item-body"
+              itemscope
+              itemprop="acceptedAnswer"
+              itemtype="https://schema.org/Answer">
+              <p itemprop="text">
                 Yes. Once delivered, the website, content, and domain are fully
                 yours.
               </p>
@@ -2007,16 +2280,23 @@ morocco payment methods,
           </article>
 
           <!-- FAQ 7 -->
-          <article class="acc-item">
+          <article class="acc-item"
+            itemscope
+            itemprop="mainEntity"
+            itemtype="https://schema.org/Question">
             <button class="acc-item-header" type="button">
               <div class="acc-avatar">Q7</div>
               <div class="acc-headline">
-                <h3>What should I do once my website is online?</h3>
+                <h3 itemprop="name">What should I do once my website is
+                  online?</h3>
               </div>
               <div class="acc-toggle-icon">+</div>
             </button>
-            <div class="acc-item-body">
-              <p>
+            <div class="acc-item-body"
+              itemscope
+              itemprop="acceptedAnswer"
+              itemtype="https://schema.org/Answer">
+              <p itemprop="text">
                 We guide you with SEO, content strategy and essential tools so
                 your
                 website attracts visitors and converts them into clients.
@@ -2025,16 +2305,23 @@ morocco payment methods,
           </article>
 
           <!-- FAQ 8 -->
-          <article class="acc-item">
+          <article class="acc-item"
+            itemscope
+            itemprop="mainEntity"
+            itemtype="https://schema.org/Question">
             <button class="acc-item-header" type="button">
               <div class="acc-avatar">Q8</div>
               <div class="acc-headline">
-                <h3>How can I attract visitors to my website?</h3>
+                <h3 itemprop="name">How can I attract visitors to my
+                  website?</h3>
               </div>
               <div class="acc-toggle-icon">+</div>
             </button>
-            <div class="acc-item-body">
-              <p>
+            <div class="acc-item-body"
+              itemscope
+              itemprop="acceptedAnswer"
+              itemtype="https://schema.org/Answer">
+              <p itemprop="text">
                 Through SEO, Google indexing, high-quality content, social
                 media,
                 email campaigns and targeted ads. We help you set everything up.
@@ -2043,16 +2330,22 @@ morocco payment methods,
           </article>
 
           <!-- FAQ 9 -->
-          <article class="acc-item">
+          <article class="acc-item"
+            itemscope
+            itemprop="mainEntity"
+            itemtype="https://schema.org/Question">
             <button class="acc-item-header" type="button">
               <div class="acc-avatar">Q9</div>
               <div class="acc-headline">
-                <h3>What if I need changes later?</h3>
+                <h3 itemprop="name">What if I need changes later?</h3>
               </div>
               <div class="acc-toggle-icon">+</div>
             </button>
-            <div class="acc-item-body">
-              <p>
+            <div class="acc-item-body"
+              itemscope
+              itemprop="acceptedAnswer"
+              itemtype="https://schema.org/Answer">
+              <p itemprop="text">
                 No problem. You can update your content yourself or use our
                 support
                 service for fast, professional modifications.
@@ -2061,16 +2354,22 @@ morocco payment methods,
           </article>
 
           <!-- FAQ 10 -->
-          <article class="acc-item">
+          <article class="acc-item"
+            itemscope
+            itemprop="mainEntity"
+            itemtype="https://schema.org/Question">
             <button class="acc-item-header" type="button">
               <div class="acc-avatar">Q10</div>
               <div class="acc-headline">
-                <h3>Will my website be indexed on Google?</h3>
+                <h3 itemprop="name">Will my website be indexed on Google?</h3>
               </div>
               <div class="acc-toggle-icon">+</div>
             </button>
-            <div class="acc-item-body">
-              <p>
+            <div class="acc-item-body"
+              itemscope
+              itemprop="acceptedAnswer"
+              itemtype="https://schema.org/Answer">
+              <p itemprop="text">
                 Yes. We optimize your pages for search engines and submit your
                 website
                 to Google Search Console to ensure proper indexing.
@@ -2079,16 +2378,22 @@ morocco payment methods,
           </article>
 
           <!-- FAQ 11 -->
-          <article class="acc-item">
+          <article class="acc-item"
+            itemscope
+            itemprop="mainEntity"
+            itemtype="https://schema.org/Question">
             <button class="acc-item-header" type="button">
               <div class="acc-avatar">Q11</div>
               <div class="acc-headline">
-                <h3>Can I sell products on my website?</h3>
+                <h3 itemprop="name">Can I sell products on my website?</h3>
               </div>
               <div class="acc-toggle-icon">+</div>
             </button>
-            <div class="acc-item-body">
-              <p>
+            <div class="acc-item-body"
+              itemscope
+              itemprop="acceptedAnswer"
+              itemtype="https://schema.org/Answer">
+              <p itemprop="text">
                 Yes. We can integrate a full e-commerce system with secure
                 online
                 payments (Stripe, PayPal, Apple Pay, etc.).
@@ -2097,16 +2402,22 @@ morocco payment methods,
           </article>
 
           <!-- FAQ 12 -->
-          <article class="acc-item">
+          <article class="acc-item"
+            itemscope
+            itemprop="mainEntity"
+            itemtype="https://schema.org/Question">
             <button class="acc-item-header" type="button">
               <div class="acc-avatar">Q12</div>
               <div class="acc-headline">
-                <h3>Can I manage the website myself?</h3>
+                <h3 itemprop="name">Can I manage the website myself?</h3>
               </div>
               <div class="acc-toggle-icon">+</div>
             </button>
-            <div class="acc-item-body">
-              <p>
+            <div class="acc-item-body"
+              itemscope
+              itemprop="acceptedAnswer"
+              itemtype="https://schema.org/Answer">
+              <p itemprop="text">
                 Yes. You’ll receive access to a simple dashboard to manage text,
                 images, blog posts, products and more.
               </p>
@@ -2114,16 +2425,23 @@ morocco payment methods,
           </article>
 
           <!-- FAQ 13 -->
-          <article class="acc-item">
+          <article class="acc-item"
+            itemscope
+            itemprop="mainEntity"
+            itemtype="https://schema.org/Question">
             <button class="acc-item-header" type="button">
               <div class="acc-avatar">Q13</div>
               <div class="acc-headline">
-                <h3>Do you provide hosting and domain names?</h3>
+                <h3 itemprop="name">Do you provide hosting and domain
+                  names?</h3>
               </div>
               <div class="acc-toggle-icon">+</div>
             </button>
-            <div class="acc-item-body">
-              <p>
+            <div class="acc-item-body"
+              itemscope
+              itemprop="acceptedAnswer"
+              itemtype="https://schema.org/Answer">
+              <p itemprop="text">
                 Yes. We can take care of everything: hosting, domain
                 registration,
                 SSL certificate and security setup.
@@ -2132,17 +2450,24 @@ morocco payment methods,
           </article>
 
           <!-- FAQ 14 -->
-          <article class="acc-item">
+          <article class="acc-item"
+            itemscope
+            itemprop="mainEntity"
+            itemtype="https://schema.org/Question">
             <button class="acc-item-header" type="button">
               <div class="acc-avatar">Q14</div>
               <div class="acc-headline">
-                <h3>Can I connect my site to WhatsApp, Instagram or
+                <h3 itemprop="name">Can I connect my site to WhatsApp, Instagram
+                  or
                   Facebook?</h3>
               </div>
               <div class="acc-toggle-icon">+</div>
             </button>
-            <div class="acc-item-body">
-              <p>
+            <div class="acc-item-body"
+              itemscope
+              itemprop="acceptedAnswer"
+              itemtype="https://schema.org/Answer">
+              <p itemprop="text">
                 Yes. We integrate messaging buttons, social links, Facebook
                 Pixel,
                 tracking and Instagram feeds to boost engagement.
@@ -2154,17 +2479,22 @@ morocco payment methods,
       </div>
     </section>
 
-    <section class="crv-section">
+    <section id="testimonials"
+      class="crv-section"
+      aria-labelledby="testimonials-title"
+      itemscope
+      itemtype="https://schema.org/Review">
 
       <div class="crv-header">
         <div class="crv-title-badge">
           <span class="crv-title-icon">💬</span>
-          <span class="crv-title-text">What our clients say</span>
+          <span class="crv-title-text" id="testimonials-title">What our clients
+            say</span>
         </div>
       </div>
 
       <!-- floating dots -->
-      <div class="crv-orbit">
+      <div class="crv-orbit" aria-hidden="true">
         <span class="crv-orbit-dot crv-orbit-dot--pink"></span>
         <span class="crv-orbit-dot crv-orbit-dot--lav"></span>
         <span class="crv-orbit-dot crv-orbit-dot--sky"></span>
@@ -2174,8 +2504,7 @@ morocco payment methods,
         <header class="crv-header">
           <p class="crv-subtitle">
             Real feedback from real people. These stories show how we help
-            brands feel more
-            trusted, modern and easy to work with.
+            brands feel more trusted, modern and easy to work with.
           </p>
         </header>
 
@@ -2185,18 +2514,25 @@ morocco payment methods,
             <div class="crv-slider" data-slider="main">
 
               <!-- Review 1 -->
-              <article class="crv-slide crv-slide-active">
+              <article class="crv-slide crv-slide-active"
+                itemscope
+                itemprop="review"
+                itemtype="https://schema.org/Review">
+
                 <div class="crv-top">
                   <div class="crv-avatar">SM</div>
                   <div class="crv-ident">
-                    <div class="crv-name">Sarah Mitchell</div>
+                    <div class="crv-name" itemprop="author">Sarah Mitchell</div>
                     <div class="crv-role">Brand Owner • Paris</div>
-                    <div class="crv-stars">★★★★★</div>
+                    <div class="crv-stars" itemprop="reviewRating" itemscope
+                      itemtype="https://schema.org/Rating">
+                      <span itemprop="ratingValue">5</span>★★★★★
+                    </div>
                   </div>
                   <span class="crv-tag">Featured</span>
                 </div>
 
-                <p class="crv-text">
+                <p class="crv-text" itemprop="reviewBody">
                   “From the first call to the final result everything felt
                   smooth and simple.
                   Our clients now see a professional image the second they land
@@ -2205,18 +2541,25 @@ morocco payment methods,
               </article>
 
               <!-- Review 2 -->
-              <article class="crv-slide">
+              <article class="crv-slide"
+                itemscope
+                itemprop="review"
+                itemtype="https://schema.org/Review">
+
                 <div class="crv-top">
                   <div class="crv-avatar">JC</div>
                   <div class="crv-ident">
-                    <div class="crv-name">James Carter</div>
+                    <div class="crv-name" itemprop="author">James Carter</div>
                     <div class="crv-role">E-commerce Founder</div>
-                    <div class="crv-stars">★★★★★</div>
+                    <div class="crv-stars" itemprop="reviewRating" itemscope
+                      itemtype="https://schema.org/Rating">
+                      <span itemprop="ratingValue">5</span>★★★★★
+                    </div>
                   </div>
                   <span class="crv-tag">5★ rated</span>
                 </div>
 
-                <p class="crv-text">
+                <p class="crv-text" itemprop="reviewBody">
                   “We saw an instant lift in trust. The new design looks like a
                   real product,
                   and the review section is the part customers mention the
@@ -2225,18 +2568,25 @@ morocco payment methods,
               </article>
 
               <!-- Review 3 -->
-              <article class="crv-slide">
+              <article class="crv-slide"
+                itemscope
+                itemprop="review"
+                itemtype="https://schema.org/Review">
+
                 <div class="crv-top">
                   <div class="crv-avatar">AN</div>
                   <div class="crv-ident">
-                    <div class="crv-name">Amina Nouiri</div>
+                    <div class="crv-name" itemprop="author">Amina Nouiri</div>
                     <div class="crv-role">Marketing Lead • Casablanca</div>
-                    <div class="crv-stars">★★★★★</div>
+                    <div class="crv-stars" itemprop="reviewRating" itemscope
+                      itemtype="https://schema.org/Rating">
+                      <span itemprop="ratingValue">5</span>★★★★★
+                    </div>
                   </div>
                   <span class="crv-tag">New</span>
                 </div>
 
-                <p class="crv-text">
+                <p class="crv-text" itemprop="reviewBody">
                   “Animations, colors and layout feel very premium but still
                   light.
                   It looks great on laptop and mobile without us having to think
@@ -2247,431 +2597,453 @@ morocco payment methods,
             </div>
 
             <!-- dots -->
-            <div class="crv-dots" data-dots="main">
+            <div class="crv-dots" data-dots="main" aria-hidden="true">
               <span class="crv-dot crv-dot-active"></span>
               <span class="crv-dot"></span>
               <span class="crv-dot"></span>
             </div>
+
           </div>
         </div>
       </div>
     </section>
 
-    <section class="cookie-banner" id="cookie-banner"
-      aria-label="Cookie consent">
+    <section
+      class="cookie-banner"
+      id="cookie-banner"
+      aria-label="Cookie consent"
+      aria-describedby="cookie-text cookie-actions">
       <div class="cookie-content">
-        <div class="cookie-icon">🍪</div>
+        <div class="cookie-icon" aria-hidden="true">🍪</div>
 
         <h3 class="cookie-title">We Use Cookies</h3>
 
-        <p class="cookie-text">
+        <p class="cookie-text" id="cookie-text">
           We use cookies to give you the best experience, analyze traffic,
           and improve our services. You can accept or decline non-essential
-          cookies.
+          cookies at any time.
+          <a href="/cookie-policy.html" class="cookie-link">
+            Learn more in our cookie policy.
+          </a>
         </p>
 
-        <div class="cookie-actions">
-          <button type="button" class="cookie-accept">Accept</button>
-          <button type="button" class="cookie-decline">Decline</button>
+        <div class="cookie-actions" id="cookie-actions">
+          <button type="button" class="cookie-accept">
+            Accept all cookies
+          </button>
+          <button type="button" class="cookie-decline">
+            Only essential cookies
+          </button>
         </div>
       </div>
     </section>
 
     <!-- FOOTER -->
-    <footer
-      class="relative text-slate-100 pt-16 pb-10 overflow-hidden animated-footer-bg"
-      role="contentinfo" itemscope
-      itemtype="https://schema.org/Organization">
+<footer
+  class="relative text-slate-100 pt-16 pb-10 overflow-hidden animated-footer-bg"
+  role="contentinfo"
+  itemscope
+  itemtype="https://schema.org/Organization">
 
-      <!-- ========================= -->
-      <!-- BILINGUAL SEO METADATA -->
-      <!-- ========================= -->
+  <!-- ========================= -->
+  <!-- BILINGUAL / TRILINGUAL SEO METADATA -->
+  <!-- ========================= -->
 
-      <meta itemprop="name" content="TechnoPro Web">
+  <!-- Organization name -->
+  <meta itemprop="name" content="TechnoPro Web">
 
-      <!-- Website URL -->
-      <meta itemprop="url" content="https://technoproweb.com">
+  <!-- Website URL -->
+  <meta itemprop="url" content="https://technoproweb.com">
 
-      <!-- Contact Info -->
-      <meta itemprop="email" content="contact@technoproweb.com">
-      <meta itemprop="telephone" content="+212621691502">
+  <!-- Contact Info -->
+  <meta itemprop="email" content="contact@technoproweb.com">
+  <meta itemprop="telephone" content="+212621691502">
 
-      <!-- English description -->
-      <meta itemprop="description"
-        content="TechnoPro Web is a modern Web & AI agency creating high-performance websites, e-commerce solutions, SEO strategies, and business automation." />
+  <!-- English description -->
+  <meta itemprop="description"
+    content="TechnoPro Web is a web & AI agency based in Tangier, Morocco. We create high-performance custom websites, ecommerce stores, SEO strategies and business automation to help companies get more clients online." />
 
-      <!-- French description -->
-      <meta itemprop="description"
-        content="TechnoPro Web est une agence Web & IA moderne spécialisée dans la création de sites web performants, solutions e-commerce, SEO, et automatisation professionnelle." />
+  <!-- French description -->
+  <meta itemprop="description"
+    content="TechnoPro Web est une agence web & IA basée à Tanger, Maroc. Nous créons des sites internet performants, boutiques e-commerce, stratégies SEO et automatisations métier pour aider les entreprises à gagner plus de clients en ligne." />
 
-      <!-- English keywords -->
-      <meta itemprop="keywords"
-        content="web agency Morocco, web development Tangier, website design, ecommerce development, SEO Morocco, AI automation, digital marketing Tangier, custom website, professional website, UI UX design, Technopro Web" />
+  <!-- English keywords -->
+  <meta itemprop="keywords"
+    content="web agency Tangier, web agency Morocco, website creation Tangier, website creation Morocco, website design agency, web development Morocco, ecommerce website Morocco, SEO agency Morocco, SEO services Tangier, digital marketing Tangier, AI automation agency, custom website for small business, responsive website design, landing page design, Laravel developer Morocco, React developer Morocco, bilingual website, TechnoPro Web" />
 
-      <!-- French keywords -->
-      <meta itemprop="keywords"
-        content="agence web Maroc, création site web Tanger, développement web, site vitrine, site e-commerce Maroc, agence digitale Tanger, référencement naturel SEO Maroc, automatisation IA, conception site internet, Technopro Web" />
+  <!-- French keywords -->
+  <meta itemprop="keywords"
+    content="agence web Tanger, agence web Maroc, création site internet Tanger, création site web Maroc, création site vitrine, développement site e-commerce, site e-commerce Maroc, agence SEO Maroc, services SEO Tanger, référencement naturel Maroc, marketing digital Tanger, automatisation IA Maroc, site web pour petites entreprises, refonte site internet, création landing page, site internet responsive, site internet bilingue, TechnoPro Web" />
 
-      <!-- Logo -->
-      <meta itemprop="logo" content="https://technoproweb.com/assets/logo.png">
+  <!-- Arabic keywords -->
+  <meta itemprop="keywords"
+    content="وكالة إنشاء مواقع طنجة, وكالة ويب طنجة, وكالة ويب المغرب, إنشاء موقع إلكتروني في طنجة, إنشاء موقع إلكتروني في المغرب, تصميم موقع احترافي, تطوير مواقع الويب المغرب, متجر إلكتروني في المغرب, وكالة سيو المغرب, تحسين محركات البحث طنجة, تسويق رقمي طنجة, برمجة مواقع بلغة Laravel, مطور React في المغرب, موقع متعدد اللغات, برمجة متجر إلكتروني, وكالة مواقع الويب في طنجة, TechnoPro Web" />
 
-      <!-- Service Areas -->
-      <meta itemprop="areaServed" content="Morocco" />
-      <meta itemprop="areaServed" content="Maroc" />
-      <meta itemprop="areaServed" content="Europe" />
+  <!-- Logo -->
+  <meta itemprop="logo" content="https://technoproweb.com/assets/logo.png">
 
-      <!-- English service types -->
-      <meta itemprop="serviceType" content="Website creation" />
-      <meta itemprop="serviceType" content="Custom showcase websites" />
-      <meta itemprop="serviceType" content="E-commerce development" />
-      <meta itemprop="serviceType" content="SEO optimization" />
-      <meta itemprop="serviceType" content="AI automation" />
-      <meta itemprop="serviceType" content="Landing pages" />
-      <meta itemprop="serviceType" content="UI/UX design" />
+  <!-- Service Areas -->
+  <meta itemprop="areaServed" content="Morocco" />
+  <meta itemprop="areaServed" content="Maroc" />
+  <meta itemprop="areaServed" content="Europe" />
 
-      <!-- French service types -->
-      <meta itemprop="serviceType" content="Création de site web" />
-      <meta itemprop="serviceType" content="Site vitrine personnalisé" />
-      <meta itemprop="serviceType" content="Développement e-commerce" />
-      <meta itemprop="serviceType" content="Optimisation SEO" />
-      <meta itemprop="serviceType" content="Automatisation IA" />
-      <meta itemprop="serviceType" content="Pages d’atterrissage" />
-      <meta itemprop="serviceType" content="Design UI/UX" />
+  <!-- English service types -->
+  <meta itemprop="serviceType" content="Website creation" />
+  <meta itemprop="serviceType" content="Custom showcase websites" />
+  <meta itemprop="serviceType" content="E-commerce development" />
+  <meta itemprop="serviceType" content="SEO optimization" />
+  <meta itemprop="serviceType" content="AI automation" />
+  <meta itemprop="serviceType" content="Landing pages" />
+  <meta itemprop="serviceType" content="UI/UX design" />
 
-      <!-- Social profiles -->
-      <link itemprop="sameAs" href="https://facebook.com">
-      <link itemprop="sameAs" href="https://instagram.com">
-      <link itemprop="sameAs" href="https://linkedin.com">
-      <link itemprop="sameAs" href="https://wa.me/212621691502">
+  <!-- French service types -->
+  <meta itemprop="serviceType" content="Création de site web" />
+  <meta itemprop="serviceType" content="Site vitrine personnalisé" />
+  <meta itemprop="serviceType" content="Développement e-commerce" />
+  <meta itemprop="serviceType" content="Optimisation SEO" />
+  <meta itemprop="serviceType" content="Automatisation IA" />
+  <meta itemprop="serviceType" content="Pages d’atterrissage" />
+  <meta itemprop="serviceType" content="Design UI/UX" />
 
-      <!-- ========================= -->
-      <!-- Decorative particles / UI -->
-      <!-- ========================= -->
+  <!-- Social profiles (microdata) -->
+  <link itemprop="sameAs" href="https://facebook.com">
+  <link itemprop="sameAs" href="https://instagram.com">
+  <link itemprop="sameAs" href="https://linkedin.com">
+  <link itemprop="sameAs" href="https://wa.me/212621691502">
 
-      <div
-        class="pointer-events-none absolute -top-20 left-10 w-3 h-3 rounded-full particle"></div>
-      <div
-        class="pointer-events-none absolute top-1/3 right-10 w-2 h-2 rounded-full particle delay-1"></div>
-      <div
-        class="pointer-events-none absolute bottom-10 left-1/4 w-2.5 h-2.5 rounded-full particle delay-2"></div>
-      <div
-        class="pointer-events-none absolute bottom-1/3 right-1/3 w-3 h-3 rounded-full particle delay-3"></div>
+  <!-- ========================= -->
+  <!-- Decorative particles / UI -->
+  <!-- ========================= -->
 
-      <!-- Animated gradient line on top -->
-      <div class="absolute inset-x-0 top-0 h-[2px] animated-gradient"></div>
+  <div
+    class="pointer-events-none absolute -top-20 left-10 w-3 h-3 rounded-full particle"
+    aria-hidden="true"></div>
+  <div
+    class="pointer-events-none absolute top-1/3 right-10 w-2 h-2 rounded-full particle delay-1"
+    aria-hidden="true"></div>
+  <div
+    class="pointer-events-none absolute bottom-10 left-1/4 w-2.5 h-2.5 rounded-full particle delay-2"
+    aria-hidden="true"></div>
+  <div
+    class="pointer-events-none absolute bottom-1/3 right-1/3 w-3 h-3 rounded-full particle delay-3"
+    aria-hidden="true"></div>
 
-      <div class="relative max-w-6xl mx-auto px-4 space-y-12">
+  <!-- Animated gradient line on top -->
+  <div class="absolute inset-x-0 top-0 h-[2px] animated-gradient"
+    aria-hidden="true"></div>
 
-        <!-- ========= TOP SECTION ========= -->
-        <div
-          class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between reveal-footer">
-          <div class="space-y-2">
-            <div class="inline-flex items-center gap-2">
-              <span
-                class="text-xl font-black tracking-tight bg-clip-text text-transparent
+  <div class="relative max-w-6xl mx-auto px-4 space-y-12">
+
+    <!-- ========= TOP SECTION ========= -->
+    <div
+      class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between reveal-footer">
+      <div class="space-y-2">
+        <div class="inline-flex items-center gap-2">
+          <span
+            class="text-xl font-black tracking-tight bg-clip-text text-transparent
                bg-gradient-to-r from-[#F6CED8] via-[#C6B2FF] to-[#B0E0FF]"
-                itemprop="name">
-                TechnoPro Web
-              </span>
-              <span
-                class="text-xs px-2 py-0.5 rounded-full bg-white/10 border border-white/10 text-slate-200">
-                Web & AI Agency
-              </span>
-            </div>
-            <p class="max-w-xl text-sm text-slate-300">
-              We create modern websites, smart automation and premium SEO
-              to boost your results online.
-            </p>
-          </div>
+            itemprop="name">
+            TechnoPro Web
+          </span>
+          <span
+            class="text-xs px-2 py-0.5 rounded-full bg-white/10 border border-white/10 text-slate-200">
+            Web & AI Agency
+          </span>
+        </div>
+        <p class="max-w-xl text-sm text-slate-300">
+          We create modern websites, smart automation and premium SEO
+          to boost your results online.
+        </p>
+      </div>
 
-          <a href="/contact.html"
-            class="relative inline-flex items-center gap-2 rounded-full px-7 py-3 text-sm font-semibold
+      <a href="/contact.html"
+        class="relative inline-flex items-center gap-2 rounded-full px-7 py-3 text-sm font-semibold
        text-white shadow-[0_12px_35px_rgba(0,0,0,0.6)]
        bg-gradient-to-r from-[#F6CED8] via-[#C6B2FF] to-[#B0E0FF]
        hover:shadow-[0_18px_45px_rgba(0,0,0,0.8)]
        transition-transform duration-300 hover:-translate-y-1 cta-pulse">
-            <span>💬 Get a free project estimate</span>
-          </a>
-        </div>
+        <span>💬 Get a free project estimate</span>
+      </a>
+    </div>
 
-        <!-- ========= GRID SECTION ========= -->
-        <div class="grid gap-10 md:grid-cols-4">
+    <!-- ========= GRID SECTION ========= -->
+    <div class="grid gap-10 md:grid-cols-4">
 
-          <!-- About -->
-          <div class="space-y-4 reveal-footer">
-            <h4
-              class="text-sm font-semibold tracking-wide text-slate-200 uppercase">About</h4>
-            <p class="text-sm text-slate-300">
-              We support ambitious businesses in building high-performing
-              digital solutions.
-            </p>
-            <div class="flex gap-4">
-              <div
-                class="footer-card px-4 py-3 rounded-2xl floating-footer text-center min-w-[90px]">
-                <div class="text-xs text-slate-200">+50</div>
-                <div class="text-[11px] text-slate-400">Projects</div>
-              </div>
-              <div
-                class="footer-card px-4 py-3 rounded-2xl floating-footer-slow text-center min-w-[90px]">
-                <div class="text-xs text-slate-200">24/7</div>
-                <div class="text-[11px] text-slate-400">Support</div>
-              </div>
-            </div>
+      <!-- About -->
+      <div class="space-y-4 reveal-footer">
+        <h4
+          class="text-sm font-semibold tracking-wide text-slate-200 uppercase">About</h4>
+        <p class="text-sm text-slate-300">
+          We support ambitious businesses in building high-performing
+          digital solutions.
+        </p>
+        <div class="flex gap-4">
+          <div
+            class="footer-card px-4 py-3 rounded-2xl floating-footer text-center min-w-[90px]">
+            <div class="text-xs text-slate-200">+50</div>
+            <div class="text-[11px] text-slate-400">Projects</div>
           </div>
-
-          <!-- Web Services -->
-          <nav class="space-y-4 reveal-footer" aria-label="Web services">
-            <h4
-              class="text-sm font-semibold tracking-wide text-slate-200 uppercase">Web
-              Services</h4>
-            <ul class="space-y-2 text-sm text-slate-300">
-              <li class="flex items-center gap-2 hover:text-white transition">
-                <span aria-hidden="true">💻</span> <span>Custom showcase
-                  website</span>
-              </li>
-              <li class="flex items-center gap-2 hover:text-white transition">
-                <span aria-hidden="true">🛒</span> <span>Optimized
-                  e-commerce</span>
-              </li>
-              <li class="flex items-center gap-2 hover:text-white transition">
-                <span aria-hidden="true">⚙️</span> <span>Automation & AI</span>
-              </li>
-              <li class="flex items-center gap-2 hover:text-white transition">
-                <span aria-hidden="true">📈</span> <span>SEO & content
-                  strategy</span>
-              </li>
-            </ul>
-          </nav>
-
-          <!-- Company -->
-          <nav class="space-y-4 reveal-footer" aria-label="Company pages">
-            <h4
-              class="text-sm font-semibold tracking-wide text-slate-200 uppercase">Company</h4>
-            <ul class="space-y-2 text-sm text-slate-300">
-
-              <li class="group">
-                <a href="/portfolio.html"
-                  class="relative inline-block transition text-slate-300 hover:text-white">
-                  Our projects
-                  <span
-                    class="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
-                </a>
-              </li>
-
-              <li class="group">
-                <a href="/about.html"
-                  class="relative inline-block transition text-slate-300 hover:text-white">
-                  About the agency
-                  <span
-                    class="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
-                </a>
-              </li>
-
-              <li class="group">
-                <a href="/services.html"
-                  class="relative inline-block transition text-slate-300 hover:text-white">
-                  Services
-                  <span
-                    class="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
-                </a>
-              </li>
-
-              <li class="group">
-                <a href="/contact.html"
-                  class="relative inline-block transition text-slate-300 hover:text-white">
-                  Contact
-                  <span
-                    class="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
-                </a>
-              </li>
-
-            </ul>
-          </nav>
-
-          <!-- Contact -->
-          <div class="space-y-4 reveal-footer">
-            <h4
-              class="text-sm font-semibold tracking-wide text-slate-200 uppercase">Direct
-              contact</h4>
-
-            <div class="space-y-3 text-sm">
-
-              <div
-                class="footer-card rounded-2xl px-2 py-3 flex items-start gap-3">
-                <div
-                  class="w-8 h-8 rounded-full flex items-center justify-center text-lg bg-white/10">
-                  <span aria-hidden="true">📍</span>
-                </div>
-                <div itemprop="address" itemscope
-                  itemtype="https://schema.org/PostalAddress">
-                  <div class="text-slate-200 font-medium">
-                    <span itemprop="addressLocality">Tanger</span>,
-                    <span itemprop="addressCountry">Morocco</span>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class="footer-card rounded-2xl px-2 py-3 flex items-start gap-3">
-                <div
-                  class="w-8 h-8 rounded-full flex items-center justify-center text-lg bg-white/10">
-                  <span aria-hidden="true">📞</span>
-                </div>
-                <div>
-                  <a href="tel:+212621691502"
-                    class="text-slate-200 font-medium hover:text-white transition"
-                    itemprop="telephone">
-                    +212 6 21 69 15 02
-                  </a>
-                  <div class="text-slate-400 text-xs">Call & WhatsApp</div>
-                </div>
-              </div>
-
-              <div
-                class="footer-card rounded-2xl px-2 py-3 flex items-start gap-3">
-                <div
-                  class="w-8 h-8 rounded-full flex items-center justify-center text-lg bg-white/10">
-                  <span aria-hidden="true">✉️</span>
-                </div>
-                <div>
-                  <a href="mailto:contact@technoproweb.com"
-                    class="text-slate-200 font-medium hover:text-white transition"
-                    itemprop="email">
-                    contact@technoproweb.com
-                  </a>
-                  <div class="text-slate-400 text-xs">Reply within 24h</div>
-                </div>
-              </div>
-
-            </div>
+          <div
+            class="footer-card px-4 py-3 rounded-2xl floating-footer-slow text-center min-w-[90px]">
+            <div class="text-xs text-slate-200">24/7</div>
+            <div class="text-[11px] text-slate-400">Support</div>
           </div>
-
         </div>
+      </div>
 
-        <!-- Social media + bottom -->
-        <div
-          class="pt-6 border-t border-white/10 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+      <!-- Web Services -->
+      <nav class="space-y-4 reveal-footer" aria-label="Web services">
+        <h4
+          class="text-sm font-semibold tracking-wide text-slate-200 uppercase">Web
+          Services</h4>
+        <ul class="space-y-2 text-sm text-slate-300">
+          <li class="flex items-center gap-2 hover:text-white transition">
+            <span aria-hidden="true">💻</span> <span>Custom showcase
+              website</span>
+          </li>
+          <li class="flex items-center gap-2 hover:text-white transition">
+            <span aria-hidden="true">🛒</span> <span>Optimized
+              e-commerce</span>
+          </li>
+          <li class="flex items-center gap-2 hover:text-white transition">
+            <span aria-hidden="true">⚙️</span> <span>Automation & AI</span>
+          </li>
+          <li class="flex items-center gap-2 hover:text-white transition">
+            <span aria-hidden="true">📈</span> <span>SEO & content
+              strategy</span>
+          </li>
+        </ul>
+      </nav>
 
-          <div class="flex items-center gap-3 reveal-footer">
-            <span class="text-xs text-slate-400">Follow us:</span>
-            <div class="flex gap-3" aria-label="TechnoPro Web social media">
+      <!-- Company -->
+      <nav class="space-y-4 reveal-footer" aria-label="Company pages">
+        <h4
+          class="text-sm font-semibold tracking-wide text-slate-200 uppercase">Company</h4>
+        <ul class="space-y-2 text-sm text-slate-300">
 
-              <!-- FACEBOOK -->
-              <a href="https://facebook.com"
-                aria-label="Visit TechnoPro Web on Facebook"
-                class="social-orb social-orb--orbit" style="--accent:#1877F2;"
-                target="_blank" rel="noopener noreferrer"
-                itemprop="sameAs">
-                <svg viewBox="0 0 24 24" class="social-orb__icon" width="18"
-                  height="18" aria-hidden="true">
-                  <path fill="currentColor"
-                    d="M13 22v-8h2.5l.5-3H13V8.5A1.5 1.5 0 0 1 14.5 7H16V4h-1.5A4.5 4.5 0 0 0 10 8.5V11H8v3h2v8z" />
-                </svg>
-                <span class="social-orb__label">Facebook</span>
+          <li class="group">
+            <a href="/portfolio.html"
+              class="relative inline-block transition text-slate-300 hover:text-white">
+              Our projects
+              <span
+                class="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </li>
 
-                <!-- DOTS -->
-                <span class="social-orb__dot social-orb__dot--1"></span>
-                <span class="social-orb__dot social-orb__dot--2"></span>
-                <span class="social-orb__dot social-orb__dot--3"></span>
-                <span class="social-orb__dot social-orb__dot--4"></span>
-              </a>
+          <li class="group">
+            <a href="/about.html"
+              class="relative inline-block transition text-slate-300 hover:text-white">
+              About the agency
+              <span
+                class="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </li>
 
-              <!-- INSTAGRAM -->
-              <a href="https://instagram.com"
-                aria-label="Visit TechnoPro Web on Instagram"
-                class="social-orb social-orb--orbit" style="--accent:#F56040;"
-                target="_blank" rel="noopener noreferrer"
-                itemprop="sameAs">
-                <svg viewBox="0 0 24 24" class="social-orb__icon" width="18"
-                  height="18" aria-hidden="true">
-                  <path fill="currentColor"
-                    d="M8 3h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8zm4 2.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5zM16.5 7a.9.9 0 1 1-.9.9.9.9 0 0 1 .9-.9z" />
-                </svg>
-                <span class="social-orb__label">Instagram</span>
+          <li class="group">
+            <a href="/services.html"
+              class="relative inline-block transition text-slate-300 hover:text-white">
+              Services
+              <span
+                class="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </li>
 
-                <span class="social-orb__dot social-orb__dot--1"></span>
-                <span class="social-orb__dot social-orb__dot--2"></span>
-                <span class="social-orb__dot social-orb__dot--3"></span>
-                <span class="social-orb__dot social-orb__dot--4"></span>
-              </a>
+          <li class="group">
+            <a href="/contact.html"
+              class="relative inline-block transition text-slate-300 hover:text-white">
+              Contact
+              <span
+                class="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </li>
 
-              <!-- LINKEDIN -->
-              <a href="https://www.linkedin.com/in/nada-el-moudden-229606285/"
-                aria-label="Visit TechnoPro Web on LinkedIn"
-                class="social-orb social-orb--orbit"
-                style="--accent:#0A66C2;" target="_blank"
-                rel="noopener noreferrer" itemprop="sameAs">
-                <svg viewBox="0 0 24 24" class="social-orb__icon" width="18"
-                  height="18" aria-hidden="true">
-                  <path fill="currentColor"
-                    d="M6 6a2 2 0 1 1-2 2 2 2 0 0 1 2-2zM4 10h4v10H4zm6 0h3.8v1.7h.1A4.1 4.1 0 0 1 18 9.9C20.6 9.9 21 11.6 21 14.1V20h-4v-5.1c0-1.2 0-2.7-1.7-2.7S13 13.5 13 14.8V20h-3z" />
-                </svg>
-                <span class="social-orb__label">LinkedIn</span>
+        </ul>
+      </nav>
 
-                <span class="social-orb__dot social-orb__dot--1"></span>
-                <span class="social-orb__dot social-orb__dot--2"></span>
-                <span class="social-orb__dot social-orb__dot--3"></span>
-                <span class="social-orb__dot social-orb__dot--4"></span>
-              </a>
+      <!-- Contact -->
+      <div class="space-y-4 reveal-footer">
+        <h4
+          class="text-sm font-semibold tracking-wide text-slate-200 uppercase">Direct
+          contact</h4>
 
-              <!-- WhatsApp -->
-              <a
-                href="https://wa.me/212621691502?text=Hey%20TechnoPro%20Web,%20I%20would%20like%20to%20build%20a%20website.%20Can%20we%20talk%3F"
-                aria-label="Contact TechnoPro Web on WhatsApp" target="_blank"
-                rel="noopener noreferrer"
-                class="social-orb social-orb--orbit" style="--accent:#25D366;"
-                itemprop="sameAs">
+        <div class="space-y-3 text-sm">
 
-                <!-- WhatsApp Icon -->
-                <svg viewBox="0 0 32 32" class="social-orb__icon" width="18"
-                  height="18" aria-hidden="true">
-                  <path fill="currentColor"
-                    d="M16.027 3c-7.003 0-12.68 5.677-12.68 12.68 0 2.235.584 4.416 1.7 6.346L3 29l7.18-2.015a12.63 12.63 0 0 0 5.847 1.492h.007c7.003 0 12.68-5.677 12.68-12.68C28.714 8.677 23.03 3 16.027 3zm7.41 17.884c-.31.868-1.81 1.678-2.51 1.785-.643.097-1.474.138-2.375-.148-.547-.173-1.253-.405-2.163-.79-3.807-1.641-6.283-5.44-6.476-5.693-.19-.254-1.544-2.054-1.544-3.92 0-1.866.978-2.781 1.323-3.157.345-.376.75-.47 1.003-.47.253 0 .5.003.717.013.23.01.538-.087.842.642.31.744 1.053 2.575 1.145 2.76.09.187.15.402.03.654-.12.25-.18.403-.35.62-.18.23-.37.51-.53.685-.175.19-.355.4-.152.78.203.376.903 1.487 1.94 2.41 1.334 1.186 2.46 1.556 2.84 1.73.38.173.608.15.83-.09.22-.24.953-1.112 1.207-1.497.254-.385.505-.32.842-.19.345.127 2.18 1.027 2.55 1.213.376.187.63.28.72.435.09.157.09.91-.22 1.78z" />
-                </svg>
-
-                <span class="social-orb__label">WhatsApp</span>
-
-                <span class="social-orb__dot social-orb__dot--1"></span>
-                <span class="social-orb__dot social-orb__dot--2"></span>
-                <span class="social-orb__dot social-orb__dot--3"></span>
-                <span class="social-orb__dot social-orb__dot--4"></span>
-              </a>
-
+          <div
+            class="footer-card rounded-2xl px-2 py-3 flex items-start gap-3">
+            <div
+              class="w-8 h-8 rounded-full flex items-center justify-center text-lg bg-white/10">
+              <span aria-hidden="true">📍</span>
             </div>
-
+            <div itemprop="address" itemscope
+              itemtype="https://schema.org/PostalAddress">
+              <div class="text-slate-200 font-medium">
+                <span itemprop="addressLocality">Tanger</span>,
+                <span itemprop="addressCountry">Morocco</span>
+              </div>
+            </div>
           </div>
 
           <div
-            class="flex items-center justify-between md:justify-end gap-4 reveal-footer w-full md:w-auto">
-            <span class="text-[11px] text-slate-400">
-              ©️ <span class="year" data-year></span> TechnoPro Web — All rights
-              reserved
-            </span>
+            class="footer-card rounded-2xl px-2 py-3 flex items-start gap-3">
+            <div
+              class="w-8 h-8 rounded-full flex items-center justify-center text-lg bg-white/10">
+              <span aria-hidden="true">📞</span>
+            </div>
+            <div>
+              <a href="tel:+212621691502"
+                class="text-slate-200 font-medium hover:text-white transition"
+                itemprop="telephone">
+                +212 6 21 69 15 02
+              </a>
+              <div class="text-slate-400 text-xs">Call & WhatsApp</div>
+            </div>
+          </div>
 
-            <button id="backToTop"
-              class="backtotop-btn inline-flex items-center gap-2 rounded-full px-4 py-2 text-[11px] font-medium
-         text-slate-100 bg-white/5 border border-white/15
-         shadow-[0_8px_20px_rgba(0,0,0,0.6)]
-         hover:bg-white/10 hover:border-[#C6B2FF] hover:text-white
-         transition-all duration-300 opacity-0 pointer-events-none">
-              <span class="relative flex items-center gap-1">
-                <span
-                  class="inline-flex h-4 w-4 items-center justify-center rounded-full bg-gradient-to-br from-[#F6CED8] via-[#C6B2FF] to-[#B0E0FF] text-[10px]">
-                  ↑
-                </span>
-                <span>Back to top</span>
-                <span class="dot-move"></span>
-              </span>
-            </button>
+          <div
+            class="footer-card rounded-2xl px-2 py-3 flex items-start gap-3">
+            <div
+              class="w-8 h-8 rounded-full flex items-center justify-center text-lg bg-white/10">
+              <span aria-hidden="true">✉️</span>
+            </div>
+            <div>
+              <a href="mailto:contact@technoproweb.com"
+                class="text-slate-200 font-medium hover:text-white transition"
+                itemprop="email">
+                contact@technoproweb.com
+              </a>
+              <div class="text-slate-400 text-xs">Reply within 24h</div>
+            </div>
           </div>
 
         </div>
       </div>
 
-      <!-- ========================= -->
-      <!-- BILINGUAL JSON-LD SCHEMA -->
-      <!-- ========================= -->
-      <script type="application/ld+json">
+    </div>
+
+    <!-- Social media + bottom -->
+    <div
+      class="pt-6 border-t border-white/10 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+
+      <div class="flex items-center gap-3 reveal-footer">
+        <span class="text-xs text-slate-400">Follow us:</span>
+        <div class="flex gap-3" aria-label="TechnoPro Web social media">
+
+          <!-- FACEBOOK -->
+          <a href="https://facebook.com"
+            aria-label="Visit TechnoPro Web on Facebook"
+            class="social-orb social-orb--orbit" style="--accent:#1877F2;"
+            target="_blank" rel="noopener noreferrer"
+            itemprop="sameAs">
+            <svg viewBox="0 0 24 24" class="social-orb__icon" width="18"
+              height="18" aria-hidden="true">
+              <path fill="currentColor"
+                d="M13 22v-8h2.5l.5-3H13V8.5A1.5 1.5 0 0 1 14.5 7H16V4h-1.5A4.5 4.5 0 0 0 10 8.5V11H8v3h2v8z" />
+            </svg>
+            <span class="social-orb__label">Facebook</span>
+
+            <!-- DOTS -->
+            <span class="social-orb__dot social-orb__dot--1"></span>
+            <span class="social-orb__dot social-orb__dot--2"></span>
+            <span class="social-orb__dot social-orb__dot--3"></span>
+            <span class="social-orb__dot social-orb__dot--4"></span>
+          </a>
+
+          <!-- INSTAGRAM -->
+          <a href="https://instagram.com"
+            aria-label="Visit TechnoPro Web on Instagram"
+            class="social-orb social-orb--orbit" style="--accent:#F56040;"
+            target="_blank" rel="noopener noreferrer"
+            itemprop="sameAs">
+            <svg viewBox="0 0 24 24" class="social-orb__icon" width="18"
+              height="18" aria-hidden="true">
+              <path fill="currentColor"
+                d="M8 3h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8zm4 2.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5zM16.5 7a.9.9 0 1 1-.9.9.9.9 0 0 1 .9-.9z" />
+            </svg>
+            <span class="social-orb__label">Instagram</span>
+
+            <span class="social-orb__dot social-orb__dot--1"></span>
+            <span class="social-orb__dot social-orb__dot--2"></span>
+            <span class="social-orb__dot social-orb__dot--3"></span>
+            <span class="social-orb__dot social-orb__dot--4"></span>
+          </a>
+
+          <!-- LINKEDIN -->
+          <a href="https://www.linkedin.com/in/nada-el-moudden-229606285/"
+            aria-label="Visit TechnoPro Web on LinkedIn"
+            class="social-orb social-orb--orbit"
+            style="--accent:#0A66C2;" target="_blank"
+            rel="noopener noreferrer" itemprop="sameAs">
+            <svg viewBox="0 0 24 24" class="social-orb__icon" width="18"
+              height="18" aria-hidden="true">
+              <path fill="currentColor"
+                d="M6 6a2 2 0 1 1-2 2 2 2 0 0 1 2-2zM4 10h4v10H4zm6 0h3.8v1.7h.1A4.1 4.1 0 0 1 18 9.9C20.6 9.9 21 11.6 21 14.1V20h-4v-5.1c0-1.2 0-2.7-1.7-2.7S13 13.5 13 14.8V20h-3z" />
+            </svg>
+            <span class="social-orb__label">LinkedIn</span>
+
+            <span class="social-orb__dot social-orb__dot--1"></span>
+            <span class="social-orb__dot social-orb__dot--2"></span>
+            <span class="social-orb__dot social-orb__dot--3"></span>
+            <span class="social-orb__dot social-orb__dot--4"></span>
+          </a>
+
+          <!-- WhatsApp -->
+          <a
+            href="https://wa.me/212621691502?text=Hey%20TechnoPro%20Web,%20I%20would%20like%20to%20build%20a%20website.%20Can%20we%20talk%3F"
+            aria-label="Contact TechnoPro Web on WhatsApp" target="_blank"
+            rel="noopener noreferrer"
+            class="social-orb social-orb--orbit" style="--accent:#25D366;"
+            itemprop="sameAs">
+
+            <!-- WhatsApp Icon -->
+            <svg viewBox="0 0 32 32" class="social-orb__icon" width="18"
+              height="18" aria-hidden="true">
+              <path fill="currentColor"
+                d="M16.027 3c-7.003 0-12.68 5.677-12.68 12.68 0 2.235.584 4.416 1.7 6.346L3 29l7.18-2.015a12.63 12.63 0 0 0 5.847 1.492h.007c7.003 0 12.68-5.677 12.68-12.68C28.714 8.677 23.03 3 16.027 3zm7.41 17.884c-.31.868-1.81 1.678-2.51 1.785-.643.097-1.474.138-2.375-.148-.547-.173-1.253-.405-2.163-.79-3.807-1.641-6.283-5.44-6.476-5.693-.19-.254-1.544-2.054-1.544-3.92 0-1.866.978-2.781 1.323-3.157.345-.376.75-.47 1.003-.47.253 0 .5.003.717.013.23.01.538-.087.842.642.31.744 1.053 2.575 1.145 2.76.09.187.15.402.03.654-.12.25-.18.403-.35.62-.18.23-.37.51-.53.685-.175.19-.355.4-.152.78.203.376.903 1.487 1.94 2.41 1.334 1.186 2.46 1.556 2.84 1.73.38.173.608.15.83-.09.22-.24.953-1.112 1.207-1.497.254-.385.505-.32.842-.19.345.127 2.18 1.027 2.55 1.213.376.187.63.28.72.435.09.157.09.91-.22 1.78z" />
+            </svg>
+
+            <span class="social-orb__label">WhatsApp</span>
+
+            <span class="social-orb__dot social-orb__dot--1"></span>
+            <span class="social-orb__dot social-orb__dot--2"></span>
+            <span class="social-orb__dot social-orb__dot--3"></span>
+            <span class="social-orb__dot social-orb__dot--4"></span>
+          </a>
+
+        </div>
+
+      </div>
+
+      <div
+        class="flex items-center justify-between md:justify-end gap-4 reveal-footer w-full md:w-auto">
+        <span class="text-[11px] text-slate-400">
+          ©️ <span class="year" data-year></span> TechnoPro Web — All rights
+          reserved
+        </span>
+
+        <button id="backToTop"
+          class="backtotop-btn inline-flex items-center gap-2 rounded-full px-4 py-2 text-[11px] font-medium
+         text-slate-100 bg-white/5 border border-white/15
+         shadow-[0_8px_20px_rgba(0,0,0,0.6)]
+         hover:bg-white/10 hover:border-[#C6B2FF] hover:text-white
+         transition-all duration-300 opacity-0 pointer-events-none">
+          <span class="relative flex items-center gap-1">
+            <span
+              class="inline-flex h-4 w-4 items-center justify-center rounded-full bg-gradient-to-br from-[#F6CED8] via-[#C6B2FF] to-[#B0E0FF] text-[10px]">
+              ↑
+            </span>
+            <span>Back to top</span>
+            <span class="dot-move"></span>
+          </span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ========================= -->
+  <!-- JSON-LD SCHEMA -->
+  <!-- ========================= -->
+  <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -2715,7 +3087,8 @@ morocco payment methods,
   }
   </script>
 
-    </footer>
+</footer>
+
 
     <!-- =========================
             SCRIPTS

@@ -598,22 +598,32 @@
       </div>
     </section>
 
-    <section class="cookie-banner" id="cookie-banner"
-      aria-label="Cookie consent">
+    <section
+      class="cookie-banner"
+      id="cookie-banner"
+      aria-label="Cookie consent"
+      aria-describedby="cookie-text cookie-actions">
       <div class="cookie-content">
-        <div class="cookie-icon">🍪</div>
+        <div class="cookie-icon" aria-hidden="true">🍪</div>
 
         <h3 class="cookie-title">We Use Cookies</h3>
 
-        <p class="cookie-text">
+        <p class="cookie-text" id="cookie-text">
           We use cookies to give you the best experience, analyze traffic,
           and improve our services. You can accept or decline non-essential
-          cookies.
+          cookies at any time.
+          <a href="/cookie-policy.html" class="cookie-link">
+            Learn more in our cookie policy.
+          </a>
         </p>
 
-        <div class="cookie-actions">
-          <button type="button" class="cookie-accept">Accept</button>
-          <button type="button" class="cookie-decline">Decline</button>
+        <div class="cookie-actions" id="cookie-actions">
+          <button type="button" class="cookie-accept">
+            Accept all cookies
+          </button>
+          <button type="button" class="cookie-decline">
+            Only essential cookies
+          </button>
         </div>
       </div>
     </section>
