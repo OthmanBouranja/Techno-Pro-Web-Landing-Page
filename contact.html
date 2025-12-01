@@ -1,86 +1,311 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>TechnoPro Web</title>
+    <!-- ===========================
+      🔥 PRIMARY SEO TITLE
+    ============================ -->
+    <title>
+      Contact | TechnoPro Web | Agence Web à Tanger – Demander un Devis Site
+      Web, E-Commerce & Apps
+    </title>
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="assets/img/logos/formatLogo-no-bg.png" sizes="192x192">
+    <!-- ===========================
+      🔥 MULTILINGUAL META DESCRIPTION (FR / AR / EN)
+    ============================ -->
+    <meta
+      name="description"
+      content="
+        Contactez TechnoPro Web, agence web à Tanger, pour votre site vitrine, site e-commerce, application web ou mobile et vos projets de réservation en ligne. 
+        تواصل مع وكالة تكنو برو ويب في طنجة لإنشاء موقع إلكتروني احترافي، متجر إلكتروني أو تطبيق مع نظام حجز أونلاين. 
+        Get in touch with TechnoPro Web to discuss your website, e-commerce, booking platform or mobile app project and receive a tailored quote.
+      " />
 
-  <!-- Tailwind CDN -->
-  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <!-- ===========================
+      🔥 MULTILINGUAL KEYWORDS
+    ============================ -->
+    <meta
+      name="keywords"
+      content="
+        contact TechnoPro Web, formulaire contact agence web, devis site web Maroc, contact création site vitrine, contact création site e-commerce, 
+        agence web Tanger contact, demande de devis site internet, devis boutique en ligne, développement web sur mesure, 
+        اتصل تكنو برو ويب, وكالة ويب طنجة تواصل, طلب عرض سعر موقع إلكتروني, إنشاء موقع شركة, إنشاء متجر إلكتروني المغرب, 
+        TechnoPro Web contact, web agency Morocco contact, request website quote, contact for e-commerce development, booking app contact, mobile app agency Morocco
+      " />
 
+    <!-- Robots -->
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="googlebot"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
-  <link rel="stylesheet" href="dist/output.css">
-  <link href="/css/style.css" rel="stylesheet" />
+    <!-- ===========================
+      🔥 BRAND / CATEGORY META
+    ============================ -->
+    <meta name="application-name"
+      content="TechnoPro Web – Agence Web & Digital" />
+    <meta name="author" content="TechnoPro Web" />
+    <meta name="creator"
+      content="TechnoPro Web – Web Development & Digital Experiences" />
+    <meta name="publisher" content="TechnoPro Web – Web Agency Morocco" />
+    <meta
+      name="category"
+      content="Contact, Web Development, E-Commerce, Digital Agency, Mobile Apps" />
+    <meta name="format-detection"
+      content="telephone=no, address=no, email=no" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests" />
 
-</head>
+    <!-- ===========================
+      🔥 PERFORMANCE HINTS
+    ============================ -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="image"
+      href="assets/img/logos/formatLogo-no-bg.png" />
 
-<body class="antialiased text-slate-800">
-  <span id="cursorDots" aria-hidden="true"></span>
+    <!-- (Optionnel) Google Search Console -->
+    <!-- <meta name="google-site-verification" content="VOTRE_CODE_ICI" /> -->
 
-  <!-- =========================
+    <!-- ===========================
+      🔥 CANONICAL & HREFLANG
+      (adapte le domaine si besoin)
+    ============================ -->
+    <link rel="canonical" href="https://technopro-web.com/contact.html" />
+    <link rel="alternate" hrefLang="fr-MA"
+      href="https://technopro-web.com/contact.html" />
+    <link rel="alternate" hrefLang="ar-MA"
+      href="https://technopro-web.com/ar/contact.html" />
+    <link rel="alternate" hrefLang="en"
+      href="https://technopro-web.com/en/contact.html" />
+    <link rel="alternate" hrefLang="x-default"
+      href="https://technopro-web.com/contact.html" />
+
+    <!-- ===========================
+      🔥 FAVICONS
+    ============================ -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/img/logos/formatLogo-no-bg.png"
+      sizes="192x192" />
+    <link
+      rel="apple-touch-icon"
+      href="assets/img/logos/formatLogo-no-bg.png"
+      sizes="180x180" />
+
+    <!-- ===========================
+      🔥 OPEN GRAPH (FB / WHATSAPP / LINKEDIN)
+    ============================ -->
+    <meta
+      property="og:title"
+      content="Contact TechnoPro Web | Agence Web à Tanger – Demander un Devis" />
+    <meta
+      property="og:description"
+      content="Besoin d’un site vitrine, e-commerce ou d’une application web/mobile ? Contactez TechnoPro Web à Tanger pour un devis personnalisé et un accompagnement digital complet." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://technopro-web.com/contact.html" />
+    <meta property="og:site_name" content="TechnoPro Web" />
+    <meta property="og:locale" content="fr_MA" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:locale:alternate" content="ar_MA" />
+    <meta
+      property="og:image"
+      content="https://technopro-web.com/assets/img/logos/formatLogo-no-bg.png" />
+    <meta
+      property="og:image:alt"
+      content="TechnoPro Web – Agence Web & Digital à Tanger – Page de contact" />
+
+    <!-- ===========================
+      🔥 TWITTER CARD
+    ============================ -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@TechnoProWeb" />
+    <meta
+      name="twitter:title"
+      content="Contact TechnoPro Web | Web Agency Morocco – Ask for a Quote" />
+    <meta
+      name="twitter:description"
+      content="Get in touch with TechnoPro Web in Tangier for your website, e-commerce, booking or mobile app project." />
+    <meta
+      name="twitter:image"
+      content="https://technopro-web.com/assets/img/logos/formatLogo-no-bg.png" />
+
+    <!-- ===========================
+      🔥 STRUCTURED DATA (JSON-LD)
+    ============================ -->
+
+    <!-- ORGANIZATION + CONTACTPOINT -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "TechnoPro Web",
+        "url": "https://technopro-web.com",
+        "logo": "https://technopro-web.com/assets/img/logos/formatLogo-no-bg.png",
+        "sameAs": [
+          "https://www.facebook.com/people/TechnoPro-Web/61584682072813/?locale=fr_FR",
+          "https://www.instagram.com/technopro-web",
+          "https://www.linkedin.com/company/technoproweb/about/?viewAsMember=true"
+        ],
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+212 6 21 69 15 02",
+            "contactType": "customer service",
+            "areaServed": ["MA", "FR"],
+            "availableLanguage": ["fr", "ar", "en"]
+          }
+        ]
+      }
+    </script>
+
+    <!-- LOCAL BUSINESS (OPTIONNEL – adapte adresse si tu veux) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "TechnoPro Web",
+        "url": "https://technopro-web.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Tanger",
+          "addressRegion": "Tanger-Tétouan-Al Hoceïma",
+          "addressCountry": "MA"
+        },
+        "telephone": "+212-6-00-00-00-00",
+        "image": "https://technopro-web.com/assets/img/logos/formatLogo-no-bg.png",
+        "priceRange": "$$",
+        "areaServed": [
+          {
+            "@type": "Country",
+            "name": "Morocco"
+          },
+          {
+            "@type": "Country",
+            "name": "France"
+          }
+        ]
+      }
+    </script>
+
+    <!-- CONTACT PAGE SCHEMA -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Contact – TechnoPro Web",
+        "url": "https://technopro-web.com/contact.html",
+        "about": "Contact page to reach TechnoPro Web for website, e-commerce, booking platform and mobile app projects.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "TechnoPro Web"
+        }
+      }
+    </script>
+
+    <!-- BREADCRUMB -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Accueil",
+            "item": "https://technopro-web.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Contact",
+            "item": "https://technopro-web.com/contact.html"
+          }
+        ]
+      }
+    </script>
+
+    <!-- ===========================
+      🔥 CSS
+    ============================ -->
+    <link rel="stylesheet" href="dist/output.css" />
+    <link href="/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body class="antialiased text-slate-800">
+    <span id="cursorDots" aria-hidden="true"></span>
+
+    <!-- =========================
        LIGHT NAVBAR (sticky)
   ========================== -->
-  <header class="sticky top-0 z-50 border-b border-slate-200 bg-white/80 backdrop-blur">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="flex h-20 items-center justify-between gap-3">
+    <header
+      class="sticky top-0 z-50 border-b border-slate-200 bg-white/80 backdrop-blur">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-20 items-center justify-between gap-3">
 
-      <!-- Brand -->
-      <a href="/" class="flex items-center gap-2">
-        <img src="assets/img/logos/formatLogo-no-bg.png" alt="Techno Pro Web Logo"
-          class="h-20 w-20 rounded-lg object-cover img-logo">
-      </a>
+          <!-- Brand -->
+          <a href="/" class="flex items-center gap-2"
+            title="TechnoPro Web - Agence Web & IA à Tanger">
+            <img src="assets/img/logos/formatLogo-no-bg.png"
+              alt="Logo Techno Pro Web"
+              class="h-20 w-20 rounded-lg object-cover img-logo">
+          </a>
 
-        <!-- Desktop Navigation -->
-        <nav class="hidden lg:block">
-          <ul class="flex items-center gap-1 rounded-full bg-slate-100 py-1 shadow-sm ring-1 ring-slate-200">
-            <!-- Accueil -->
-            <li>
-              <a href="/" class="rounded-full px-4 py-2 text-sm font-medium text-slate-600 hover:text-slate-900">
-                Home
-              </a>
-            </li>
+          <!-- Desktop Navigation -->
+          <nav class="hidden lg:block" aria-label="Navigation principale">
+            <ul
+              class="flex items-center gap-1 rounded-full bg-slate-100 py-1 shadow-sm ring-1 ring-slate-200">
+              <!-- Accueil -->
+              <li>
+                <a href="/" data-i18n="nav.home"
+                  class="rounded-full px-4 py-2 text-sm font-medium text-slate-600 hover:text-slate-900">
+                  Accueil
+                </a>
+              </li>
 
-            <!-- À propos -->
-            <li>
-              <a href="about.html"
-                class="rounded-full px-4 py-2 text-sm font-medium text-slate-600 hover:text-slate-900">
-                About
-              </a>
-            </li>
+              <!-- À propos -->
+              <li>
+                <a href="propos.html" data-i18n="nav.about"
+                  class="rounded-full px-4 py-2 text-sm font-medium text-slate-600 hover:text-slate-900">
+                  À propos
+                </a>
+              </li>
 
-            <!-- Services -->
-            <li>
-              <a href="services.html" data-i18n="nav.services"
-                class="rounded-full px-4 py-2 text-sm font-medium text-slate-600 hover:text-slate-900">
-                Services
-              </a>
-            </li>
+              <!-- Services -->
+              <li>
+                <a href="services.html" data-i18n="nav.services"
+                  class="rounded-full px-4 py-2 text-sm font-medium text-slate-600 hover:text-slate-900">
+                  Services
+                </a>
+              </li>
 
-            <!-- Portfolio -->
-            <li>
-              <a href="portfolio.html" data-i18n="nav.portfolio"
-                class="rounded-full px-4 py-2 text-sm font-medium text-slate-600 hover:text-slate-900">
-                Portfolio
-              </a>
-            </li>
+              <!-- Portfolio -->
+              <li>
+                <a href="portfolio.html" data-i18n="nav.portfolio"
+                  class="rounded-full px-4 py-2 text-sm font-medium text-slate-600 hover:text-slate-900">
+                  Portfolio
+                </a>
+              </li>
 
-            <!-- Contact (ACTIF) -->
-            <li>
-              <a href="contact.html" data-i18n="nav.contact"
-                class="rounded-full px-4 py-2 text-sm font-medium bg-white text-slate-900 shadow-sm">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </nav>
+              <!-- Contact (ACTIF) -->
+              <li>
+                <a href="contact.html" data-i18n="nav.contact"
+                  class="rounded-full px-4 py-2 text-sm font-medium bg-white text-slate-900 shadow-sm">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </nav>
 
-        <div class="flex items-center gap-2">
-          <!-- Language Switcher (Desktop) -->
-          <!-- <div id="langSwitcher" class="flex items-center gap-3">
+          <div class="flex items-center gap-2">
+            <!-- Language Switcher (Desktop) -->
+            <!--
+        <div id="langSwitcher" class="flex items-center gap-3">
           <button type="button" data-lang="fr" aria-pressed="false" title="Français"
             class="inline-flex h-6 w-8 items-center justify-center rounded-md bg-white/80 ring-1 ring-slate-200 shadow-sm hover:bg-white transition">
             <span class="text-base leading-none">🇫🇷</span>
@@ -92,38 +317,44 @@
             <span class="text-base leading-none">🇺🇸</span>
             <span class="sr-only">English</span>
           </button>
-        </div> -->
+        </div>
+        -->
 
-          <!-- CTA -->
-          <!-- <a href="contact.html" data-i18n="cta.get_started"
+            <!-- CTA -->
+            <!-- Version i18n possible :
+        <a href="contact.html" data-i18n="cta.get_started"
           class="hidden sm:inline-flex items-center rounded-full bg-gradient-to-r from-[#C6B2FF] to-[#B0E0FF] px-4 py-2 text-sm font-semibold text-white shadow-sm hover:opacity-90">
-          Get Started
-        </a> -->
-          <a href="contact.html"
-            class="hidden sm:inline-flex items-center rounded-full bg-gradient-to-r from-[#C6B2FF] to-[#B0E0FF] px-4 py-2 text-sm font-semibold text-white shadow-sm hover:opacity-90">
-            Get Started
-          </a>
+          Commencer votre projet
+        </a>
+        -->
+            <a href="contact.html"
+              class="hidden sm:inline-flex items-center rounded-full bg-gradient-to-r from-[#C6B2FF] to-[#B0E0FF] px-4 py-2 text-sm font-semibold text-white shadow-sm hover:opacity-90">
+              Commencer
+            </a>
 
-          <!-- Mobile toggle -->
-          <button id="mobToggle" type="button" aria-expanded="false" aria-label="Toggle navigation"
-            class="lg:hidden inline-flex h-10 w-10 items-center justify-center rounded-lg border border-slate-300 bg-white shadow-sm">
-            <span class="sr-only">Toggle navigation</span>
+            <!-- Mobile toggle -->
+            <button id="mobToggle" type="button" aria-expanded="false"
+              aria-label="Basculer la navigation"
+              class="lg:hidden inline-flex h-10 w-10 items-center justify-center rounded-lg border border-slate-300 bg-white shadow-sm">
+              <span class="sr-only">Basculer la navigation</span>
 
-            <!-- Fries lines -->
-            <span class="burger-line line-1 block w-5 rounded-full"></span>
-            <span class="burger-line line-2 block w-4 rounded-full"></span>
-            <span class="burger-line line-3 block w-6 rounded-full"></span>
-          </button>
+              <!-- Fries lines -->
+              <span class="burger-line line-1 block w-5 rounded-full"></span>
+              <span class="burger-line line-2 block w-4 rounded-full"></span>
+              <span class="burger-line line-3 block w-6 rounded-full"></span>
+            </button>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Mobile Menu -->
-    <div id="mobMenu" class="lg:hidden hidden border-t border-slate-200 bg-white">
-      <div class="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
+      <!-- Mobile Menu -->
+      <div id="mobMenu"
+        class="lg:hidden hidden border-t border-slate-200 bg-white">
+        <div class="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
 
-        <!-- <div class="mb-3 flex items-center justify-between rounded-xl border border-slate-200 bg-white px-3 py-2">
-        <span class="text-sm font-semibold text-slate-700">Language</span>
+          <!--
+      <div class="mb-3 flex items-center justify-between rounded-xl border border-slate-200 bg-white px-3 py-2">
+        <span class="text-sm font-semibold text-slate-700">Langue</span>
         <div class="flex items-center gap-2">
           <button type="button" data-lang="en"
             class="mob-lang flex items-center gap-1 rounded-full px-3 py-1.5 ring-1 ring-slate-200 hover:bg-slate-50">
@@ -136,560 +367,698 @@
             <span class="text-sm">FR</span>
           </button>
         </div>
-      </div> -->
-
-        <ul class="space-y-3">
-          <li><a href="/" data-i18n="nav.home" class="block text-sm font-medium">Accueil</a></li>
-          <li><a href="about.html" data-i18n="nav.about" class="block text-sm font-medium">À propos</a></li>
-          <li><a href="services.html" data-i18n="nav.services" class="block text-sm font-medium">Services</a></li>
-          <li><a href="portfolio.html" data-i18n="nav.portfolio" class="block text-sm font-medium">Portfolio</a></li>
-
-          <!-- Contact actif côté mobile : léger highlight -->
-          <li><a href="contact.html" data-i18n="nav.contact"
-              class="block text-sm font-medium text-slate-900">Contact</a></li>
-
-          <li>
-            <!-- <a href="contact.html" data-i18n="cta.get_started"
-            class="inline-flex rounded-full bg-gradient-to-r from-[#C6B2FF] to-[#B0E0FF] px-4 py-2 text-sm font-semibold text-white">
-            Get Started
-          </a> -->
-            <a href="contact.html"
-              class="inline-flex rounded-full bg-gradient-to-r from-[#C6B2FF] to-[#B0E0FF] px-4 py-2 text-sm font-semibold text-white">
-              Get Started
-            </a>
-          </li>
-        </ul>
       </div>
-    </div>
-  </header>
+      -->
 
-  <!-- =========================
+          <ul class="space-y-3">
+            <li><a href="/" data-i18n="nav.home"
+                class="block text-sm font-medium">Accueil</a></li>
+            <li><a href="propos.html" data-i18n="nav.about"
+                class="block text-sm font-medium">À propos</a></li>
+            <li><a href="services.html" data-i18n="nav.services"
+                class="block text-sm font-medium">Services</a></li>
+            <li><a href="portfolio.html" data-i18n="nav.portfolio"
+                class="block text-sm font-medium">Portfolio</a></li>
+
+            <!-- Contact actif côté mobile -->
+            <li><a href="contact.html" data-i18n="nav.contact"
+                class="block text-sm font-medium text-slate-900">Contact</a></li>
+
+            <li>
+              <!-- Version i18n possible :
+          <a href="contact.html" data-i18n="cta.get_started"
+            class="inline-flex rounded-full bg-gradient-to-r from-[#C6B2FF] to-[#B0E0FF] px-4 py-2 text-sm font-semibold text-white">
+            Commencer votre projet
+          </a>
+          -->
+              <a href="contact.html"
+                class="inline-flex rounded-full bg-gradient-to-r from-[#C6B2FF] to-[#B0E0FF] px-4 py-2 text-sm font-semibold text-white">
+                Commencer
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- =========================
          HERO with gradient
   ========================== -->
 
-  <!-- =========================
+    <!-- =========================
    CONTACT — Technoproweb
 ========================= -->
-  <section id="contact" class="relative overflow-hidden py-20">
-    <!-- Background image + overlay -->
-    <div class="absolute inset-0 -z-10 bg-black">
-      <div
-        class="h-full w-full bg-[url('https://img.freepik.com/photos-gratuite/vue-rapprochee-du-logiciel-codage-tablette-dans-salle-serveur_482257-118186.jpg?t=st=1763467795~exp=1763471395~hmac=69442ea702dc67933c02f8d93e4f439f6f95282f5afc87e922dbe33ebef3bd7d&w=2000')] bg-cover bg-center opacity-60">
+    <section id="contact"
+      class="relative overflow-hidden py-20"
+      aria-label="Formulaire de contact TechnoPro Web – Agence web & digitale au Maroc"
+      itemscope
+      itemtype="https://schema.org/ContactPage">
+
+      <!-- Métadonnées SEO structurées pour la page de contact -->
+      <meta itemprop="name"
+        content="Contact TechnoPro Web – Agence web & digitale à Tanger, Maroc">
+      <meta itemprop="description"
+        content="Contactez TechnoPro Web pour votre projet de site internet, e-commerce, SEO ou automatisation digitale. Devis gratuit, réponse en moins de 24h et -15 % sur votre premier projet.">
+      <meta itemprop="keywords"
+        content="contact agence web, contact TechnoPro Web, devis site internet Maroc, devis e-commerce, contact SEO Tanger, agence digitale Maroc, créer un site web, création site vitrine, création site e-commerce, automatisation IA">
+
+      <!-- Lien vers l’organisation principale (cohérence SEO avec le reste du site) -->
+      <meta itemprop="url" content="https://technoproweb.com/contact.html">
+
+      <!-- Background image + overlay -->
+      <div class="absolute inset-0 -z-10 bg-black">
+        <div
+          class="h-full w-full bg-[url('https://img.freepik.com/photos-gratuite/vue-rapprochee-du-logiciel-codage-tablette-dans-salle-serveur_482257-118186.jpg?t=st=1763467795~exp=1763471395~hmac=69442ea702dc67933c02f8d93e4f439f6f95282f5afc87e922dbe33ebef3bd7d&w=2000')] bg-cover bg-center opacity-60">
+        </div>
       </div>
-    </div>
-    <div class="absolute inset-0 -z-10 bg-gradient-to-tr from-black/80 via-black/70 to-black/60"></div>
+      <div
+        class="absolute inset-0 -z-10 bg-gradient-to-tr from-black/80 via-black/70 to-black/60"></div>
 
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="grid gap-10 items-center">
-        <!-- LEFT : TEXT -->
-        <div class="text-white m-auto text-center space-y-5">
-          <h2 class="text-3xl sm:text-4xl font-extrabold leading-tight">
-            Want to grow<br />
-            your business online?
-          </h2>
-          <p class="max-w-xl text-sm sm:text-base text-white/80">
-            Start your digital growth with Technoproweb today.
-            Benefit from tailored support and enjoy a special
-            <span class="font-semibold">-15% discount on your first project</span>.
-          </p>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-10 items-center">
 
-          <div class="mt-6 space-y-3 text-sm sm:text-base">
-            <div class="flex justify-center items-center gap-3">
-              <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-indigo-300">
-                <!-- phone icon -->
-                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M3 5.75C3 4.784 3.784 4 4.75 4h2.02c.63 0 1.19.37 1.407.954l1.06 2.827a1.5 1.5 0 0 1-.376 1.602l-1.21 1.135a.75.75 0 0 0-.16.86 10.97 10.97 0 0 0 4.99 4.99.75.75 0 0 0 .86-.16l1.135-1.21a1.5 1.5 0 0 1 1.602-.375l2.827 1.059A1.5 1.5 0 0 1 20 17.23v2.02A1.75 1.75 0 0 1 18.25 21h-.5C10.268 21 3 13.732 3 5.75v0Z" />
-                </svg>
-              </span>
-              <div>
-                <p class="text-xs uppercase tracking-wide text-white/50">By phone</p>
-                <p class="font-semibold">(+212) 6 21 69 15 02</p>
+          <!-- GAUCHE : TEXTE -->
+          <div class="text-white m-auto text-center space-y-5">
+            <h1 class="text-3xl sm:text-4xl font-extrabold leading-tight">
+              Vous voulez développer<br />
+              votre activité en ligne ?
+            </h1>
+
+            <p class="max-w-xl text-sm sm:text-base text-white/80">
+              Démarrez votre croissance digitale avec
+              <span class="font-semibold">TechnoPro Web</span>.
+              Profitez d’un accompagnement sur mesure et d’une
+              <span class="font-semibold">remise de -15 % sur votre premier
+                projet</span>.
+            </p>
+
+            <div class="mt-6 space-y-3 text-sm sm:text-base">
+
+              <!-- Contact téléphone -->
+              <div class="flex justify-center items-center gap-3"
+                itemscope
+                itemprop="about"
+                itemtype="https://schema.org/Organization">
+                <span
+                  class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-indigo-300">
+                  <!-- Icône téléphone -->
+                  <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor"
+                    aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 5.75C3 4.784 3.784 4 4.75 4h2.02c.63 0 1.19.37 1.407.954l1.06 2.827a1.5 1.5 0 0 1-.376 1.602l-1.21 1.135a.75.75 0 0 0-.16.86 10.97 10.97 0 0 0 4.99 4.99.75.75 0 0 0 .86-.16l1.135-1.21a1.5 1.5 0 0 1 1.602-.375l2.827 1.059A1.5 1.5 0 0 1 20 17.23v2.02A1.75 1.75 0 0 1 18.25 21h-.5C10.268 21 3 13.732 3 5.75v0Z" />
+                  </svg>
+                </span>
+                <div>
+                  <p class="text-xs uppercase tracking-wide text-white/50">Par
+                    téléphone</p>
+                  <p class="font-semibold">
+                    <a href="tel:+212621691502"
+                      class="hover:underline"
+                      itemprop="telephone">
+                      (+212) 6 21 69 15 02
+                    </a>
+                  </p>
+                  <meta itemprop="name" content="TechnoPro Web">
+                </div>
+              </div>
+
+              <!-- Contact WhatsApp -->
+              <div class="flex justify-center items-center gap-3">
+                <span
+                  class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-emerald-500 text-white">
+                  <span class="text-sm">WA</span>
+                </span>
+                <div>
+                  <p
+                    class="text-xs uppercase tracking-wide text-white/50">WhatsApp</p>
+                  <a
+                    href="https://wa.me/212621691502?text=Bonjour%20TechnoPro%20Web%2C%20je%20souhaite%20parler%20de%20mon%20projet%20web."
+                    class="font-semibold hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    itemprop="sameAs">
+                    Discuter sur WhatsApp
+                  </a>
+                </div>
               </div>
             </div>
 
-            <div class="flex justify-center items-center gap-3">
-              <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-emerald-500 text-white">
-                <span class="text-sm">WA</span>
-              </span>
-              <div>
-                <p class="text-xs uppercase tracking-wide text-white/50">WhatsApp</p>
-                <a href="https://wa.me/212621691502?text=Bonjour%20Technoproweb%2C%20je%20souhaite%20parler%20de%20mon%20projet%20web."
-                  class="font-semibold hover:underline" target="_blank">
-                  Chat on WhatsApp
-                </a>
-              </div>
-            </div>
+            <p class="mt-6 text-xs m-auto text-white/60 max-w-sm">
+              Réponse en moins de 24&nbsp;heures ouvrables. Vos informations
+              restent strictement
+              confidentielles.
+            </p>
           </div>
 
-          <p class="mt-6 text-xs m-auto text-white/60 max-w-sm">
-            Response in less than 24 business hours. Your information stays strictly confidential.
-          </p>
-        </div>
-
-        <!-- RIGHT : FORM CARD -->
-        <div
-          class="relative mx-auto w-full max-w-4xl rounded-3xl bg-white/95 p-6 sm:p-8 shadow-2xl ring-1 ring-black/5 backdrop-blur">
-          <h3 class="text-xl font-semibold text-slate-900 mb-4">
-            Tell us about your project
-          </h3>
-          <p class="text-sm text-slate-600 mb-6">
-            Fill out this form and we’ll get back to you with a concrete proposal and a detailed project estimate.
-          </p>
-
-          <form id="contact-form" action="#" class="space-y-4">
-
-            <!-- Name -->
-            <div>
-              <label for="name" class="block text-sm font-medium text-slate-700 mb-1">
-                Name / Surname
-              </label>
-              <input id="name" name="name" type="text" required
-                class="block w-full rounded-xl border border-slate-200 bg-slate-50/60 px-3 py-2 text-sm text-slate-900 shadow-sm outline-none focus:border-indigo-400 focus:ring-2 focus:ring-indigo-300/60" />
-            </div>
-
-            <!-- Phone -->
-            <div>
-              <label for="phone" class="block text-sm font-medium text-slate-700 mb-1">
-                Phone
-              </label>
-              <input id="phone" name="phone" type="tel" placeholder="+212600000000"
-                class="block w-full rounded-xl border border-slate-200 bg-slate-50/60 px-3 py-2 text-sm text-slate-900 shadow-sm outline-none focus:border-indigo-400 focus:ring-2 focus:ring-indigo-300/60" />
-            </div>
-
-            <!-- Email -->
-            <div>
-              <label for="email" class="block text-sm font-medium text-slate-700 mb-1">
-                Email address
-              </label>
-              <input id="email" name="email" type="email" required
-                class="block w-full rounded-xl border border-slate-200 bg-slate-50/60 px-3 py-2 text-sm text-slate-900 shadow-sm outline-none focus:border-indigo-400 focus:ring-2 focus:ring-indigo-300/60" />
-            </div>
-
-            <!-- Message -->
-            <div>
-              <label for="message" class="block text-sm font-medium text-slate-700 mb-1">
-                Project / Message
-              </label>
-              <textarea id="message" name="message" rows="4" required
-                class="block w-full rounded-xl border border-slate-200 bg-slate-50/60 px-3 py-2 text-sm text-slate-900 shadow-sm outline-none focus:border-indigo-400 focus:ring-2 focus:ring-indigo-300/60"
-                placeholder="Tell us about your business, your current website or your goals…"></textarea>
-            </div>
-
-            <!-- Privacy / Policy checkbox -->
-            <!-- <div class="pt-1 flex items-start gap-2">
-              <input id="privacy" name="privacy" type="checkbox" required
-                class="mt-1 h-4 w-4 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500" />
-              <label for="privacy" class="text-xs text-slate-600">
-                I accept the
-                <a href="/privacy-policy" class="text-indigo-600 underline hover:text-indigo-500" target="_blank">
-                  Privacy Policy
-                </a>
-                and consent to being contacted by Technoproweb.
-              </label>
-            </div> -->
-
-            <!-- Hidden simple field (anti-spam) -->
-            <input type="text" name="website" class="hidden" tabindex="-1" autocomplete="off" />
-
-            <!-- Submit -->
-            <button type="submit"
-              class="mt-2 inline-flex w-full items-center justify-center rounded-full bg-gradient-to-r from-[#4F46E5] via-[#6366F1] to-[#0EA5E9] px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-indigo-500/30 transition hover:brightness-110">
-              Send your message
-            </button>
-
-            <p class="mt-3 text-[11px] leading-relaxed text-slate-500">
-              By submitting this form, you agree that Technoproweb may contact you by email or phone
-              regarding your request.
+          <!-- DROITE : CARTE FORMULAIRE -->
+          <div
+            class="relative mx-auto w-full max-w-4xl rounded-3xl bg-white/95 p-6 sm:p-8 shadow-2xl ring-1 ring-black/5 backdrop-blur">
+            <h3 class="text-xl font-semibold text-slate-900 mb-4">
+              Parlez-nous de votre projet
+            </h3>
+            <p class="text-sm text-slate-600 mb-6">
+              Remplissez ce formulaire et nous reviendrons vers vous avec une
+              proposition concrète et une estimation détaillée de votre projet.
             </p>
-          </form>
+
+            <form id="contact-form" action="#" class="space-y-4">
+
+              <!-- Nom -->
+              <div>
+                <label for="name"
+                  class="block text-sm font-medium text-slate-700 mb-1">
+                  Nom / Prénom
+                </label>
+                <input id="name" name="name" type="text" required
+                  class="block w-full rounded-xl border border-slate-200 bg-slate-50/60 px-3 py-2 text-sm text-slate-900 shadow-sm outline-none focus:border-indigo-400 focus:ring-2 focus:ring-indigo-300/60"
+                  aria-label="Nom et prénom">
+              </div>
+
+              <!-- Téléphone -->
+              <div>
+                <label for="phone"
+                  class="block text-sm font-medium text-slate-700 mb-1">
+                  Téléphone
+                </label>
+                <input id="phone" name="phone" type="tel"
+                  placeholder="+212600000000"
+                  class="block w-full rounded-xl border border-slate-200 bg-slate-50/60 px-3 py-2 text-sm text-slate-900 shadow-sm outline-none focus:border-indigo-400 focus:ring-2 focus:ring-indigo-300/60"
+                  aria-label="Numéro de téléphone">
+              </div>
+
+              <!-- Email -->
+              <div>
+                <label for="email"
+                  class="block text-sm font-medium text-slate-700 mb-1">
+                  Adresse e-mail
+                </label>
+                <input id="email" name="email" type="email" required
+                  class="block w-full rounded-xl border border-slate-200 bg-slate-50/60 px-3 py-2 text-sm text-slate-900 shadow-sm outline-none focus:border-indigo-400 focus:ring-2 focus:ring-indigo-300/60"
+                  aria-label="Adresse e-mail">
+              </div>
+
+              <!-- Message -->
+              <div>
+                <label for="message"
+                  class="block text-sm font-medium text-slate-700 mb-1">
+                  Projet / Message
+                </label>
+                <textarea id="message" name="message" rows="4" required
+                  class="block w-full rounded-xl border border-slate-200 bg-slate-50/60 px-3 py-2 text-sm text-slate-900 shadow-sm outline-none focus:border-indigo-400 focus:ring-2 focus:ring-indigo-300/60"
+                  placeholder="Parlez-nous de votre activité, de votre site actuel ou de vos objectifs…"
+                  aria-label="Description du projet ou message"></textarea>
+              </div>
+
+              <!-- Champ caché anti-spam -->
+              <input type="text" name="website" class="hidden" tabindex="-1"
+                autocomplete="off" />
+
+              <!-- Submit -->
+              <button type="submit"
+                class="mt-2 inline-flex w-full items-center justify-center rounded-full bg-gradient-to-r from-[#4F46E5] via-[#6366F1] to-[#0EA5E9] px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-indigo-500/30 transition hover:brightness-110">
+                Envoyer mon message
+              </button>
+
+              <p class="mt-3 text-[11px] leading-relaxed text-slate-500">
+                En envoyant ce formulaire, vous acceptez d’être contacté(e) par
+                TechnoPro Web par e-mail ou par téléphone concernant votre
+                demande.
+              </p>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
 
+      <!-- JSON-LD SEO : ContactPage reliée à l’organisation -->
+      <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "@id": "https://technoproweb.com/contact.html#contact-section",
+    "url": "https://technoproweb.com/contact.html",
+    "name": "Contact TechnoPro Web – Agence web & digitale à Tanger, Maroc",
+    "description": "Formulaire de contact pour discuter de votre projet de site web, e-commerce, SEO ou automatisation digitale avec TechnoPro Web. Devis gratuit, réponse en moins de 24h.",
+    "about": {
+      "@type": "Organization",
+      "@id": "https://technoproweb.com/#organization",
+      "name": "TechnoPro Web",
+      "telephone": "+212621691502",
+      "email": "contact@technoproweb.com"
+    },
+    "contactOption": [
+      "CustomerSupport",
+      "Sales"
+    ],
+    "areaServed": [
+      "MA",
+      "FR",
+      "EU"
+    ]
+  }
+  </script>
+    </section>
 
     <section
       class="cookie-banner"
       id="cookie-banner"
-      aria-label="Cookie consent"
+      aria-label="Consentement aux cookies"
       aria-describedby="cookie-text cookie-actions">
       <div class="cookie-content">
         <div class="cookie-icon" aria-hidden="true">🍪</div>
 
-        <h3 class="cookie-title">We Use Cookies</h3>
+        <h3 class="cookie-title">Nous utilisons des cookies</h3>
 
         <p class="cookie-text" id="cookie-text">
-          We use cookies to give you the best experience, analyze traffic,
-          and improve our services. You can accept or decline non-essential
-          cookies at any time.
+          Nous utilisons des cookies pour améliorer votre expérience,
+          analyser le trafic et optimiser nos services.
+          Vous pouvez accepter ou refuser les cookies non essentiels.
           <a href="/cookie-policy.html" class="cookie-link">
-            Learn more in our cookie policy.
+            En savoir plus dans notre politique de cookies.
           </a>
         </p>
 
         <div class="cookie-actions" id="cookie-actions">
           <button type="button" class="cookie-accept">
-            Accept all cookies
+            Accepter tous les cookies
           </button>
           <button type="button" class="cookie-decline">
-            Only essential cookies
+            Cookies essentiels uniquement
           </button>
         </div>
       </div>
     </section>
 
+    <!-- FOOTER -->
+    <footer
+      class="relative text-slate-100 pt-16 pb-10 overflow-hidden animated-footer-bg"
+      role="contentinfo"
+      itemscope
+      itemtype="https://schema.org/Organization">
 
+      <!-- ========================= -->
+      <!-- BILINGUE / SEO MICRODATA -->
+      <!-- ========================= -->
 
-  <!-- FOOTER -->
-  <footer class="relative text-slate-100 pt-16 pb-10 overflow-hidden animated-footer-bg" role="contentinfo" itemscope
-    itemtype="https://schema.org/Organization">
+      <!-- Nom de l'organisation -->
+      <meta itemprop="name" content="TechnoPro Web">
 
-    <!-- ========================= -->
-    <!-- BILINGUAL SEO METADATA -->
-    <!-- ========================= -->
+      <!-- URL du site -->
+      <meta itemprop="url" content="https://technoproweb.com">
 
-    <meta itemprop="name" content="TechnoPro Web">
+      <!-- Contact -->
+      <meta itemprop="email" content="contact@technoproweb.com">
+      <meta itemprop="telephone" content="+212621691502">
 
-    <!-- Website URL -->
-    <meta itemprop="url" content="https://technoproweb.com">
+      <!-- Description EN -->
+      <meta itemprop="description"
+        content="TechnoPro Web is a web & AI agency based in Tangier, Morocco. We create high-performance custom websites, ecommerce stores, SEO strategies and business automation to help companies get more clients online." />
 
-    <!-- Contact Info -->
-    <meta itemprop="email" content="contact@technoproweb.com">
-    <meta itemprop="telephone" content="+212621691502">
+      <!-- Description FR -->
+      <meta itemprop="description"
+        content="TechnoPro Web est une agence web & IA basée à Tanger, Maroc. Nous créons des sites internet performants, boutiques e-commerce, stratégies SEO et automatisations métier pour aider les entreprises à gagner plus de clients en ligne." />
 
-    <!-- English description -->
-    <meta itemprop="description"
-      content="TechnoPro Web is a modern Web & AI agency creating high-performance websites, e-commerce solutions, SEO strategies, and business automation." />
+      <!-- Mots-clés EN -->
+      <meta itemprop="keywords"
+        content="web agency Tangier, web agency Morocco, website creation Tangier, website creation Morocco, website design agency, web development Morocco, ecommerce website Morocco, SEO agency Morocco, SEO services Tangier, digital marketing Tangier, AI automation agency, custom website for small business, responsive website design, landing page design, Laravel developer Morocco, React developer Morocco, bilingual website, TechnoPro Web" />
 
-    <!-- French description -->
-    <meta itemprop="description"
-      content="TechnoPro Web est une agence Web & IA moderne spécialisée dans la création de sites web performants, solutions e-commerce, SEO, et automatisation professionnelle." />
+      <!-- Mots-clés FR -->
+      <meta itemprop="keywords"
+        content="agence web Tanger, agence web Maroc, création site internet Tanger, création site web Maroc, création site vitrine, développement site e-commerce, site e-commerce Maroc, agence SEO Maroc, services SEO Tanger, référencement naturel Maroc, marketing digital Tanger, automatisation IA Maroc, site web pour petites entreprises, refonte site internet, création landing page, site internet responsive, site internet bilingue, TechnoPro Web" />
 
-    <!-- English keywords -->
-    <meta itemprop="keywords"
-      content="web agency Morocco, web development Tangier, website design, ecommerce development, SEO Morocco, AI automation, digital marketing Tangier, custom website, professional website, UI UX design, Technopro Web" />
+      <!-- Mots-clés AR -->
+      <meta itemprop="keywords"
+        content="وكالة إنشاء مواقع طنجة, وكالة ويب طنجة, وكالة ويب المغرب, إنشاء موقع إلكتروني في طنجة, إنشاء موقع إلكتروني في المغرب, تصميم موقع احترافي, تطوير مواقع الويب المغرب, متجر إلكتروني في المغرب, وكالة سيو المغرب, تحسين محركات البحث طنجة, تسويق رقمي طنجة, برمجة مواقع بلغة Laravel, مطور React في المغرب, موقع متعدد اللغات, برمجة متجر إلكتروني, وكالة مواقع الويب في طنجة, TechnoPro Web" />
 
-    <!-- French keywords -->
-    <meta itemprop="keywords"
-      content="agence web Maroc, création site web Tanger, développement web, site vitrine, site e-commerce Maroc, agence digitale Tanger, référencement naturel SEO Maroc, automatisation IA, conception site internet, Technopro Web" />
+      <!-- Logo -->
+      <meta itemprop="logo" content="https://technoproweb.com/assets/logo.png">
 
-    <!-- Logo -->
-    <meta itemprop="logo" content="https://technoproweb.com/assets/logo.png">
+      <!-- Zones desservies -->
+      <meta itemprop="areaServed" content="Morocco" />
+      <meta itemprop="areaServed" content="Maroc" />
+      <meta itemprop="areaServed" content="Europe" />
 
-    <!-- Service Areas -->
-    <meta itemprop="areaServed" content="Morocco" />
-    <meta itemprop="areaServed" content="Maroc" />
-    <meta itemprop="areaServed" content="Europe" />
+      <!-- Types de services (EN + FR) -->
+      <meta itemprop="serviceType" content="Website creation" />
+      <meta itemprop="serviceType" content="Custom showcase websites" />
+      <meta itemprop="serviceType" content="E-commerce development" />
+      <meta itemprop="serviceType" content="SEO optimization" />
+      <meta itemprop="serviceType" content="AI automation" />
+      <meta itemprop="serviceType" content="Landing pages" />
+      <meta itemprop="serviceType" content="UI/UX design" />
 
-    <!-- English service types -->
-    <meta itemprop="serviceType" content="Website creation" />
-    <meta itemprop="serviceType" content="Custom showcase websites" />
-    <meta itemprop="serviceType" content="E-commerce development" />
-    <meta itemprop="serviceType" content="SEO optimization" />
-    <meta itemprop="serviceType" content="AI automation" />
-    <meta itemprop="serviceType" content="Landing pages" />
-    <meta itemprop="serviceType" content="UI/UX design" />
+      <meta itemprop="serviceType" content="Création de site web" />
+      <meta itemprop="serviceType" content="Site vitrine personnalisé" />
+      <meta itemprop="serviceType" content="Développement e-commerce" />
+      <meta itemprop="serviceType" content="Optimisation SEO" />
+      <meta itemprop="serviceType" content="Automatisation IA" />
+      <meta itemprop="serviceType" content="Pages d’atterrissage" />
+      <meta itemprop="serviceType" content="Design UI/UX" />
 
-    <!-- French service types -->
-    <meta itemprop="serviceType" content="Création de site web" />
-    <meta itemprop="serviceType" content="Site vitrine personnalisé" />
-    <meta itemprop="serviceType" content="Développement e-commerce" />
-    <meta itemprop="serviceType" content="Optimisation SEO" />
-    <meta itemprop="serviceType" content="Automatisation IA" />
-    <meta itemprop="serviceType" content="Pages d’atterrissage" />
-    <meta itemprop="serviceType" content="Design UI/UX" />
+      <!-- Profils sociaux -->
+      <link itemprop="sameAs"
+        href="https://www.facebook.com/profile.php?id=61584682072813&locale=fr_FR">
+      <link itemprop="sameAs" href="https://instagram.com">
+      <link itemprop="sameAs"
+        href="https://www.linkedin.com/company/technoproweb/about/?viewAsMember=true">
+      <link itemprop="sameAs" href="https://wa.me/212621691502">
 
-    <!-- Social profiles -->
-    <link itemprop="sameAs" href="https://facebook.com">
-    <link itemprop="sameAs" href="https://instagram.com">
-    <link itemprop="sameAs" href="https://linkedin.com">
-    <link itemprop="sameAs" href="https://wa.me/212621691502">
+      <!-- ========================= -->
+      <!-- Décor / particules -->
+      <!-- ========================= -->
+      <div
+        class="pointer-events-none absolute -top-20 left-10 w-3 h-3 rounded-full particle"
+        aria-hidden="true"></div>
+      <div
+        class="pointer-events-none absolute top-1/3 right-10 w-2 h-2 rounded-full particle delay-1"
+        aria-hidden="true"></div>
+      <div
+        class="pointer-events-none absolute bottom-10 left-1/4 w-2.5 h-2.5 rounded-full particle delay-2"
+        aria-hidden="true"></div>
+      <div
+        class="pointer-events-none absolute bottom-1/3 right-1/3 w-3 h-3 rounded-full particle delay-3"
+        aria-hidden="true"></div>
 
-    <!-- ========================= -->
-    <!-- Decorative particles / UI -->
-    <!-- ========================= -->
+      <!-- Ligne dégradé animée -->
+      <div class="absolute inset-x-0 top-0 h-[2px] animated-gradient"
+        aria-hidden="true"></div>
 
-    <div class="pointer-events-none absolute -top-20 left-10 w-3 h-3 rounded-full particle"></div>
-    <div class="pointer-events-none absolute top-1/3 right-10 w-2 h-2 rounded-full particle delay-1"></div>
-    <div class="pointer-events-none absolute bottom-10 left-1/4 w-2.5 h-2.5 rounded-full particle delay-2"></div>
-    <div class="pointer-events-none absolute bottom-1/3 right-1/3 w-3 h-3 rounded-full particle delay-3"></div>
+      <div class="relative max-w-6xl mx-auto px-4 space-y-12">
 
-    <!-- Animated gradient line on top -->
-    <div class="absolute inset-x-0 top-0 h-[2px] animated-gradient"></div>
-
-    <div class="relative max-w-6xl mx-auto px-4 space-y-12">
-
-      <!-- ========= TOP SECTION ========= -->
-      <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between reveal-footer">
-        <div class="space-y-2">
-          <div class="inline-flex items-center gap-2">
-            <span class="text-xl font-black tracking-tight bg-clip-text text-transparent
-               bg-gradient-to-r from-[#F6CED8] via-[#C6B2FF] to-[#B0E0FF]" itemprop="name">
-              TechnoPro Web
-            </span>
-            <span class="text-xs px-2 py-0.5 rounded-full bg-white/10 border border-white/10 text-slate-200">
-              Web & AI Agency
-            </span>
+        <!-- ========= TOP ========= -->
+        <div
+          class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between reveal-footer">
+          <div class="space-y-2">
+            <div class="inline-flex items-center gap-2">
+              <span
+                class="text-xl font-black tracking-tight bg-clip-text text-transparent
+             bg-gradient-to-r from-[#F6CED8] via-[#C6B2FF] to-[#B0E0FF]"
+                itemprop="name">
+                TechnoPro Web
+              </span>
+              <span
+                class="text-xs px-2 py-0.5 rounded-full bg-white/10 border border-white/10 text-slate-200">
+                Agence Web &amp; IA
+              </span>
+            </div>
+            <p class="max-w-xl text-sm text-slate-300">
+              Nous créons des sites web modernes, automatisations intelligentes
+              et SEO premium
+              pour booster vos résultats en ligne.
+            </p>
           </div>
-          <p class="max-w-xl text-sm text-slate-300">
-            We create modern websites, smart automation and premium SEO
-            to boost your results online.
-          </p>
+
+          <a href="/contact.html"
+            class="relative inline-flex items-center gap-2 rounded-full px-7 py-3 text-sm font-semibold
+           text-white shadow-[0_12px_35px_rgba(0,0,0,0.6)]
+           bg-gradient-to-r from-[#F6CED8] via-[#C6B2FF] to-[#B0E0FF]
+           hover:shadow-[0_18px_45px_rgba(0,0,0,0.8)]
+           transition-transform duration-300 hover:-translate-y-1 cta-pulse">
+            <span>💬 Demander un devis gratuit</span>
+          </a>
         </div>
 
-        <a href="/contact.html" class="relative inline-flex items-center gap-2 rounded-full px-7 py-3 text-sm font-semibold
-       text-white shadow-[0_12px_35px_rgba(0,0,0,0.6)]
-       bg-gradient-to-r from-[#F6CED8] via-[#C6B2FF] to-[#B0E0FF]
-       hover:shadow-[0_18px_45px_rgba(0,0,0,0.8)]
-       transition-transform duration-300 hover:-translate-y-1 cta-pulse">
-          <span>💬 Get a free project estimate</span>
-        </a>
-      </div>
+        <!-- ========= GRID ========= -->
+        <div class="grid gap-10 md:grid-cols-4">
 
-      <!-- ========= GRID SECTION ========= -->
-      <div class="grid gap-10 md:grid-cols-4">
-
-        <!-- About -->
-        <div class="space-y-4 reveal-footer">
-          <h4 class="text-sm font-semibold tracking-wide text-slate-200 uppercase">About</h4>
-          <p class="text-sm text-slate-300">
-            We support ambitious businesses in building high-performing
-            digital solutions.
-          </p>
-          <div class="flex gap-4">
-            <div class="footer-card px-4 py-3 rounded-2xl floating-footer text-center min-w-[90px]">
-              <div class="text-xs text-slate-200">+50</div>
-              <div class="text-[11px] text-slate-400">Projects</div>
-            </div>
-            <div class="footer-card px-4 py-3 rounded-2xl floating-footer-slow text-center min-w-[90px]">
-              <div class="text-xs text-slate-200">24/7</div>
-              <div class="text-[11px] text-slate-400">Support</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Web Services -->
-        <nav class="space-y-4 reveal-footer" aria-label="Web services">
-          <h4 class="text-sm font-semibold tracking-wide text-slate-200 uppercase">Web
-            Services</h4>
-          <ul class="space-y-2 text-sm text-slate-300">
-            <li class="flex items-center gap-2 hover:text-white transition">
-              <span aria-hidden="true">💻</span> <span>Custom showcase
-                website</span>
-            </li>
-            <li class="flex items-center gap-2 hover:text-white transition">
-              <span aria-hidden="true">🛒</span> <span>Optimized
-                e-commerce</span>
-            </li>
-            <li class="flex items-center gap-2 hover:text-white transition">
-              <span aria-hidden="true">⚙️</span> <span>Automation & AI</span>
-            </li>
-            <li class="flex items-center gap-2 hover:text-white transition">
-              <span aria-hidden="true">📈</span> <span>SEO & content
-                strategy</span>
-            </li>
-          </ul>
-        </nav>
-
-        <!-- Company -->
-        <nav class="space-y-4 reveal-footer" aria-label="Company pages">
-          <h4 class="text-sm font-semibold tracking-wide text-slate-200 uppercase">Company</h4>
-          <ul class="space-y-2 text-sm text-slate-300">
-
-            <li class="group">
-              <a href="/portfolio.html" class="relative inline-block transition text-slate-300 hover:text-white">
-                Our projects
-                <span
-                  class="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
-              </a>
-            </li>
-
-            <li class="group">
-              <a href="/about.html" class="relative inline-block transition text-slate-300 hover:text-white">
-                About the agency
-                <span
-                  class="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
-              </a>
-            </li>
-
-            <li class="group">
-              <a href="/services.html" class="relative inline-block transition text-slate-300 hover:text-white">
-                Services
-                <span
-                  class="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
-              </a>
-            </li>
-
-            <li class="group">
-              <a href="/contact.html" class="relative inline-block transition text-slate-300 hover:text-white">
-                Contact
-                <span
-                  class="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
-              </a>
-            </li>
-
-          </ul>
-        </nav>
-
-        <!-- Contact -->
-        <div class="space-y-4 reveal-footer">
-          <h4 class="text-sm font-semibold tracking-wide text-slate-200 uppercase">Direct
-            contact</h4>
-
-          <div class="space-y-3 text-sm">
-
-            <div class="footer-card rounded-2xl px-2 py-3 flex items-start gap-3">
-              <div class="w-8 h-8 rounded-full flex items-center justify-center text-lg bg-white/10">
-                <span aria-hidden="true">📍</span>
+          <!-- À propos -->
+          <div class="space-y-4 reveal-footer">
+            <h4
+              class="text-sm font-semibold tracking-wide text-slate-200 uppercase">
+              À propos
+            </h4>
+            <p class="text-sm text-slate-300">
+              Nous accompagnons les entreprises ambitieuses pour créer des
+              expériences
+              digitales performantes et rentables.
+            </p>
+            <div class="flex gap-4">
+              <div
+                class="footer-card px-4 py-3 rounded-2xl floating-footer text-center min-w-[90px]">
+                <div class="text-xs text-slate-200">+50</div>
+                <div class="text-[11px] text-slate-400">Projets</div>
               </div>
-              <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-                <div class="text-slate-200 font-medium">
-                  <span itemprop="addressLocality">Tanger</span>,
-                  <span itemprop="addressCountry">Morocco</span>
+              <div
+                class="footer-card px-4 py-3 rounded-2xl floating-footer-slow text-center min-w-[90px]">
+                <div class="text-xs text-slate-200">24/7</div>
+                <div class="text-[11px] text-slate-400">Support</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Services Web -->
+          <nav class="space-y-4 reveal-footer" aria-label="Services web">
+            <h4
+              class="text-sm font-semibold tracking-wide text-slate-200 uppercase">
+              Services Web
+            </h4>
+            <ul class="space-y-2 text-sm text-slate-300">
+              <li class="flex items-center gap-2 hover:text-white transition">
+                <span aria-hidden="true">💻</span>
+                <span>Site vitrine sur mesure</span>
+              </li>
+              <li class="flex items-center gap-2 hover:text-white transition">
+                <span aria-hidden="true">🛒</span>
+                <span>Site e-commerce optimisé</span>
+              </li>
+              <li class="flex items-center gap-2 hover:text-white transition">
+                <span aria-hidden="true">⚙️</span>
+                <span>Automatisation &amp; IA</span>
+              </li>
+              <li class="flex items-center gap-2 hover:text-white transition">
+                <span aria-hidden="true">📈</span>
+                <span>SEO &amp; stratégie contenu</span>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Entreprise -->
+          <nav class="space-y-4 reveal-footer" aria-label="Pages de l'agence">
+            <h4
+              class="text-sm font-semibold tracking-wide text-slate-200 uppercase">
+              Agence
+            </h4>
+            <ul class="space-y-2 text-sm text-slate-300">
+
+              <li class="group">
+                <a href="/portfolio.html"
+                  class="relative inline-block transition text-slate-300 hover:text-white">
+                  Nos projets
+                  <span
+                    class="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+                </a>
+              </li>
+
+              <li class="group">
+                <a href="/propos.html"
+                  class="relative inline-block transition text-slate-300 hover:text-white">
+                  À propos de l’agence
+                  <span
+                    class="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+                </a>
+              </li>
+
+              <li class="group">
+                <a href="/services.html"
+                  class="relative inline-block transition text-slate-300 hover:text-white">
+                  Services
+                  <span
+                    class="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+                </a>
+              </li>
+
+              <li class="group">
+                <a href="/contact.html"
+                  class="relative inline-block transition text-slate-300 hover:text-white">
+                  Contact
+                  <span
+                    class="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+                </a>
+              </li>
+
+            </ul>
+          </nav>
+
+          <!-- Contact direct -->
+          <div class="space-y-4 reveal-footer">
+            <h4
+              class="text-sm font-semibold tracking-wide text-slate-200 uppercase">
+              Contact direct
+            </h4>
+
+            <div class="space-y-3 text-sm">
+
+              <div
+                class="footer-card rounded-2xl px-2 py-3 flex items-start gap-3">
+                <div
+                  class="w-8 h-8 rounded-full flex items-center justify-center text-lg bg-white/10">
+                  <span aria-hidden="true">📍</span>
+                </div>
+                <div itemprop="address" itemscope
+                  itemtype="https://schema.org/PostalAddress">
+                  <div class="text-slate-200 font-medium">
+                    <span itemprop="addressLocality">Tanger</span>,
+                    <span itemprop="addressCountry">Maroc</span>
+                  </div>
                 </div>
               </div>
+
+              <div
+                class="footer-card rounded-2xl px-2 py-3 flex items-start gap-3">
+                <div
+                  class="w-8 h-8 rounded-full flex items-center justify-center text-lg bg-white/10">
+                  <span aria-hidden="true">📞</span>
+                </div>
+                <div>
+                  <a href="tel:+212621691502"
+                    class="text-slate-200 font-medium hover:text-white transition"
+                    itemprop="telephone">
+                    +212 6 21 69 15 02
+                  </a>
+                  <div class="text-slate-400 text-xs">Appel &amp; WhatsApp</div>
+                </div>
+              </div>
+
+              <div
+                class="footer-card rounded-2xl px-2 py-3 flex items-start gap-3">
+                <div
+                  class="w-8 h-8 rounded-full flex items-center justify-center text-lg bg-white/10">
+                  <span aria-hidden="true">✉️</span>
+                </div>
+                <div>
+                  <a href="mailto:contact@technoproweb.com"
+                    class="text-slate-200 font-medium hover:text-white transition"
+                    itemprop="email">
+                    contact@technoproweb.com
+                  </a>
+                  <div class="text-slate-400 text-xs">Réponse sous 24h</div>
+                </div>
+              </div>
+
             </div>
-
-            <div class="footer-card rounded-2xl px-2 py-3 flex items-start gap-3">
-              <div class="w-8 h-8 rounded-full flex items-center justify-center text-lg bg-white/10">
-                <span aria-hidden="true">📞</span>
-              </div>
-              <div>
-                <a href="tel:+212621691502" class="text-slate-200 font-medium hover:text-white transition"
-                  itemprop="telephone">
-                  +212 6 21 69 15 02
-                </a>
-                <div class="text-slate-400 text-xs">Call & WhatsApp</div>
-              </div>
-            </div>
-
-            <div class="footer-card rounded-2xl px-2 py-3 flex items-start gap-3">
-              <div class="w-8 h-8 rounded-full flex items-center justify-center text-lg bg-white/10">
-                <span aria-hidden="true">✉️</span>
-              </div>
-              <div>
-                <a href="mailto:contact@technoproweb.com" class="text-slate-200 font-medium hover:text-white transition"
-                  itemprop="email">
-                  contact@technoproweb.com
-                </a>
-                <div class="text-slate-400 text-xs">Reply within 24h</div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Social media + bottom -->
-      <div class="pt-6 border-t border-white/10 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-
-        <div class="flex items-center gap-3 reveal-footer">
-          <span class="text-xs text-slate-400">Follow us:</span>
-          <div class="flex gap-3" aria-label="TechnoPro Web social media">
-
-            <!-- FACEBOOK -->
-            <a href="https://facebook.com" aria-label="Visit TechnoPro Web on Facebook"
-              class="social-orb social-orb--orbit" style="--accent:#1877F2;" target="_blank" rel="noopener noreferrer"
-              itemprop="sameAs">
-              <svg viewBox="0 0 24 24" class="social-orb__icon" width="18" height="18" aria-hidden="true">
-                <path fill="currentColor"
-                  d="M13 22v-8h2.5l.5-3H13V8.5A1.5 1.5 0 0 1 14.5 7H16V4h-1.5A4.5 4.5 0 0 0 10 8.5V11H8v3h2v8z" />
-              </svg>
-              <span class="social-orb__label">Facebook</span>
-
-              <!-- DOTS -->
-              <span class="social-orb__dot social-orb__dot--1"></span>
-              <span class="social-orb__dot social-orb__dot--2"></span>
-              <span class="social-orb__dot social-orb__dot--3"></span>
-              <span class="social-orb__dot social-orb__dot--4"></span>
-            </a>
-
-            <!-- INSTAGRAM -->
-            <a href="https://instagram.com" aria-label="Visit TechnoPro Web on Instagram"
-              class="social-orb social-orb--orbit" style="--accent:#F56040;" target="_blank" rel="noopener noreferrer"
-              itemprop="sameAs">
-              <svg viewBox="0 0 24 24" class="social-orb__icon" width="18" height="18" aria-hidden="true">
-                <path fill="currentColor"
-                  d="M8 3h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8zm4 2.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5zM16.5 7a.9.9 0 1 1-.9.9.9.9 0 0 1 .9-.9z" />
-              </svg>
-              <span class="social-orb__label">Instagram</span>
-
-              <span class="social-orb__dot social-orb__dot--1"></span>
-              <span class="social-orb__dot social-orb__dot--2"></span>
-              <span class="social-orb__dot social-orb__dot--3"></span>
-              <span class="social-orb__dot social-orb__dot--4"></span>
-            </a>
-
-            <!-- LINKEDIN -->
-            <a href="https://www.linkedin.com/in/nada-el-moudden-229606285/"
-              aria-label="Visit TechnoPro Web on LinkedIn" class="social-orb social-orb--orbit"
-              style="--accent:#0A66C2;" target="_blank" rel="noopener noreferrer" itemprop="sameAs">
-              <svg viewBox="0 0 24 24" class="social-orb__icon" width="18" height="18" aria-hidden="true">
-                <path fill="currentColor"
-                  d="M6 6a2 2 0 1 1-2 2 2 2 0 0 1 2-2zM4 10h4v10H4zm6 0h3.8v1.7h.1A4.1 4.1 0 0 1 18 9.9C20.6 9.9 21 11.6 21 14.1V20h-4v-5.1c0-1.2 0-2.7-1.7-2.7S13 13.5 13 14.8V20h-3z" />
-              </svg>
-              <span class="social-orb__label">LinkedIn</span>
-
-              <span class="social-orb__dot social-orb__dot--1"></span>
-              <span class="social-orb__dot social-orb__dot--2"></span>
-              <span class="social-orb__dot social-orb__dot--3"></span>
-              <span class="social-orb__dot social-orb__dot--4"></span>
-            </a>
-
-            <!-- WhatsApp -->
-            <a href="https://wa.me/212621691502?text=Hey%20TechnoPro%20Web,%20I%20would%20like%20to%20build%20a%20website.%20Can%20we%20talk%3F"
-              aria-label="Contact TechnoPro Web on WhatsApp" target="_blank" rel="noopener noreferrer"
-              class="social-orb social-orb--orbit" style="--accent:#25D366;" itemprop="sameAs">
-
-              <!-- WhatsApp Icon -->
-              <svg viewBox="0 0 32 32" class="social-orb__icon" width="18" height="18" aria-hidden="true">
-                <path fill="currentColor"
-                  d="M16.027 3c-7.003 0-12.68 5.677-12.68 12.68 0 2.235.584 4.416 1.7 6.346L3 29l7.18-2.015a12.63 12.63 0 0 0 5.847 1.492h.007c7.003 0 12.68-5.677 12.68-12.68C28.714 8.677 23.03 3 16.027 3zm7.41 17.884c-.31.868-1.81 1.678-2.51 1.785-.643.097-1.474.138-2.375-.148-.547-.173-1.253-.405-2.163-.79-3.807-1.641-6.283-5.44-6.476-5.693-.19-.254-1.544-2.054-1.544-3.92 0-1.866.978-2.781 1.323-3.157.345-.376.75-.47 1.003-.47.253 0 .5.003.717.013.23.01.538-.087.842.642.31.744 1.053 2.575 1.145 2.76.09.187.15.402.03.654-.12.25-.18.403-.35.62-.18.23-.37.51-.53.685-.175.19-.355.4-.152.78.203.376.903 1.487 1.94 2.41 1.334 1.186 2.46 1.556 2.84 1.73.38.173.608.15.83-.09.22-.24.953-1.112 1.207-1.497.254-.385.505-.32.842-.19.345.127 2.18 1.027 2.55 1.213.376.187.63.28.72.435.09.157.09.91-.22 1.78z" />
-              </svg>
-
-              <span class="social-orb__label">WhatsApp</span>
-
-              <span class="social-orb__dot social-orb__dot--1"></span>
-              <span class="social-orb__dot social-orb__dot--2"></span>
-              <span class="social-orb__dot social-orb__dot--3"></span>
-              <span class="social-orb__dot social-orb__dot--4"></span>
-            </a>
-
           </div>
 
         </div>
 
-        <div class="flex items-center justify-between md:justify-end gap-4 reveal-footer w-full md:w-auto">
-          <span class="text-[11px] text-slate-400">
-            ©️ <span class="year" data-year></span> TechnoPro Web — All rights
-            reserved
-          </span>
+        <!-- Social + bottom -->
+        <div
+          class="pt-6 border-t border-white/10 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
 
-          <button id="backToTop" class="backtotop-btn inline-flex items-center gap-2 rounded-full px-4 py-2 text-[11px] font-medium
-         text-slate-100 bg-white/5 border border-white/15
-         shadow-[0_8px_20px_rgba(0,0,0,0.6)]
-         hover:bg-white/10 hover:border-[#C6B2FF] hover:text-white
-         transition-all duration-300 opacity-0 pointer-events-none">
-            <span class="relative flex items-center gap-1">
-              <span
-                class="inline-flex h-4 w-4 items-center justify-center rounded-full bg-gradient-to-br from-[#F6CED8] via-[#C6B2FF] to-[#B0E0FF] text-[10px]">
-                ↑
-              </span>
-              <span>Back to top</span>
-              <span class="dot-move"></span>
+          <div class="flex items-center gap-3 reveal-footer">
+            <span class="text-[11px] text-slate-400">Suivez-nous :</span>
+            <div class="flex gap-3" aria-label="Réseaux sociaux TechnoPro Web">
+
+              <!-- FACEBOOK -->
+              <a
+                href="https://www.facebook.com/profile.php?id=61584682072813&locale=fr_FR"
+                aria-label="Visiter TechnoPro Web sur Facebook"
+                class="social-orb social-orb--orbit" style="--accent:#1877F2;"
+                target="_blank" rel="noopener noreferrer"
+                itemprop="sameAs">
+                <svg viewBox="0 0 24 24" class="social-orb__icon" width="18"
+                  height="18" aria-hidden="true">
+                  <path fill="currentColor"
+                    d="M13 22v-8h2.5l.5-3H13V8.5A1.5 1.5 0 0 1 14.5 7H16V4h-1.5A4.5 4.5 0 0 0 10 8.5V11H8v3h2v8z" />
+                </svg>
+                <span class="social-orb__label">Facebook</span>
+                <span class="social-orb__dot social-orb__dot--1"></span>
+                <span class="social-orb__dot social-orb__dot--2"></span>
+                <span class="social-orb__dot social-orb__dot--3"></span>
+                <span class="social-orb__dot social-orb__dot--4"></span>
+              </a>
+
+              <!-- INSTAGRAM -->
+              <a href="https://instagram.com"
+                aria-label="Visiter TechnoPro Web sur Instagram"
+                class="social-orb social-orb--orbit" style="--accent:#F56040;"
+                target="_blank" rel="noopener noreferrer"
+                itemprop="sameAs">
+                <svg viewBox="0 0 24 24" class="social-orb__icon" width="18"
+                  height="18" aria-hidden="true">
+                  <path fill="currentColor"
+                    d="M8 3h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8zm4 2.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5zM16.5 7a.9.9 0 1 1-.9.9.9.9 0 0 1 .9-.9z" />
+                </svg>
+                <span class="social-orb__label">Instagram</span>
+                <span class="social-orb__dot social-orb__dot--1"></span>
+                <span class="social-orb__dot social-orb__dot--2"></span>
+                <span class="social-orb__dot social-orb__dot--3"></span>
+                <span class="social-orb__dot social-orb__dot--4"></span>
+              </a>
+
+              <!-- LINKEDIN -->
+              <a
+                href="https://www.linkedin.com/company/technoproweb/about/?viewAsMember=true"
+                aria-label="Visiter TechnoPro Web sur LinkedIn"
+                class="social-orb social-orb--orbit" style="--accent:#0A66C2;"
+                target="_blank" rel="noopener noreferrer" itemprop="sameAs">
+                <svg viewBox="0 0 24 24" class="social-orb__icon" width="18"
+                  height="18" aria-hidden="true">
+                  <path fill="currentColor"
+                    d="M6 6a2 2 0 1 1-2 2 2 2 0 0 1 2-2zM4 10h4v10H4zm6 0h3.8v1.7h.1A4.1 4.1 0 0 1 18 9.9C20.6 9.9 21 11.6 21 14.1V20h-4v-5.1c0-1.2 0-2.7-1.7-2.7S13 13.5 13 14.8V20h-3z" />
+                </svg>
+                <span class="social-orb__label">LinkedIn</span>
+                <span class="social-orb__dot social-orb__dot--1"></span>
+                <span class="social-orb__dot social-orb__dot--2"></span>
+                <span class="social-orb__dot social-orb__dot--3"></span>
+                <span class="social-orb__dot social-orb__dot--4"></span>
+              </a>
+
+              <!-- WHATSAPP -->
+              <a
+                href="https://wa.me/212621691502?text=Bonjour%20TechnoPro%20Web,%20je%20souhaite%20cr%C3%A9er%20un%20site%20web.%20Pouvez-vous%20m%E2%80%99en%20dire%20plus%20%3F"
+                aria-label="Contacter TechnoPro Web sur WhatsApp"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-orb social-orb--orbit" style="--accent:#25D366;"
+                itemprop="sameAs">
+                <svg viewBox="0 0 32 32" class="social-orb__icon" width="18"
+                  height="18" aria-hidden="true">
+                  <path fill="currentColor"
+                    d="M16.027 3c-7.003 0-12.68 5.677-12.68 12.68 0 2.235.584 4.416 1.7 6.346L3 29l7.18-2.015a12.63 12.63 0 0 0 5.847 1.492h.007c7.003 0 12.68-5.677 12.68-12.68C28.714 8.677 23.03 3 16.027 3zm7.41 17.884c-.31.868-1.81 1.678-2.51 1.785-.643.097-1.474.138-2.375-.148-.547-.173-1.253-.405-2.163-.79-3.807-1.641-6.283-5.44-6.476-5.693-.19-.254-1.544-2.054-1.544-3.92 0-1.866.978-2.781 1.323-3.157.345-.376.75-.47 1.003-.47.253 0 .5.003.717.013.23.01.538-.087.842.642.31.744 1.053 2.575 1.145 2.76.09.187.15.402.03.654-.12.25-.18.403-.35.62-.18.23-.37.51-.53.685-.175.19-.355.4-.152.78.203.376.903 1.487 1.94 2.41 1.334 1.186 2.46 1.556 2.84 1.73.38.173.608.15.83-.09.22-.24.953-1.112 1.207-1.497.254-.385.505-.32.842-.19.345.127 2.18 1.027 2.55 1.213.376.187.63.28.72.435.09.157.09.91-.22 1.78z" />
+                </svg>
+                <span class="social-orb__label">WhatsApp</span>
+                <span class="social-orb__dot social-orb__dot--1"></span>
+                <span class="social-orb__dot social-orb__dot--2"></span>
+                <span class="social-orb__dot social-orb__dot--3"></span>
+                <span class="social-orb__dot social-orb__dot--4"></span>
+              </a>
+
+            </div>
+          </div>
+
+          <div
+            class="flex items-center justify-between md:justify-end gap-4 reveal-footer w-full md:w-auto">
+            <span class="text-[11px] text-slate-400">
+              ©️ <span class="year" data-year></span> TechnoPro Web — Tous
+              droits
+              réservés
             </span>
-          </button>
+
+            <button id="backToTop"
+              class="backtotop-btn inline-flex items-center gap-2 rounded-full px-4 py-2 text-[11px] font-medium
+             text-slate-100 bg-white/5 border border-white/15
+             shadow-[0_8px_20px_rgba(0,0,0,0.6)]
+             hover:bg-white/10 hover:border-[#C6B2FF] hover:text-white
+             transition-all duration-300 opacity-0 pointer-events-none">
+              <span class="relative flex items-center gap-1">
+                <span
+                  class="inline-flex h-4 w-4 items-center justify-center rounded-full bg-gradient-to-br from-[#F6CED8] via-[#C6B2FF] to-[#B0E0FF] text-[10px]">
+                  ↑
+                </span>
+                <span>Retour en haut</span>
+                <span class="dot-move"></span>
+              </span>
+            </button>
+          </div>
+
         </div>
-
       </div>
-    </div>
 
-    <!-- ========================= -->
-    <!-- BILINGUAL JSON-LD SCHEMA -->
-    <!-- ========================= -->
-    <script type="application/ld+json">
+      <!-- ========================= -->
+      <!-- JSON-LD SCHEMA -->
+      <!-- ========================= -->
+      <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -710,9 +1079,8 @@
       "Europe"
     ],
     "sameAs": [
-      "https://facebook.com",
-      "https://instagram.com",
-      "https://www.linkedin.com/in/nada-el-moudden-229606285/",
+      "https://www.facebook.com/profile.php?id=61584682072813&locale=fr_FR",
+      "https://www.linkedin.com/company/technoproweb/about/?viewAsMember=true",
       "https://wa.me/212621691502"
     ],
     "serviceType": [
@@ -733,10 +1101,9 @@
   }
   </script>
 
-  </footer>
+    </footer>
 
-
-  <script>
+    <script>
     document.addEventListener('DOMContentLoaded', function () {
       const form = document.getElementById('contact-form');
       const phoneRecipient = '212621691502'; // <-- your WhatsApp number (no "+")
@@ -771,13 +1138,13 @@
     });
   </script>
 
-  <!-- =========================
+    <!-- =========================
             SCRIPTS
   ========================== -->
 
-  <script src="en.js"></script>
-  <script src="fr.js"></script>
-  <script src="js/main.js"></script>
-</body>
+    <script src="en.js" defer></script>
+    <script src="fr.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </body>
 
 </html>
