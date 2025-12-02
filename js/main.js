@@ -1154,3 +1154,77 @@ ${message}
 });
 
 // End WhatsApp contact form
+
+// WhatsApp Floating Button
+document.addEventListener("DOMContentLoaded", () => {
+  const waBtn = document.querySelector(".wa-btn");
+  const toggle = document.getElementById("wa-toggle");
+  const firstLink = document.querySelector(".wa-card");
+
+  // Ripple on main button
+  waBtn.addEventListener("click", (e) => {
+    const rect = waBtn.getBoundingClientRect();
+    const span = document.createElement("span");
+    span.className = "ripple";
+    span.style.left = e.clientX - rect.left + "px";
+    span.style.top = e.clientY - rect.top + "px";
+    waBtn.appendChild(span);
+    span.addEventListener("animationend", () => span.remove());
+  });
+
+  // Confetti burst when panel opens
+  const colors = ["#25D366", "#20bd5a", "#0f9f46", "#34e17a", "#b0f0c7"];
+
+  function confettiBurst(originEl) {
+    const count = 26;
+    const rect = originEl.getBoundingClientRect();
+    const originX = rect.left + rect.width / 2;
+    const originY = rect.top + rect.height / 2;
+
+    for (let i = 0; i < count; i++) {
+      const piece = document.createElement("div");
+      piece.className = "confetti";
+      piece.style.background =
+        colors[Math.floor(Math.random() * colors.length)];
+      piece.style.borderRadius = Math.random() > 0.5 ? "2px" : "50%";
+      piece.style.left = originX + "px";
+      piece.style.top = originY + "px";
+
+      const angle = (Math.random() * 120 - 60) * (Math.PI / 180); // -60..60 deg
+      const velocity = 6 + Math.random() * 10;
+      const rotate = Math.random() * 720 - 360;
+      const duration = 900 + Math.random() * 700;
+      const driftX = Math.random() * 160 - 80;
+
+      piece.animate(
+        [
+          { transform: `translate(0,0) rotate(0deg)`, opacity: 1 },
+          {
+            transform: `translate(${Math.cos(angle) * velocity * 8 + driftX
+              }px, ${-Math.sin(angle) * velocity * 8 - 30
+              }px) rotate(${rotate}deg)`,
+            opacity: 0.9,
+            offset: 0.5,
+          },
+          {
+            transform: `translate(${driftX}px, 160px) rotate(${rotate * 1.6
+              }deg)`,
+            opacity: 0,
+          },
+        ],
+        { duration, easing: "cubic-bezier(.2,.8,.2,1)", fill: "forwards" }
+      );
+
+      document.body.appendChild(piece);
+      setTimeout(() => piece.remove(), duration + 60);
+    }
+  }
+
+  toggle.addEventListener("change", () => {
+    if (toggle.checked) {
+      confettiBurst(waBtn);
+      // Focus first actionable item for keyboard users
+      setTimeout(() => firstLink?.focus?.(), 200);
+    }
+  });
+});

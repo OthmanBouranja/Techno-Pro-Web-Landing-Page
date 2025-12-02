@@ -290,6 +290,11 @@
     <!-- ======================= -->
     <link rel="stylesheet" href="dist/output.css">
     <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Font Awesome (required for WhatsApp icon) -->
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      referrerpolicy="no-referrer" />
   </head>
 
   <body class="antialiased text-slate-800">
@@ -1237,6 +1242,65 @@
   </script>
 
 </section>
+
+<div class="wa-wrap">
+    <input type="checkbox" id="wa-toggle" class="wa-toggle">
+
+    <!-- Floating Button -->
+    <label for="wa-toggle" class="wa-btn" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </label>
+
+    <!-- Panel -->
+    <div class="wa-panel" role="dialog" aria-labelledby="wa-title" aria-modal="false">
+        <div class="wa-header">
+            <div class="wa-header-row">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="#e8f5ed">
+                    <path d="M20 2H4a2 2 0 0 0-2 2v15l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z" />
+                </svg>
+                <span id="wa-title">Discuter sur WhatsApp</span>
+            </div>
+            <small>Bonjour ! Cliquez sur un membre de notre équipe pour discuter sur
+                <strong>WhatsApp</strong></small>
+        </div>
+
+        <div class="wa-divider"></div>
+
+        <div class="wa-body">
+            <div class="wa-note">
+                L’équipe répond généralement en quelques minutes
+                <span class="typing"><span class="dot"></span><span class="dot"></span><span class="dot"></span></span>
+            </div>
+
+            <!-- Support card -->
+            <a class="wa-card"
+                href="https://api.whatsapp.com/send?phone=+212621691502&text=Bonjour%2C%20je%20souhaite%20cr%C3%A9er%20un%20site%20ou%20une%20application.%20Pouvez-vous%20m'aider%20%3F"
+                target="_blank" rel="nofollow noopener">
+                <div class="wa-left">
+                    <label for="wa-toggle" class="wa-btn-card">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </label>
+
+                    <div class="wa-meta">
+                        <div class="title">Support</div>
+                        <div class="sub">Support Technique</div>
+                    </div>
+                </div>
+
+                <div class="wa-right">
+                    <svg viewBox="0 0 32 32">
+                        <path d="M16 3C9.37 3 4 8.37 4 15c0 2.64.77 5.1 2.09 7.16L5 29l6.07-1.96A11.97 11.97 0 0 0 16 27c6.63 0 12-5.37 12-12S22.63 3 16 3z" />
+                    </svg>
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+    <!-- Close Button -->
+    <label for="wa-toggle" class="wa-close">&times;</label>
+</div>
+
 
 <section
   class="cookie-banner"
