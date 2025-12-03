@@ -1112,7 +1112,7 @@ body.cursor-idle #cursorDots {
 /* ===== Section ===== */
 .why-choose {
   position: relative;
-  padding: clamp(3rem, 5vw, 5rem);
+  padding: clamp(1rem, 5vw, 5rem);
   background: radial-gradient(
       1200px 600px at 10% -10%,
       rgba(246, 206, 216, 0.22),
@@ -2261,6 +2261,7 @@ body.cursor-idle #cursorDots {
   /* Small fade-in for the card content */
   .vision-card-enter {
     animation: vision-card-fade 0.9s ease-out both;
+    margin-bottom: 20px;
   }
 
   @keyframes vision-card-fade {
