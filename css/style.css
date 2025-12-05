@@ -1680,6 +1680,15 @@ body.cursor-idle #cursorDots {
     flex-shrink: 0;
     animation: checkPulse 3.2s ease-in-out infinite;
   }
+  .items-pill  {
+        color: black;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .items-pill-white  {
+    font-size: 15px;
+    font-weight: bold;
+  }
   @keyframes checkPulse {
     0%   { transform: scale(1);    opacity: 1; }
     50%  { transform: scale(1.08); opacity: 0.9; }
