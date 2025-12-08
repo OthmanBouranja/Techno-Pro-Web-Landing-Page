@@ -260,15 +260,22 @@
     sizes="192x192">
   <link rel="apple-touch-icon" href="https://technoproweb.com/assets/img/logos/formatLogo-no-bg.png">
 
-  <!-- ======================= -->
-  <!-- CSS                     -->
-  <!-- ======================= -->
-  <link rel="stylesheet" href="/dist/output.css?v=1">
-  <link rel="stylesheet" href="/css/style.css?v=1">
+  <!-- CSS principal (critique, bloque le rendu) -->
+  <link rel="stylesheet" href="/dist/output.css?v=1" />
 
-  <!-- Font Awesome (required for WhatsApp icon) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    referrerpolicy="no-referrer" />
+  <!-- CSS secondaire (non bloquant) -->
+  <link rel="preload" href="/css/style.css?v=1" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript>
+    <link rel="stylesheet" href="/css/style.css?v=1" />
+  </noscript>
+
+  <!-- Font Awesome (WhatsApp icon) - chargé en non bloquant -->
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'" referrerpolicy="no-referrer" />
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      referrerpolicy="no-referrer" />
+  </noscript>
 
 
   <!-- Google tag (gtag.js) -->
@@ -434,72 +441,72 @@
 
 
   <main>
-      <!-- =========================
+    <!-- =========================
          HERO with gradient
   ========================== -->
 
-  <section id="about-vision" class="relative overflow-hidden bg-[#fdfbff]" aria-labelledby="about-vision-title"
-    itemscope itemtype="https://schema.org/AboutPage">
+    <section id="about-vision" class="relative overflow-hidden bg-[#fdfbff]" aria-labelledby="about-vision-title"
+      itemscope itemtype="https://schema.org/AboutPage">
 
-    <!-- Big soft gradient background -->
-    <div class="absolute inset-0 home-intro-aurora pointer-events-none"></div>
+      <!-- Big soft gradient background -->
+      <div class="absolute inset-0 home-intro-aurora pointer-events-none"></div>
 
-    <!-- Diagonal lines around the card -->
-    <div class="pointer-events-none" aria-hidden="true">
-      <span class="home-intro-line home-intro-line--1"></span>
-      <span class="home-intro-line home-intro-line--2"></span>
-    </div>
-
-    <!-- Floating dots layer -->
-    <div class="vision-dots" aria-hidden="true">
-      <span class="vision-dot vision-dot--1"></span>
-      <span class="vision-dot vision-dot--2"></span>
-      <span class="vision-dot vision-dot--3"></span>
-      <span class="vision-dot vision-dot--4"></span>
-    </div>
-
-    <!-- Content -->
-    <div class="relative z-10 mx-auto max-w-4xl px-4 text-center">
-
-      <!-- Rotating circle -->
-      <div class="vision-orbit mx-auto mb-8">
-        <img src="assets/img/logos/formatLogo-no-bg.png"
-          alt="TechnoPro Web – agence web & IA à Tanger, création de sites internet & SEO"
-          title="TechnoPro Web — Création de sites web, IA & SEO à Tanger, Maroc" loading="lazy" width="320"
-          height="320" itemprop="image">
+      <!-- Diagonal lines around the card -->
+      <div class="pointer-events-none" aria-hidden="true">
+        <span class="home-intro-line home-intro-line--1"></span>
+        <span class="home-intro-line home-intro-line--2"></span>
       </div>
 
-      <!-- Badge -->
-      <p class="vision-card-enter inline-flex items-center gap-2 rounded-full bg-white/70 px-4 py-1 text-[11px] font-semibold uppercase tracking-[0.25em] text-slate-700 backdrop-blur"
-        title="À propos de TechnoPro Web" data-i18n="about.badge">
-        <span class="inline-block h-2 w-2 rounded-full bg-emerald-400"></span>
-        À propos
-      </p>
+      <!-- Floating dots layer -->
+      <div class="vision-dots" aria-hidden="true">
+        <span class="vision-dot vision-dot--1"></span>
+        <span class="vision-dot vision-dot--2"></span>
+        <span class="vision-dot vision-dot--3"></span>
+        <span class="vision-dot vision-dot--4"></span>
+      </div>
 
-      <!-- Title -->
-      <h2 id="about-vision-title" class="mt-6 text-3xl sm:text-4xl md:text-5xl leading-tight vision-card-enter"
-        itemprop="headline" title="À propos de TechnoPro Web — une vision claire pour votre présence digitale">
-        <span class="vision-title-line vision-title-line--1">
-          Une vision claire
-        </span>
-        <span class="vision-title-line vision-title-line--2">
-          pour votre <span class="vision-title-highlight">présence digitale</span>
-        </span>
-      </h2>
+      <!-- Content -->
+      <div class="relative z-10 mx-auto max-w-4xl px-4 text-center">
 
-      <!-- Subtitle -->
-      <p class="mt-6 mx-auto text-sm sm:text-base text-slate-700 vision-sub-animated" itemprop="description">
-        Chez <span class="vision-subtext" itemprop="about">TechnoPro Web</span>,
-        nous combinons <strong>design</strong>, <strong>performance</strong> et
-        <strong>automatisation</strong> pour créer des sites web rapides, élégants
-        et orientés résultats. Notre mission : transformer vos idées en une
-        présence en ligne visible sur Google et crédible auprès de vos clients.
-      </p>
+        <!-- Rotating circle -->
+        <div class="vision-orbit mx-auto mb-8">
+          <img src="assets/img/logos/formatLogo-no-bg.png"
+            alt="TechnoPro Web – agence web & IA à Tanger, création de sites internet & SEO"
+            title="TechnoPro Web — Création de sites web, IA & SEO à Tanger, Maroc" loading="lazy" width="320"
+            height="320" itemprop="image">
+        </div>
 
-    </div>
+        <!-- Badge -->
+        <p class="vision-card-enter inline-flex items-center gap-2 rounded-full bg-white/70 px-4 py-1 text-[11px] font-semibold uppercase tracking-[0.25em] text-slate-700 backdrop-blur"
+          title="À propos de TechnoPro Web" data-i18n="about.badge">
+          <span class="inline-block h-2 w-2 rounded-full bg-emerald-400"></span>
+          À propos
+        </p>
 
-    <!-- JSON-LD SEO for About Page / Organization -->
-    <script type="application/ld+json">
+        <!-- Title -->
+        <h2 id="about-vision-title" class="mt-6 text-3xl sm:text-4xl md:text-5xl leading-tight vision-card-enter"
+          itemprop="headline" title="À propos de TechnoPro Web — une vision claire pour votre présence digitale">
+          <span class="vision-title-line vision-title-line--1">
+            Une vision claire
+          </span>
+          <span class="vision-title-line vision-title-line--2">
+            pour votre <span class="vision-title-highlight">présence digitale</span>
+          </span>
+        </h2>
+
+        <!-- Subtitle -->
+        <p class="mt-6 mx-auto text-sm sm:text-base text-slate-700 vision-sub-animated" itemprop="description">
+          Chez <span class="vision-subtext" itemprop="about">TechnoPro Web</span>,
+          nous combinons <strong>design</strong>, <strong>performance</strong> et
+          <strong>automatisation</strong> pour créer des sites web rapides, élégants
+          et orientés résultats. Notre mission : transformer vos idées en une
+          présence en ligne visible sur Google et crédible auprès de vos clients.
+        </p>
+
+      </div>
+
+      <!-- JSON-LD SEO for About Page / Organization -->
+      <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "AboutPage",
@@ -573,151 +580,151 @@
   }
   </script>
 
-  </section>
+    </section>
 
 
 
-  <section id="tpw-agence" class="tpw-section" aria-labelledby="tpw-agence-title" itemscope
-    itemtype="https://schema.org/Service">
+    <section id="tpw-agence" class="tpw-section" aria-labelledby="tpw-agence-title" itemscope
+      itemtype="https://schema.org/Service">
 
-    <div class="tpw-container">
+      <div class="tpw-container">
 
-      <!-- LEFT : TEXT -->
-      <div class="tpw-left tpw-reveal">
+        <!-- LEFT : TEXT -->
+        <div class="tpw-left tpw-reveal">
 
-        <div class="tpw-pill" title="TechnoPro Web — Agence digitale au Maroc">
-          <span class="tpw-pill-dot"></span>
-          <span itemprop="providerMobility">TECHNOPRO WEB • AGENCE DIGITALE</span>
+          <div class="tpw-pill" title="TechnoPro Web — Agence digitale au Maroc">
+            <span class="tpw-pill-dot"></span>
+            <span itemprop="providerMobility">TECHNOPRO WEB • AGENCE DIGITALE</span>
+          </div>
+
+          <h1 class="tpw-title" id="tpw-agence-title" itemprop="name"
+            title="Agence web Maroc — TechnoPro Web | Création de sites internet & marketing digital">
+            Agence web au Maroc — <span class="tpw-gradient-text">TechnoPro Web</span> :
+            création de sites internet &amp; marketing digital
+          </h1>
+
+          <p class="tpw-subtitle" itemprop="alternateName">
+            SITES WEB SUR MESURE • SEO AVANCÉ • PUBLICITÉ DIGITALE
+          </p>
+
+          <!-- Questions / accroche -->
+          <p class="tpw-text tpw-question" itemprop="description">
+            Et si votre site devenait enfin votre meilleur commercial, capable de présenter
+            votre activité à vos clients <strong>24h/24 et 7j/7</strong> ?
+            Vous êtes une entreprise au Maroc ou à l’international et vous cherchez
+            une <strong>agence web au Maroc</strong> pour créer un site professionnel
+            et booster votre visibilité ?
+          </p>
+
+          <p class="tpw-text tpw-question" itemprop="description">
+            Vous êtes freelance ou prestataire web et vous cherchez un
+            <strong>partenaire offshore fiable au Maroc</strong> pour déléguer une partie
+            de vos projets tout en gardant une qualité haut de gamme ?
+          </p>
+
+          <!-- Expérience & forces -->
+          <p class="tpw-text" itemprop="description">
+            <strong>TechnoPro Web</strong> est une agence digitale avec
+            <strong>10+ ans d’expérience</strong> en <strong>création de sites vitrines
+              et e-commerce</strong>, rapides et orientés conversion. Nous accompagnons
+            TPE, PME et grandes entreprises dans tout le Maroc et en Europe.
+          </p>
+
+          <p class="tpw-text" itemprop="description">
+            <strong>Référencement naturel (SEO)</strong>, campagnes
+            <strong>Google Ads (SEA)</strong>, réseaux sociaux
+            (<strong>Facebook / Instagram Ads & community management</strong>) :
+            nous mettons en place des systèmes complets pour attirer un trafic qualifié
+            et transformer vos visiteurs en clients.
+          </p>
+
+          <ul class="tpw-list" aria-label="Principaux services web proposés par TechnoPro Web" itemscope
+            itemtype="https://schema.org/ItemList" itemprop="hasOfferCatalog">
+            <meta itemprop="name" content="TechnoPro Web — Catalogue de services web & digitaux">
+
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+              <span itemprop="itemOffered" itemscope itemtype="https://schema.org/Service">
+                <span itemprop="serviceType">Création de sites web responsives & ultra-rapides</span>
+              </span>
+            </li>
+
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+              <span itemprop="itemOffered" itemscope itemtype="https://schema.org/Service">
+                <span itemprop="serviceType">Stratégies SEO durables et orientées ROI</span>
+              </span>
+            </li>
+
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+              <span itemprop="itemOffered" itemscope itemtype="https://schema.org/Service">
+                <span itemprop="serviceType">Campagnes Google Ads & Social Ads pilotées par la data</span>
+              </span>
+            </li>
+
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+              <span itemprop="itemOffered" itemscope itemtype="https://schema.org/Service">
+                <span itemprop="serviceType">Accompagnement humain, transparent et réactif</span>
+              </span>
+            </li>
+          </ul>
+
+          <div class="tpw-cta-row">
+            <a href="contact.html" class="tpw-cta-btn"
+              title="Contacter TechnoPro Web — Obtenir un diagnostic web & SEO gratuit" itemprop="url">
+              📩 Parler avec un expert TechnoPro Web
+            </a>
+            <span class="tpw-counter-text">
+              <span data-counter="120">0</span>+ projets livrés au Maroc & à l’international
+            </span>
+          </div>
         </div>
 
-        <h1 class="tpw-title" id="tpw-agence-title" itemprop="name"
-          title="Agence web Maroc — TechnoPro Web | Création de sites internet & marketing digital">
-          Agence web au Maroc — <span class="tpw-gradient-text">TechnoPro Web</span> :
-          création de sites internet &amp; marketing digital
-        </h1>
+        <!-- RIGHT : CREATIVE IMAGE -->
+        <div class="tpw-right">
+          <div class="tpw-visual" role="img"
+            aria-label="Illustration de maquettes de sites responsives sur ordinateur et mobile créés par TechnoPro Web">
 
-        <p class="tpw-subtitle" itemprop="alternateName">
-          SITES WEB SUR MESURE • SEO AVANCÉ • PUBLICITÉ DIGITALE
-        </p>
+            <div class="tpw-blob" aria-hidden="true"></div>
 
-        <!-- Questions / accroche -->
-        <p class="tpw-text tpw-question" itemprop="description">
-          Et si votre site devenait enfin votre meilleur commercial, capable de présenter
-          votre activité à vos clients <strong>24h/24 et 7j/7</strong> ?
-          Vous êtes une entreprise au Maroc ou à l’international et vous cherchez
-          une <strong>agence web au Maroc</strong> pour créer un site professionnel
-          et booster votre visibilité ?
-        </p>
-
-        <p class="tpw-text tpw-question" itemprop="description">
-          Vous êtes freelance ou prestataire web et vous cherchez un
-          <strong>partenaire offshore fiable au Maroc</strong> pour déléguer une partie
-          de vos projets tout en gardant une qualité haut de gamme ?
-        </p>
-
-        <!-- Expérience & forces -->
-        <p class="tpw-text" itemprop="description">
-          <strong>TechnoPro Web</strong> est une agence digitale avec
-          <strong>10+ ans d’expérience</strong> en <strong>création de sites vitrines
-            et e-commerce</strong>, rapides et orientés conversion. Nous accompagnons
-          TPE, PME et grandes entreprises dans tout le Maroc et en Europe.
-        </p>
-
-        <p class="tpw-text" itemprop="description">
-          <strong>Référencement naturel (SEO)</strong>, campagnes
-          <strong>Google Ads (SEA)</strong>, réseaux sociaux
-          (<strong>Facebook / Instagram Ads & community management</strong>) :
-          nous mettons en place des systèmes complets pour attirer un trafic qualifié
-          et transformer vos visiteurs en clients.
-        </p>
-
-        <ul class="tpw-list" aria-label="Principaux services web proposés par TechnoPro Web" itemscope
-          itemtype="https://schema.org/ItemList" itemprop="hasOfferCatalog">
-          <meta itemprop="name" content="TechnoPro Web — Catalogue de services web & digitaux">
-
-          <li itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
-            <span itemprop="itemOffered" itemscope itemtype="https://schema.org/Service">
-              <span itemprop="serviceType">Création de sites web responsives & ultra-rapides</span>
-            </span>
-          </li>
-
-          <li itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
-            <span itemprop="itemOffered" itemscope itemtype="https://schema.org/Service">
-              <span itemprop="serviceType">Stratégies SEO durables et orientées ROI</span>
-            </span>
-          </li>
-
-          <li itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
-            <span itemprop="itemOffered" itemscope itemtype="https://schema.org/Service">
-              <span itemprop="serviceType">Campagnes Google Ads & Social Ads pilotées par la data</span>
-            </span>
-          </li>
-
-          <li itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
-            <span itemprop="itemOffered" itemscope itemtype="https://schema.org/Service">
-              <span itemprop="serviceType">Accompagnement humain, transparent et réactif</span>
-            </span>
-          </li>
-        </ul>
-
-        <div class="tpw-cta-row">
-          <a href="contact.html" class="tpw-cta-btn"
-            title="Contacter TechnoPro Web — Obtenir un diagnostic web & SEO gratuit" itemprop="url">
-            📩 Parler avec un expert TechnoPro Web
-          </a>
-          <span class="tpw-counter-text">
-            <span data-counter="120">0</span>+ projets livrés au Maroc & à l’international
-          </span>
-        </div>
-      </div>
-
-      <!-- RIGHT : CREATIVE IMAGE -->
-      <div class="tpw-right">
-        <div class="tpw-visual" role="img"
-          aria-label="Illustration de maquettes de sites responsives sur ordinateur et mobile créés par TechnoPro Web">
-
-          <div class="tpw-blob" aria-hidden="true"></div>
-
-          <div class="tpw-desktop" aria-hidden="true">
-            <div class="tpw-desktop-header">
-              <div class="tpw-desktop-dots">
-                <span style="background:#F6CED8"></span>
-                <span style="background:#FBBF24"></span>
-                <span style="background:#22C55E"></span>
+            <div class="tpw-desktop" aria-hidden="true">
+              <div class="tpw-desktop-header">
+                <div class="tpw-desktop-dots">
+                  <span style="background:#F6CED8"></span>
+                  <span style="background:#FBBF24"></span>
+                  <span style="background:#22C55E"></span>
+                </div>
+                <span class="tpw-desktop-label">Vue desktop — TechnoPro Web</span>
               </div>
-              <span class="tpw-desktop-label">Vue desktop — TechnoPro Web</span>
+
+              <div class="tpw-desktop-hero"></div>
+
+              <div class="tpw-desktop-grid">
+                <div>
+                  <div class="tpw-line"></div>
+                  <div class="tpw-line light"></div>
+                  <div class="tpw-line light"></div>
+                </div>
+                <div>
+                  <div class="tpw-line block"></div>
+                  <div class="tpw-line light short"></div>
+                </div>
+              </div>
             </div>
 
-            <div class="tpw-desktop-hero"></div>
+            <div class="tpw-phone" aria-hidden="true">
+              <div class="tpw-phone-screen"></div>
+              <div class="tpw-phone-cta">CONTACT • MOBILE FIRST</div>
+            </div>
 
-            <div class="tpw-desktop-grid">
-              <div>
-                <div class="tpw-line"></div>
-                <div class="tpw-line light"></div>
-                <div class="tpw-line light"></div>
-              </div>
-              <div>
-                <div class="tpw-line block"></div>
-                <div class="tpw-line light short"></div>
-              </div>
+            <div class="tpw-badge" title="Agence web reconnue pour ses résultats mesurables">
+              ★ Agence reconnue — résultats mesurables
             </div>
           </div>
-
-          <div class="tpw-phone" aria-hidden="true">
-            <div class="tpw-phone-screen"></div>
-            <div class="tpw-phone-cta">CONTACT • MOBILE FIRST</div>
-          </div>
-
-          <div class="tpw-badge" title="Agence web reconnue pour ses résultats mesurables">
-            ★ Agence reconnue — résultats mesurables
-          </div>
         </div>
+
       </div>
 
-    </div>
-
-    <!-- JSON-LD: Service block for the web agency hero -->
-    <script type="application/ld+json">
+      <!-- JSON-LD: Service block for the web agency hero -->
+      <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -803,205 +810,205 @@
   }
   </script>
 
-  </section>
+    </section>
 
 
 
 
 
 
-  <section id="tpw-digital-solutions" class="diff" aria-labelledby="diff-title" itemscope
-    itemtype="https://schema.org/ItemList">
+    <section id="tpw-digital-solutions" class="diff" aria-labelledby="diff-title" itemscope
+      itemtype="https://schema.org/ItemList">
 
-    <meta itemprop="name" content="TechnoPro Web — Solutions digitales & services web" />
-    <meta itemprop="itemListOrder" content="http://schema.org/ItemListUnordered" />
+      <meta itemprop="name" content="TechnoPro Web — Solutions digitales & services web" />
+      <meta itemprop="itemListOrder" content="http://schema.org/ItemListUnordered" />
 
-    <div class="diff-inner">
-      <div class="diff-pill" title="TechnoPro Web — Solutions digitales pour la croissance de votre entreprise">
-        <span class="diff-dot"></span>
-        <span itemprop="description">Solutions digitales</span>
-      </div>
-
-      <h2 class="diff-title" id="diff-title" title="Solutions digitales TechnoPro Web — Service fluide et continu">
-        Votre croissance mérite <br>
-        <span class="diff-gradient-text">un service fluide et continu</span>
-      </h2>
-
-      <p class="diff-subtitle">
-        Nous simplifions tous vos besoins digitaux. TechnoPro Web à Tanger
-        vous accompagne à chaque étape pour offrir <strong>clarté</strong>,
-        <strong>performance</strong> et <strong>valeur durable</strong>, pendant que
-        vous vous concentrez sur l’essentiel&nbsp;: votre business.
-      </p>
-    </div>
-
-    <div class="diff-cards">
-
-      <!-- Card 1 -->
-      <div class="diff-card" role="group" aria-label="Service de SEO et visibilité sur les moteurs de recherche"
-        itemscope itemprop="itemListElement" itemtype="https://schema.org/Service">
-
-        <meta itemprop="serviceType" content="SEO & Search Engine Visibility" />
-        <h3 class="diff-card-title" itemprop="name">
-          SEO & visibilité sur Google
-        </h3>
-        <p class="diff-card-text" itemprop="description">
-          Nous améliorons votre présence sur Google avec une stratégie
-          <strong>SEO durable</strong>, alignée sur vos objectifs.
-          Résultat&nbsp;: plus de visiteurs qualifiés et davantage de demandes de
-          contact.
-        </p>
-
-        <div class="diff-svg" role="img"
-          aria-label="Illustration de la progression des performances SEO sous forme de points connectés">
-
-          <!-- DNA SVG -->
-          <svg viewBox="0 0 400 150" aria-hidden="true" focusable="false">
-            <defs>
-              <lineargradient id="gradDiff1" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stop-color="#a855f7" />
-                <stop offset="50%" stop-color="#ec4899" />
-                <stop offset="100%" stop-color="#f97316" />
-              </lineargradient>
-            </defs>
-            <g stroke="url(#gradDiff1)" stroke-width="1.4" opacity="0.55">
-              <line x1="20" y1="70" x2="20" y2="150" />
-              <line x1="60" y1="55" x2="60" y2="150" />
-              <line x1="100" y1="45" x2="100" y2="150" />
-              <line x1="140" y1="40" x2="140" y2="150" />
-              <line x1="180" y1="38" x2="180" y2="150" />
-              <line x1="220" y1="40" x2="220" y2="150" />
-              <line x1="260" y1="45" x2="260" y2="150" />
-              <line x1="300" y1="55" x2="300" y2="150" />
-              <line x1="340" y1="70" x2="340" y2="150" />
-              <line x1="380" y1="90" x2="380" y2="150" />
-            </g>
-            <g class="diff-float">
-              <circle cx="20" cy="70" r="12" fill="url(#gradDiff1)" />
-              <circle cx="60" cy="55" r="15" fill="url(#gradDiff1)" />
-              <circle cx="100" cy="45" r="20" fill="url(#gradDiff1)" />
-              <circle cx="140" cy="40" r="28" fill="url(#gradDiff1)" />
-              <circle cx="180" cy="38" r="34" fill="url(#gradDiff1)" />
-              <circle cx="220" cy="40" r="25" fill="url(#gradDiff1)" />
-              <circle cx="260" cy="45" r="18" fill="url(#gradDiff1)" />
-              <circle cx="300" cy="55" r="14" fill="url(#gradDiff1)" />
-              <circle cx="340" cy="70" r="12" fill="url(#gradDiff1)" />
-              <circle cx="380" cy="90" r="10" fill="url(#gradDiff1)" />
-            </g>
-          </svg>
+      <div class="diff-inner">
+        <div class="diff-pill" title="TechnoPro Web — Solutions digitales pour la croissance de votre entreprise">
+          <span class="diff-dot"></span>
+          <span itemprop="description">Solutions digitales</span>
         </div>
-      </div>
 
-      <!-- Card 2 -->
-      <div class="diff-card" role="group" aria-label="Service de création de sites web" itemscope
-        itemprop="itemListElement" itemtype="https://schema.org/Service">
+        <h2 class="diff-title" id="diff-title" title="Solutions digitales TechnoPro Web — Service fluide et continu">
+          Votre croissance mérite <br>
+          <span class="diff-gradient-text">un service fluide et continu</span>
+        </h2>
 
-        <meta itemprop="serviceType" content="Website Creation" />
-        <h3 class="diff-card-title" itemprop="name">Création de sites web</h3>
-        <p class="diff-card-text" itemprop="description">
-          Site vitrine, boutique en ligne ou plateforme sur mesure&nbsp;:
-          nous concevons des expériences modernes, rapides et optimisées
-          pour transformer vos visiteurs en clients.
+        <p class="diff-subtitle">
+          Nous simplifions tous vos besoins digitaux. TechnoPro Web à Tanger
+          vous accompagne à chaque étape pour offrir <strong>clarté</strong>,
+          <strong>performance</strong> et <strong>valeur durable</strong>, pendant que
+          vous vous concentrez sur l’essentiel&nbsp;: votre business.
         </p>
-
-        <div class="diff-svg" role="img"
-          aria-label="Représentation créative de maquettes et modules de sites web sur mesure">
-
-          <!-- DNA SVG (reused) -->
-          <svg viewBox="0 0 400 150" aria-hidden="true" focusable="false">
-            <defs>
-              <lineargradient id="gradDiff1" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stop-color="#a855f7" />
-                <stop offset="50%" stop-color="#ec4899" />
-                <stop offset="100%" stop-color="#f97316" />
-              </lineargradient>
-            </defs>
-            <g stroke="url(#gradDiff1)" stroke-width="1.4" opacity="0.55">
-              <line x1="20" y1="70" x2="20" y2="150" />
-              <line x1="60" y1="55" x2="60" y2="150" />
-              <line x1="100" y1="45" x2="100" y2="150" />
-              <line x1="140" y1="40" x2="140" y2="150" />
-              <line x1="180" y1="38" x2="180" y2="150" />
-              <line x1="220" y1="40" x2="220" y2="150" />
-              <line x1="260" y1="45" x2="260" y2="150" />
-              <line x1="300" y1="55" x2="300" y2="150" />
-              <line x1="340" y1="70" x2="340" y2="150" />
-              <line x1="380" y1="90" x2="380" y2="150" />
-            </g>
-            <g class="diff-float">
-              <circle cx="20" cy="70" r="12" fill="url(#gradDiff1)" />
-              <circle cx="60" cy="55" r="15" fill="url(#gradDiff1)" />
-              <circle cx="100" cy="45" r="20" fill="url(#gradDiff1)" />
-              <circle cx="140" cy="40" r="28" fill="url(#gradDiff1)" />
-              <circle cx="180" cy="38" r="34" fill="url(#gradDiff1)" />
-              <circle cx="220" cy="40" r="25" fill="url(#gradDiff1)" />
-              <circle cx="260" cy="45" r="18" fill="url(#gradDiff1)" />
-              <circle cx="300" cy="55" r="14" fill="url(#gradDiff1)" />
-              <circle cx="340" cy="70" r="12" fill="url(#gradDiff1)" />
-              <circle cx="380" cy="90" r="10" fill="url(#gradDiff1)" />
-            </g>
-          </svg>
-        </div>
       </div>
 
-      <!-- Card 3 -->
-      <div class="diff-card" role="group" aria-label="Service de design & intelligence artificielle" itemscope
-        itemprop="itemListElement" itemtype="https://schema.org/Service">
+      <div class="diff-cards">
 
-        <meta itemprop="serviceType" content="Design & Artificial Intelligence" />
-        <h3 class="diff-card-title" itemprop="name">
-          Design & intelligence artificielle
-        </h3>
-        <p class="diff-card-text" itemprop="description">
-          Identité visuelle, illustrations, automatisations, générateurs IA…
-          nous utilisons le design et l’IA pour gagner en efficacité
-          et renforcer l’image de votre marque.
-        </p>
+        <!-- Card 1 -->
+        <div class="diff-card" role="group" aria-label="Service de SEO et visibilité sur les moteurs de recherche"
+          itemscope itemprop="itemListElement" itemtype="https://schema.org/Service">
 
-        <div class="diff-svg" role="img"
-          aria-label="Visualisation abstraite du design et de l’automatisation assistés par IA">
+          <meta itemprop="serviceType" content="SEO & Search Engine Visibility" />
+          <h3 class="diff-card-title" itemprop="name">
+            SEO & visibilité sur Google
+          </h3>
+          <p class="diff-card-text" itemprop="description">
+            Nous améliorons votre présence sur Google avec une stratégie
+            <strong>SEO durable</strong>, alignée sur vos objectifs.
+            Résultat&nbsp;: plus de visiteurs qualifiés et davantage de demandes de
+            contact.
+          </p>
 
-          <!-- DNA SVG -->
-          <svg viewBox="0 0 400 150" aria-hidden="true" focusable="false">
-            <defs>
-              <lineargradient id="gradDiff1" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stop-color="#a855f7" />
-                <stop offset="50%" stop-color="#ec4899" />
-                <stop offset="100%" stop-color="#f97316" />
-              </lineargradient>
-            </defs>
-            <g stroke="url(#gradDiff1)" stroke-width="1.4" opacity="0.55">
-              <line x1="20" y1="70" x2="20" y2="150" />
-              <line x1="60" y1="55" x2="60" y2="150" />
-              <line x1="100" y1="45" x2="100" y2="150" />
-              <line x1="140" y1="40" x2="140" y2="150" />
-              <line x1="180" y1="38" x2="180" y2="150" />
-              <line x1="220" y1="40" x2="220" y2="150" />
-              <line x1="260" y1="45" x2="260" y2="150" />
-              <line x1="300" y1="55" x2="300" y2="150" />
-              <line x1="340" y1="70" x2="340" y2="150" />
-              <line x1="380" y1="90" x2="380" y2="150" />
-            </g>
-            <g class="diff-float">
-              <circle cx="20" cy="70" r="12" fill="url(#gradDiff1)" />
-              <circle cx="60" cy="55" r="15" fill="url(#gradDiff1)" />
-              <circle cx="100" cy="45" r="20" fill="url(#gradDiff1)" />
-              <circle cx="140" cy="40" r="28" fill="url(#gradDiff1)" />
-              <circle cx="180" cy="38" r="34" fill="url(#gradDiff1)" />
-              <circle cx="220" cy="40" r="25" fill="url(#gradDiff1)" />
-              <circle cx="260" cy="45" r="18" fill="url(#gradDiff1)" />
-              <circle cx="300" cy="55" r="14" fill="url(#gradDiff1)" />
-              <circle cx="340" cy="70" r="12" fill="url(#gradDiff1)" />
-              <circle cx="380" cy="90" r="10" fill="url(#gradDiff1)" />
-            </g>
-          </svg>
+          <div class="diff-svg" role="img"
+            aria-label="Illustration de la progression des performances SEO sous forme de points connectés">
+
+            <!-- DNA SVG -->
+            <svg viewBox="0 0 400 150" aria-hidden="true" focusable="false">
+              <defs>
+                <lineargradient id="gradDiff1" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#a855f7" />
+                  <stop offset="50%" stop-color="#ec4899" />
+                  <stop offset="100%" stop-color="#f97316" />
+                </lineargradient>
+              </defs>
+              <g stroke="url(#gradDiff1)" stroke-width="1.4" opacity="0.55">
+                <line x1="20" y1="70" x2="20" y2="150" />
+                <line x1="60" y1="55" x2="60" y2="150" />
+                <line x1="100" y1="45" x2="100" y2="150" />
+                <line x1="140" y1="40" x2="140" y2="150" />
+                <line x1="180" y1="38" x2="180" y2="150" />
+                <line x1="220" y1="40" x2="220" y2="150" />
+                <line x1="260" y1="45" x2="260" y2="150" />
+                <line x1="300" y1="55" x2="300" y2="150" />
+                <line x1="340" y1="70" x2="340" y2="150" />
+                <line x1="380" y1="90" x2="380" y2="150" />
+              </g>
+              <g class="diff-float">
+                <circle cx="20" cy="70" r="12" fill="url(#gradDiff1)" />
+                <circle cx="60" cy="55" r="15" fill="url(#gradDiff1)" />
+                <circle cx="100" cy="45" r="20" fill="url(#gradDiff1)" />
+                <circle cx="140" cy="40" r="28" fill="url(#gradDiff1)" />
+                <circle cx="180" cy="38" r="34" fill="url(#gradDiff1)" />
+                <circle cx="220" cy="40" r="25" fill="url(#gradDiff1)" />
+                <circle cx="260" cy="45" r="18" fill="url(#gradDiff1)" />
+                <circle cx="300" cy="55" r="14" fill="url(#gradDiff1)" />
+                <circle cx="340" cy="70" r="12" fill="url(#gradDiff1)" />
+                <circle cx="380" cy="90" r="10" fill="url(#gradDiff1)" />
+              </g>
+            </svg>
+          </div>
         </div>
+
+        <!-- Card 2 -->
+        <div class="diff-card" role="group" aria-label="Service de création de sites web" itemscope
+          itemprop="itemListElement" itemtype="https://schema.org/Service">
+
+          <meta itemprop="serviceType" content="Website Creation" />
+          <h3 class="diff-card-title" itemprop="name">Création de sites web</h3>
+          <p class="diff-card-text" itemprop="description">
+            Site vitrine, boutique en ligne ou plateforme sur mesure&nbsp;:
+            nous concevons des expériences modernes, rapides et optimisées
+            pour transformer vos visiteurs en clients.
+          </p>
+
+          <div class="diff-svg" role="img"
+            aria-label="Représentation créative de maquettes et modules de sites web sur mesure">
+
+            <!-- DNA SVG (reused) -->
+            <svg viewBox="0 0 400 150" aria-hidden="true" focusable="false">
+              <defs>
+                <lineargradient id="gradDiff1" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#a855f7" />
+                  <stop offset="50%" stop-color="#ec4899" />
+                  <stop offset="100%" stop-color="#f97316" />
+                </lineargradient>
+              </defs>
+              <g stroke="url(#gradDiff1)" stroke-width="1.4" opacity="0.55">
+                <line x1="20" y1="70" x2="20" y2="150" />
+                <line x1="60" y1="55" x2="60" y2="150" />
+                <line x1="100" y1="45" x2="100" y2="150" />
+                <line x1="140" y1="40" x2="140" y2="150" />
+                <line x1="180" y1="38" x2="180" y2="150" />
+                <line x1="220" y1="40" x2="220" y2="150" />
+                <line x1="260" y1="45" x2="260" y2="150" />
+                <line x1="300" y1="55" x2="300" y2="150" />
+                <line x1="340" y1="70" x2="340" y2="150" />
+                <line x1="380" y1="90" x2="380" y2="150" />
+              </g>
+              <g class="diff-float">
+                <circle cx="20" cy="70" r="12" fill="url(#gradDiff1)" />
+                <circle cx="60" cy="55" r="15" fill="url(#gradDiff1)" />
+                <circle cx="100" cy="45" r="20" fill="url(#gradDiff1)" />
+                <circle cx="140" cy="40" r="28" fill="url(#gradDiff1)" />
+                <circle cx="180" cy="38" r="34" fill="url(#gradDiff1)" />
+                <circle cx="220" cy="40" r="25" fill="url(#gradDiff1)" />
+                <circle cx="260" cy="45" r="18" fill="url(#gradDiff1)" />
+                <circle cx="300" cy="55" r="14" fill="url(#gradDiff1)" />
+                <circle cx="340" cy="70" r="12" fill="url(#gradDiff1)" />
+                <circle cx="380" cy="90" r="10" fill="url(#gradDiff1)" />
+              </g>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="diff-card" role="group" aria-label="Service de design & intelligence artificielle" itemscope
+          itemprop="itemListElement" itemtype="https://schema.org/Service">
+
+          <meta itemprop="serviceType" content="Design & Artificial Intelligence" />
+          <h3 class="diff-card-title" itemprop="name">
+            Design & intelligence artificielle
+          </h3>
+          <p class="diff-card-text" itemprop="description">
+            Identité visuelle, illustrations, automatisations, générateurs IA…
+            nous utilisons le design et l’IA pour gagner en efficacité
+            et renforcer l’image de votre marque.
+          </p>
+
+          <div class="diff-svg" role="img"
+            aria-label="Visualisation abstraite du design et de l’automatisation assistés par IA">
+
+            <!-- DNA SVG -->
+            <svg viewBox="0 0 400 150" aria-hidden="true" focusable="false">
+              <defs>
+                <lineargradient id="gradDiff1" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#a855f7" />
+                  <stop offset="50%" stop-color="#ec4899" />
+                  <stop offset="100%" stop-color="#f97316" />
+                </lineargradient>
+              </defs>
+              <g stroke="url(#gradDiff1)" stroke-width="1.4" opacity="0.55">
+                <line x1="20" y1="70" x2="20" y2="150" />
+                <line x1="60" y1="55" x2="60" y2="150" />
+                <line x1="100" y1="45" x2="100" y2="150" />
+                <line x1="140" y1="40" x2="140" y2="150" />
+                <line x1="180" y1="38" x2="180" y2="150" />
+                <line x1="220" y1="40" x2="220" y2="150" />
+                <line x1="260" y1="45" x2="260" y2="150" />
+                <line x1="300" y1="55" x2="300" y2="150" />
+                <line x1="340" y1="70" x2="340" y2="150" />
+                <line x1="380" y1="90" x2="380" y2="150" />
+              </g>
+              <g class="diff-float">
+                <circle cx="20" cy="70" r="12" fill="url(#gradDiff1)" />
+                <circle cx="60" cy="55" r="15" fill="url(#gradDiff1)" />
+                <circle cx="100" cy="45" r="20" fill="url(#gradDiff1)" />
+                <circle cx="140" cy="40" r="28" fill="url(#gradDiff1)" />
+                <circle cx="180" cy="38" r="34" fill="url(#gradDiff1)" />
+                <circle cx="220" cy="40" r="25" fill="url(#gradDiff1)" />
+                <circle cx="260" cy="45" r="18" fill="url(#gradDiff1)" />
+                <circle cx="300" cy="55" r="14" fill="url(#gradDiff1)" />
+                <circle cx="340" cy="70" r="12" fill="url(#gradDiff1)" />
+                <circle cx="380" cy="90" r="10" fill="url(#gradDiff1)" />
+              </g>
+            </svg>
+          </div>
+        </div>
+
       </div>
 
-    </div>
-
-    <!-- JSON-LD: ItemList of services with keywords EN/FR/AR -->
-    <script type="application/ld+json">
+      <!-- JSON-LD: ItemList of services with keywords EN/FR/AR -->
+      <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -1140,94 +1147,94 @@
   }
   </script>
 
-  </section>
+    </section>
 
-  <div class="wa-wrap">
-    <input type="checkbox" id="wa-toggle" class="wa-toggle">
+    <div class="wa-wrap">
+      <input type="checkbox" id="wa-toggle" class="wa-toggle">
 
-    <!-- Floating Button -->
-    <label for="wa-toggle" class="wa-btn" aria-label="Chat on WhatsApp">
-      <i class="fa-brands fa-whatsapp"></i>
-    </label>
+      <!-- Floating Button -->
+      <label for="wa-toggle" class="wa-btn" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </label>
 
-    <!-- Panel -->
-    <div class="wa-panel" role="dialog" aria-labelledby="wa-title" aria-modal="false">
-      <div class="wa-header">
-        <div class="wa-header-row">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="#e8f5ed">
-            <path d="M20 2H4a2 2 0 0 0-2 2v15l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z" />
-          </svg>
-          <span id="wa-title">Discuter sur WhatsApp</span>
-        </div>
-        <small>Bonjour ! Cliquez sur un membre de notre équipe pour discuter sur
-          <strong>WhatsApp</strong></small>
-      </div>
-
-      <div class="wa-divider"></div>
-
-      <div class="wa-body">
-        <div class="wa-note">
-          L’équipe répond généralement en quelques minutes
-          <span class="typing"><span class="dot"></span><span class="dot"></span><span class="dot"></span></span>
-        </div>
-
-        <!-- Support card -->
-        <a class="wa-card"
-          href="https://api.whatsapp.com/send?phone=+212621691502&text=Bonjour%2C%20je%20souhaite%20cr%C3%A9er%20un%20site%20ou%20une%20application.%20Pouvez-vous%20m'aider%20%3F"
-          target="_blank" rel="nofollow noopener">
-          <div class="wa-left">
-            <label for="wa-toggle" class="wa-btn-card">
-              <i class="fa-brands fa-whatsapp"></i>
-            </label>
-
-            <div class="wa-meta">
-              <div class="title">Support</div>
-              <div class="sub">Support Technique</div>
-            </div>
-          </div>
-
-          <div class="wa-right">
-            <svg viewBox="0 0 32 32">
-              <path
-                d="M16 3C9.37 3 4 8.37 4 15c0 2.64.77 5.1 2.09 7.16L5 29l6.07-1.96A11.97 11.97 0 0 0 16 27c6.63 0 12-5.37 12-12S22.63 3 16 3z" />
+      <!-- Panel -->
+      <div class="wa-panel" role="dialog" aria-labelledby="wa-title" aria-modal="false">
+        <div class="wa-header">
+          <div class="wa-header-row">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="#e8f5ed">
+              <path d="M20 2H4a2 2 0 0 0-2 2v15l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z" />
             </svg>
+            <span id="wa-title">Discuter sur WhatsApp</span>
           </div>
-        </a>
+          <small>Bonjour ! Cliquez sur un membre de notre équipe pour discuter sur
+            <strong>WhatsApp</strong></small>
+        </div>
 
+        <div class="wa-divider"></div>
+
+        <div class="wa-body">
+          <div class="wa-note">
+            L’équipe répond généralement en quelques minutes
+            <span class="typing"><span class="dot"></span><span class="dot"></span><span class="dot"></span></span>
+          </div>
+
+          <!-- Support card -->
+          <a class="wa-card"
+            href="https://api.whatsapp.com/send?phone=+212621691502&text=Bonjour%2C%20je%20souhaite%20cr%C3%A9er%20un%20site%20ou%20une%20application.%20Pouvez-vous%20m'aider%20%3F"
+            target="_blank" rel="nofollow noopener">
+            <div class="wa-left">
+              <label for="wa-toggle" class="wa-btn-card">
+                <i class="fa-brands fa-whatsapp"></i>
+              </label>
+
+              <div class="wa-meta">
+                <div class="title">Support</div>
+                <div class="sub">Support Technique</div>
+              </div>
+            </div>
+
+            <div class="wa-right">
+              <svg viewBox="0 0 32 32">
+                <path
+                  d="M16 3C9.37 3 4 8.37 4 15c0 2.64.77 5.1 2.09 7.16L5 29l6.07-1.96A11.97 11.97 0 0 0 16 27c6.63 0 12-5.37 12-12S22.63 3 16 3z" />
+              </svg>
+            </div>
+          </a>
+
+        </div>
       </div>
+
+      <!-- Close Button -->
+      <label for="wa-toggle" class="wa-close">&times;</label>
     </div>
 
-    <!-- Close Button -->
-    <label for="wa-toggle" class="wa-close">&times;</label>
-  </div>
 
+    <section class="cookie-banner" id="cookie-banner" aria-label="Consentement aux cookies"
+      aria-describedby="cookie-text cookie-actions">
+      <div class="cookie-content">
+        <div class="cookie-icon" aria-hidden="true">🍪</div>
 
-  <section class="cookie-banner" id="cookie-banner" aria-label="Consentement aux cookies"
-    aria-describedby="cookie-text cookie-actions">
-    <div class="cookie-content">
-      <div class="cookie-icon" aria-hidden="true">🍪</div>
+        <h3 class="cookie-title">Nous utilisons des cookies</h3>
 
-      <h3 class="cookie-title">Nous utilisons des cookies</h3>
+        <p class="cookie-text" id="cookie-text">
+          Nous utilisons des cookies pour améliorer votre expérience,
+          analyser le trafic et optimiser nos services.
+          Vous pouvez accepter ou refuser les cookies non essentiels.
+          <a href="/cookie-policy.html" class="cookie-link">
+            En savoir plus dans notre politique de cookies.
+          </a>
+        </p>
 
-      <p class="cookie-text" id="cookie-text">
-        Nous utilisons des cookies pour améliorer votre expérience,
-        analyser le trafic et optimiser nos services.
-        Vous pouvez accepter ou refuser les cookies non essentiels.
-        <a href="/cookie-policy.html" class="cookie-link">
-          En savoir plus dans notre politique de cookies.
-        </a>
-      </p>
-
-      <div class="cookie-actions" id="cookie-actions">
-        <button type="button" class="cookie-accept">
-          Accepter tous les cookies
-        </button>
-        <button type="button" class="cookie-decline">
-          Cookies essentiels uniquement
-        </button>
+        <div class="cookie-actions" id="cookie-actions">
+          <button type="button" class="cookie-accept">
+            Accepter tous les cookies
+          </button>
+          <button type="button" class="cookie-decline">
+            Cookies essentiels uniquement
+          </button>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
   </main>
 
 

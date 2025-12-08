@@ -411,13 +411,23 @@ morocco payment methods,
 }
 </script>
 
-  <!-- Font Awesome (required for WhatsApp icon) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    referrerpolicy="no-referrer" />
-
-  <!-- CSS -->
+  <!-- CSS principal (critique, bloque le rendu) -->
   <link rel="stylesheet" href="/dist/output.css?v=1" />
-  <link rel="stylesheet" href="/css/style.css?v=1" />
+
+  <!-- CSS secondaire (non bloquant) -->
+  <link rel="preload" href="/css/style.css?v=1" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript>
+    <link rel="stylesheet" href="/css/style.css?v=1" />
+  </noscript>
+
+  <!-- Font Awesome (WhatsApp icon) - chargé en non bloquant -->
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'" referrerpolicy="no-referrer" />
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      referrerpolicy="no-referrer" />
+  </noscript>
+
 
 
   <!-- Google tag (gtag.js) -->
@@ -686,13 +696,16 @@ morocco payment methods,
               <div id="slides" class="relative aspect-[16/11] w-full overflow-hidden rounded-2xl">
 
                 <img src="assets/img/webDesign.png" alt="Création de site web moderne et rapide à Tanger"
-                  class="slide absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-500" fetchpriority="high" />
+                  class="slide absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-500"
+                  fetchpriority="high" />
 
                 <img src="assets/img/seo.png" alt="Service SEO pour site web afin d'obtenir la 1re page Google"
-                  class="slide absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-500" fetchpriority="high" />
+                  class="slide absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-500"
+                  fetchpriority="high" />
 
                 <img src="assets/img/ads.png" alt="Campagnes Google Ads pour attirer des clients immédiatement"
-                  class="slide absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-500" fetchpriority="high" />
+                  class="slide absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-500"
+                  fetchpriority="high" />
 
               </div>
             </div>
