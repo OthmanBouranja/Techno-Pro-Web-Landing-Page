@@ -27,3 +27,15 @@ jobs:
 
           # folder in your repo to upload
           local-dir: ./        # if your site is in a subfolder (ex: dist/), put ./dist
+
+
+          exclude: |
+            **/.git*
+            **/.DS_Store
+            node_modules/**
+            src/**
+            package.json
+            package-lock.json
+            README.md
+            Readme.txt
+            .github/**
