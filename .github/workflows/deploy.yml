@@ -1,9 +1,9 @@
-name: Deploy via FTP
+name: ftp-deploy
 
 on:
   push:
     branches:
-      - main      # or master, selon ta branche principale
+      - main          # change to master if your default branch is master
 
 jobs:
   ftp-deploy:
@@ -13,18 +13,17 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Si ton site est juste HTML/CSS/JS/PHP simple, pas besoin de build.
-      # Si tu dois build (npm run build, etc.), on peut l'ajouter plus tard.
-
-      - name: Upload files via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4
+      - name: Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          port: ${{ secrets.FTP_PORT || 21 }}
-          protocol: ftps
-          local-dir: ./          # d'où on envoie (racine du repo)
-          server-dir: ${{ secrets.FTP_REMOTE_DIR || '/' }} # où envoyer sur le serveur
-          # optionnel : clean le serveur des vieux fichiers
-          # dangerous-clean-slate: true
+
+          # ---- ADAPT THESE 3 LINES IF NEEDED ----
+          protocol: ftps       # try "ftp" if your host does not support FTPS
+          port: 21             # or 990 if your FTPS uses 990
+          server-dir: /        # or /www, /htdocs, /public_html... (same as in FileZilla)
+
+          # folder in your repo to upload
+          local-dir: ./        # if your site is in a subfolder (ex: dist/), put ./dist
