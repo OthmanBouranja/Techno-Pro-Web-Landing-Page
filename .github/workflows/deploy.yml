@@ -1,0 +1,30 @@
+name: Deploy via FTP
+
+on:
+  push:
+    branches:
+      - main      # or master, selon ta branche principale
+
+jobs:
+  ftp-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Si ton site est juste HTML/CSS/JS/PHP simple, pas besoin de build.
+      # Si tu dois build (npm run build, etc.), on peut l'ajouter plus tard.
+
+      - name: Upload files via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: ${{ secrets.FTP_PORT || 21 }}
+          protocol: ftps
+          local-dir: ./          # d'où on envoie (racine du repo)
+          server-dir: ${{ secrets.FTP_REMOTE_DIR || '/' }} # où envoyer sur le serveur
+          # optionnel : clean le serveur des vieux fichiers
+          # dangerous-clean-slate: true
