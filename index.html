@@ -72,6 +72,12 @@
   <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.technoproweb.com/sitemap.xml" />
   <meta name="referrer" content="origin-when-cross-origin" />
 
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+
   <script type="application/ld+json">
 [
   {
@@ -380,7 +386,7 @@
 </script>
 
   <!-- CSS principal (critique, bloque le rendu) -->
-  <link rel="stylesheet" href="/dist/output.css?v=1" />
+  <link rel="stylesheet" href="/dist/output.v1.css">
 
   <!-- CSS secondaire (non bloquant) -->
   <link rel="preload" href="/css/style.css?v=1" as="style" onload="this.onload=null;this.rel='stylesheet'" />
@@ -421,8 +427,10 @@
 
         <!-- Brand -->
         <a href="/" class="flex items-center gap-2" aria-label="Techno Pro Web – Home" title="Techno Pro Web – Home">
-          <img src="assets/img/logos/formatLogo-no-bg.png" alt="Techno Pro Web – Web development & modern websites"
-            class="h-20 w-20 rounded-lg object-cover img-logo">
+          <img src="assets/img/logos/logo.webp"
+            srcset="assets/img/logos/logo.webp 1x, assets/img/logos/logo.webp 2x" width="193" height="193"
+            alt="Techno Pro Web – Web development & modern websites" class="h-20 w-20 rounded-lg object-cover img-logo"
+            decoding="async" />
         </a>
 
         <!-- Desktop Navigation -->
@@ -660,22 +668,30 @@
 
           <!-- RIGHT IMAGES -->
           <div class="relative mx-auto w-full max-w-xl">
-            <div class="rounded-3xl bg-white/40 p-4 shadow-2xl ring-1 ring-white/40 backdrop-blur">
+            <div
+              class="rounded-3xl bg-white/40 p-4 shadow-2xl ring-1 ring-white/40 backdrop-blur min-h-[260px] sm:min-h-[300px] lg:min-h-[340px]">
               <div id="slides" class="relative aspect-[16/11] w-full overflow-hidden rounded-2xl">
 
-                <img src="assets/img/webDesign.png" alt="Création de site web moderne et rapide à Tanger"
-                  class="slide absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-500"
-                  fetchpriority="high" />
+                <!-- ✅ SLIDE 1 (LCP) -->
+                <img src="assets/img/webDesign.webp" width="561" height="374"
+                  alt="Création de site web moderne et rapide à Tanger"
+                  class="slide absolute inset-0 h-full w-full object-cover opacity-100 transition-opacity duration-500"
+                  fetchpriority="high" decoding="async" />
 
-                <img src="assets/img/seo.png" alt="Service SEO pour site web afin d'obtenir la 1re page Google"
+                <!-- SLIDE 2 (lazy) -->
+                <img src="assets/img/seo.webp" width="561" height="374"
+                  alt="Service SEO pour site web afin d'obtenir la 1re page Google"
                   class="slide absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-500"
-                  fetchpriority="high" />
+                  loading="lazy" decoding="async" />
 
-                <img src="assets/img/ads.png" alt="Campagnes Google Ads pour attirer des clients immédiatement"
+                <!-- SLIDE 3 (lazy) -->
+                <img src="assets/img/ads.webp" width="561" height="374"
+                  alt="Campagnes Google Ads pour attirer des clients immédiatement"
                   class="slide absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-500"
-                  fetchpriority="high" />
+                  loading="lazy" decoding="async" />
 
               </div>
+
             </div>
 
             <!-- Arrows -->
